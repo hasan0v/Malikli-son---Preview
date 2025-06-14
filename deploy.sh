@@ -207,6 +207,10 @@ main() {
         print_warning "nginx.conf.template not found. Please configure Nginx manually."
     fi
     
+    # Make startup scripts executable
+    print_step "Setting up startup scripts..."
+    chmod +x start-backend.sh
+    
     # Start/restart PM2 processes
     print_step "Starting PM2 processes..."
     

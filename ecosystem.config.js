@@ -1,10 +1,8 @@
 module.exports = {
-  apps: [
-    {
+  apps: [    {
       name: 'malikli-backend',
-      cwd: '/var/www/malikli-store/backend',
-      script: 'venv/bin/gunicorn',
-      args: '--bind 127.0.0.1:8000 --workers 3 --timeout 120 --max-requests 1000 --preload backend.wsgi:application',
+      cwd: '/var/www/malikli-store',
+      script: './start-backend.sh',
       env: {
         NODE_ENV: 'production',
         DJANGO_SETTINGS_MODULE: 'backend.settings'

@@ -327,16 +327,55 @@ sudo systemctl enable nginx
 
 ## Step 5: Setup SSL with Let's Encrypt
 
+**Important**: The deployment script initially configures Nginx for HTTP only to avoid SSL certificate issues. After the initial deployment, follow these steps to enable HTTPS:
+
+### Phase 1: Initial HTTP Setup (Done by deploy script)
+The deployment script uses `nginx.conf.template` which is configured for HTTP only to allow initial setup without SSL certificates.
+
+### Phase 2: Enable HTTPS with SSL Certificate
+
+1. **Obtain SSL Certificate**:
 ```bash
-# Install SSL certificate
-sudo certbot --nginx -d app.malikli.store
+# Stop nginx temporarily
+sudo systemctl stop nginx
+
+# Get SSL certificate from Let's Encrypt
+sudo certbot certonly --standalone -d app.malikli.store
+
+# Start nginx again
+sudo systemctl start nginx
+```
+
+2. **Update Nginx Configuration to HTTPS**:
+```bash
+# Replace the HTTP-only configuration with the SSL-enabled version
+cd /var/www/malikli-store
+sudo cp nginx.conf.ssl.template /etc/nginx/sites-available/malikli-store
+
+# Test the new configuration
+sudo nginx -t
+
+# Reload nginx with SSL configuration
+sudo systemctl reload nginx
+```
+
+3. **Verify SSL Setup**:
+```bash
+# Check certificate status
+sudo certbot certificates
 
 # Verify auto-renewal
 sudo certbot renew --dry-run
 
-# Add certbot renewal to crontab
-echo "0 12 * * * /usr/bin/certbot renew --quiet" | sudo crontab -
+# Set up automatic renewal
+echo "0 12 * * * /usr/bin/certbot renew --quiet && systemctl reload nginx" | sudo crontab -
 ```
+
+### SSL Configuration Files
+- `nginx.conf.template`: HTTP-only configuration for initial deployment
+- `nginx.conf.ssl.template`: HTTPS configuration with SSL enabled
+
+**Note**: The domain `app.malikli.store` must be pointing to your server's IP address before requesting SSL certificates.
 
 ---
 

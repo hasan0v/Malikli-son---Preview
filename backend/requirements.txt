@@ -22,3 +22,4 @@ resend>=0.6.0
 # Additional utilities
 Pillow>=10.0.0  # For image processing
 requests>=2.31.0
+gunicorn>=21.0.0  # WSGI HTTP Server for production
