@@ -1,1 +1,3 @@
 INFO 2025-06-14 20:38:27,684 autoreload 51908 66960 Watching for file changes with StatReloader
+INFO 2025-06-14 20:46:42,615 autoreload 51908 66960 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-14 20:46:43,995 autoreload 23052 50760 Watching for file changes with StatReloader
