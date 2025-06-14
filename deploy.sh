@@ -15,7 +15,7 @@ NC='\033[0m' # No Color
 
 # Configuration
 APP_DIR="/var/www/malikli-store"
-DOMAIN="app.malikli.store"
+DOMAIN="app.malikli1992.store"
 BACKEND_PORT="8000"
 FRONTEND_PORT="3000"
 NGINX_SITE="malikli-store"

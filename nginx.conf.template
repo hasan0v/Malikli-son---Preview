@@ -2,7 +2,7 @@
 # This will be replaced with HTTPS configuration after SSL certificate is obtained
 server {
     listen 80;
-    server_name app.malikli.store;
+    server_name app.malikli1992.store;
 
     # Security headers (basic)
     add_header X-Frame-Options "SAMEORIGIN" always;

@@ -1,13 +1,13 @@
 # Malikli Store Deployment Guide for AlmaLinux Server
 
 ## Overview
-This guide will help you deploy the Malikli Store application (Django + Next.js) on an AlmaLinux server with the frontend accessible at https://app.malikli.store.
+This guide will help you deploy the Malikli Store application (Django + Next.js) on an AlmaLinux server with the frontend accessible at https://app.malikli1992.store.
 
 ## Project Architecture
 - **Backend**: Django REST Framework + PostgreSQL (Supabase) + Cloudflare R2 + Resend Email
 - **Frontend**: Next.js + TypeScript + Tailwind CSS + Redux Toolkit
 - **Server**: AlmaLinux with Nginx reverse proxy
-- **Domain**: https://app.malikli.store (frontend), API at subdomain or path
+- **Domain**: https://app.malikli1992.store (frontend), API at subdomain or path
 
 ---
 
@@ -32,8 +32,8 @@ sudo dnf install -y python3-venv
 ```
 
 ### 2. Domain Configuration
-- Point `app.malikli.store` to your server IP
-- Optionally set up `api.malikli.store` for API or use path-based routing
+- Point `app.malikli1992.store` to your server IP
+- Optionally set up `api.malikli1992.store` for API or use path-based routing
 
 ---
 
@@ -66,7 +66,7 @@ cp .env.example .env  # If you have one, otherwise create new
 # Django Settings
 SECRET_KEY=your-super-secret-key-here
 DEBUG=False
-ALLOWED_HOSTS=your-server-ip,app.malikli.store,api.malikli.store
+ALLOWED_HOSTS=your-server-ip,app.malikli1992.store,api.malikli1992.store
 
 # Database (Supabase PostgreSQL)
 DATABASE_URL=postgresql://username:password@host:5432/database_name
@@ -81,7 +81,7 @@ AWS_S3_CUSTOM_DOMAIN=media.malikli1992.com
 AWS_LOCATION=media
 
 # CORS Settings
-CORS_ALLOWED_ORIGINS=https://app.malikli.store
+CORS_ALLOWED_ORIGINS=https://app.malikli1992.store
 
 # Email Configuration (Resend)
 EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
@@ -95,7 +95,7 @@ DEFAULT_FROM_EMAIL=no-reply@malikli.store
 RESEND_API_KEY=your-resend-api-key
 
 # Frontend URL
-FRONTEND_URL=https://app.malikli.store
+FRONTEND_URL=https://app.malikli1992.store
 ```
 
 ```bash
@@ -129,9 +129,9 @@ cp .env.local.example .env.local  # If exists, otherwise create new
 ### Frontend Environment Configuration (.env.local)
 ```bash
 # API URL - adjust based on your setup
-NEXT_PUBLIC_API_URL=https://app.malikli.store/api/v1
+NEXT_PUBLIC_API_URL=https://app.malikli1992.store/api/v1
 # OR if using subdomain:
-# NEXT_PUBLIC_API_URL=https://api.malikli.store/api/v1
+# NEXT_PUBLIC_API_URL=https://api.malikli1992.store/api/v1
 
 # Other environment variables as needed
 ```
@@ -340,7 +340,7 @@ The deployment script uses `nginx.conf.template` which is configured for HTTP on
 sudo systemctl stop nginx
 
 # Get SSL certificate from Let's Encrypt
-sudo certbot certonly --standalone -d app.malikli.store
+sudo certbot certonly --standalone -d app.malikli1992.store
 
 # Start nginx again
 sudo systemctl start nginx
@@ -375,7 +375,7 @@ echo "0 12 * * * /usr/bin/certbot renew --quiet && systemctl reload nginx" | sud
 - `nginx.conf.template`: HTTP-only configuration for initial deployment
 - `nginx.conf.ssl.template`: HTTPS configuration with SSL enabled
 
-**Note**: The domain `app.malikli.store` must be pointing to your server's IP address before requesting SSL certificates.
+**Note**: The domain `app.malikli1992.store` must be pointing to your server's IP address before requesting SSL certificates.
 
 ---
 
@@ -414,9 +414,9 @@ sudo systemctl status nginx
 ```
 
 ### Test the deployment
-1. Visit https://app.malikli.store - should show your Next.js frontend
-2. Visit https://app.malikli.store/api/v1/ - should show Django API
-3. Visit https://app.malikli.store/admin/ - should show Django admin
+1. Visit https://app.malikli1992.store - should show your Next.js frontend
+2. Visit https://app.malikli1992.store/api/v1/ - should show Django API
+3. Visit https://app.malikli1992.store/admin/ - should show Django admin
 
 ---
 

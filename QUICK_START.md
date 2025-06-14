@@ -85,7 +85,7 @@ sudo systemctl restart nginx
 ### 7. Setup SSL Certificate
 ```bash
 # Install SSL certificate (make sure DNS is pointing to your server)
-sudo certbot --nginx -d app.malikli.store
+sudo certbot --nginx -d app.malikli1992.store
 
 # Test auto-renewal
 sudo certbot renew --dry-run
@@ -107,9 +107,9 @@ pm2 startup
 ```
 
 ### 9. Verify Deployment
-- Visit https://app.malikli.store (frontend)
-- Visit https://app.malikli.store/api/v1/ (API)
-- Visit https://app.malikli.store/admin/ (Django admin)
+- Visit https://app.malikli1992.store (frontend)
+- Visit https://app.malikli1992.store/api/v1/ (API)
+- Visit https://app.malikli1992.store/admin/ (Django admin)
 
 ## 📋 Environment Variables Checklist
 
@@ -117,7 +117,7 @@ pm2 startup
 ```bash
 SECRET_KEY=your-super-secret-key
 DEBUG=False
-ALLOWED_HOSTS=your-server-ip,app.malikli.store
+ALLOWED_HOSTS=your-server-ip,app.malikli1992.store
 DATABASE_URL=postgresql://user:pass@host:5432/db
 AWS_ACCESS_KEY_ID=your-r2-key
 AWS_SECRET_ACCESS_KEY=your-r2-secret
@@ -125,7 +125,7 @@ AWS_STORAGE_BUCKET_NAME=malikli1992
 AWS_S3_ENDPOINT_URL=https://your-r2-endpoint
 AWS_S3_CUSTOM_DOMAIN=media.malikli1992.com
 AWS_LOCATION=media
-CORS_ALLOWED_ORIGINS=https://app.malikli.store
+CORS_ALLOWED_ORIGINS=https://app.malikli1992.store
 EMAIL_HOST_PASSWORD=your-resend-key
 RESEND_API_KEY=your-resend-key
 DEFAULT_FROM_EMAIL=no-reply@malikli.store
