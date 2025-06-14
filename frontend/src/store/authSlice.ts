@@ -9,6 +9,7 @@ export interface User {
   last_name: string;
   phone_number?: string;
   is_verified: boolean;
+  is_staff?: boolean;
 }
 
 export interface AuthState {

@@ -7,6 +7,7 @@ from rest_framework import viewsets, generics, permissions, status, mixins
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from .models import ShippingMethod, Order, Payment
 from .serializers import (
     ShippingMethodSerializer, OrderSerializer, OrderCreateSerializer,
@@ -297,3 +298,56 @@ class PaymentCallbackView(APIView):
                 {'success': False, 'message': f'Internal server error: {str(e)}'},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
+
+
+class AdminOrderViewSet(viewsets.ModelViewSet):
+    """
+    Admin-only viewset for managing all orders
+    """
+    serializer_class = OrderSerializer
+    permission_classes = [permissions.IsAuthenticated, permissions.IsAdminUser]
+    lookup_field = 'order_id'  # Use UUID for lookup
+    filterset_fields = ['order_status', 'payment_status', 'created_at']
+    search_fields = ['order_number', 'user__email', 'user__username']
+    ordering_fields = ['created_at', 'total_amount', 'order_status']
+    ordering = ['-created_at']
+    
+    def get_queryset(self):
+        """Return all orders for admin users"""
+        return Order.objects.all().select_related('user', 'shipping_method').prefetch_related('items__drop_product')
+    
+    @action(detail=True, methods=['patch'])
+    def update_status(self, request, order_id=None):
+        """Update order status - admin only"""
+        order = self.get_object()
+        new_status = request.data.get('order_status')
+        
+        if new_status not in dict(Order.ORDER_STATUS_CHOICES).keys():
+            return Response(
+                {'detail': 'Invalid status'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        order.order_status = new_status
+        order.save()
+        
+        serializer = self.get_serializer(order)
+        return Response(serializer.data)
+    
+    @action(detail=True, methods=['patch'])
+    def update_payment_status(self, request, order_id=None):
+        """Update payment status - admin only"""
+        order = self.get_object()
+        new_status = request.data.get('payment_status')
+        
+        if new_status not in dict(Order.PAYMENT_STATUS_CHOICES).keys():
+            return Response(
+                {'detail': 'Invalid payment status'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        order.payment_status = new_status
+        order.save()
+        
+        serializer = self.get_serializer(order)
+        return Response(serializer.data)

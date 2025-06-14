@@ -1,6 +1,40 @@
 /* src/app/globals.css */
 /* Tailwind directives and @theme removed */
 
+/* CSS Custom Properties */
+:root {
+  --tiffany-blue: #0ABAB5;
+  --tiffany-light: #81D8D4;
+  --tiffany-dark: #008B8B;
+  --tiffany-pale: #F0FDFC;
+  --tiffany-gradient: linear-gradient(135deg, #0ABAB5 0%, #81D8D4 100%);
+  --tiffany-gradient-reverse: linear-gradient(135deg, #81D8D4 0%, #0ABAB5 100%);
+  --tiffany-gradient-soft: linear-gradient(135deg, rgba(10, 186, 181, 0.1) 0%, rgba(129, 216, 212, 0.05) 100%);
+  --tiffany-shadow: rgba(10, 186, 181, 0.25);
+  --tiffany-shadow-light: rgba(129, 216, 212, 0.15);
+  --tiffany-shadow-soft: rgba(10, 186, 181, 0.08);
+  --elegant-white: #FAFAFA;
+  --elegant-gray: #F8F9FA;
+  --text-primary: #2C3E50;
+  --text-secondary: #5A6C7D;
+  --text-muted: #95A5A6;
+  --success-color: #27AE60;
+  --warning-color: #F39C12;
+  --error-color: #E74C3C;
+  --info-color: #3498DB;
+  
+  /* Additional common colors */
+  --primary-color: #0ABAB5;
+  --primary-hover: #008B8B;
+  --background-primary: #FFFFFF;
+  --background-secondary: #FAFAFA;
+  --background-tertiary: #F8F9FA;
+  --border-color: #E5E7EB;
+  --button-secondary: #F3F4F6;
+  --button-secondary-hover: #E5E7EB;
+  --button-disabled: #D1D5DB;
+}
+
 /* Base styles - classes using @apply will need to be refactored or removed */
 body {
   background-color: white;

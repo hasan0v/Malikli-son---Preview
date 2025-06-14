@@ -46,10 +46,9 @@ class Migration(migrations.Migration):
                 ('drop', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='drop_products', to='drops.drop')),
                 ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='in_drops', to='products.product')),
                 ('variant', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='in_drops', to='products.productvariant')),
-            ],
-            options={
+            ],            options={
                 'ordering': ['-is_featured', 'product__name'],
-                'constraints': [models.CheckConstraint(condition=models.Q(('current_stock_quantity__gte', 0)), name='check_current_stock_non_negative'), models.CheckConstraint(condition=models.Q(('current_stock_quantity__lte', models.F('initial_stock_quantity'))), name='check_current_stock_lte_initial')],
+                'constraints': [models.CheckConstraint(check=models.Q(('current_stock_quantity__gte', 0)), name='check_current_stock_non_negative'), models.CheckConstraint(check=models.Q(('current_stock_quantity__lte', models.F('initial_stock_quantity'))), name='check_current_stock_lte_initial')],
                 'unique_together': {('drop', 'product', 'variant')},
             },
         ),

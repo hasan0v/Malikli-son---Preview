@@ -175,8 +175,7 @@ export default function Navbar() {
                         <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z" clipRule="evenodd" />
                       </svg>
                       {t('nav.profile')}
-                    </Link>
-                    <Link 
+                    </Link>                    <Link 
                       href="/orders" 
                       className={styles.dropdownItem}
                       onClick={() => setUserMenuOpen(false)}
@@ -186,6 +185,19 @@ export default function Navbar() {
                       </svg>
                       {t('nav.orders')}
                     </Link>
+                    {/* Admin Panel Link - Only show for staff users */}
+                    {user.is_staff && (
+                      <Link 
+                        href="/admin" 
+                        className={styles.dropdownItem}
+                        onClick={() => setUserMenuOpen(false)}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={styles.dropdownIcon}>
+                          <path fillRule="evenodd" d="M9.493 2.853a.75.75 0 00-.386.67V6.75h-1.25a.75.75 0 100 1.5h1.25v2.25H8.75a.75.75 0 000 1.5h.357v3.25a.75.75 0 00.386.67l2.5 1.25a.75.75 0 00.67-.048l2.5-1.5a.75.75 0 00.337-.622V10.5h.25a.75.75 0 000-1.5H15.5V6.75h.25a.75.75 0 000-1.5H15.5V3.523a.75.75 0 00-.337-.622l-2.5-1.5a.75.75 0 00-.67.048l-2.5 1.25zM11 6.75V3.72l1.5-.9v3.105a.75.75 0 00.75.75h.25v2.25h-.25a.75.75 0 00-.75.75v2.58l-1.5.9V10.5a.75.75 0 00-.75-.75H10V7.5h.25a.75.75 0 00.75-.75z" clipRule="evenodd" />
+                        </svg>
+                        {t('nav.adminPanel')}
+                      </Link>
+                    )}
                     {/* <Link 
                       href="/favorites" 
                       className={styles.dropdownItem}

@@ -49,7 +49,15 @@ sudo dnf update -y
 print_step "Step 2: Installing EPEL repository..."
 sudo dnf install -y epel-release
 
-print_step "Step 3: Installing required packages..."
+print_step "Step 3: Installing Node.js 20 LTS from NodeSource..."
+# Remove old nodejs if present
+sudo dnf remove -y nodejs npm
+# Install Node.js 20 LTS
+curl -fsSL https://rpm.nodesource.com/setup_20.x | sudo bash -
+sudo dnf install -y nodejs
+
+print_step "Step 4: Installing other required packages..."
+print_step "Step 4: Installing other required packages..."
 sudo dnf install -y \
     git \
     curl \
@@ -57,11 +65,8 @@ sudo dnf install -y \
     nginx \
     certbot \
     python3-certbot-nginx \
-    nodejs \
-    npm \
     python3 \
     python3-pip \
-    python3-venv \
     postgresql-devel \
     gcc \
     python3-devel \
@@ -69,14 +74,14 @@ sudo dnf install -y \
     htop \
     vim
 
-print_step "Step 4: Installing PM2 process manager..."
+print_step "Step 5: Installing PM2 process manager..."
 sudo npm install -g pm2
 
-print_step "Step 5: Creating application directory..."
+print_step "Step 6: Creating application directory..."
 sudo mkdir -p $APP_DIR
 sudo chown $USER:$USER $APP_DIR
 
-print_step "Step 6: Setting up firewall..."
+print_step "Step 7: Setting up firewall..."
 sudo systemctl start firewalld
 sudo systemctl enable firewalld
 
@@ -89,7 +94,7 @@ sudo firewall-cmd --permanent --add-port=22/tcp
 # Reload firewall
 sudo firewall-cmd --reload
 
-print_step "Step 7: Configuring Nginx..."
+print_step "Step 8: Configuring Nginx..."
 
 # Create sites directories
 sudo mkdir -p /etc/nginx/sites-available
@@ -104,11 +109,11 @@ fi
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-print_step "Step 8: Setting up PM2 log directory..."
+print_step "Step 9: Setting up PM2 log directory..."
 sudo mkdir -p /var/log/pm2
 sudo chown $USER:$USER /var/log/pm2
 
-print_step "Step 9: Installing Python global packages..."
+print_step "Step 10: Installing Python global packages..."
 pip3 install --user --upgrade pip setuptools wheel
 
 print_status "✅ Basic server setup completed!"

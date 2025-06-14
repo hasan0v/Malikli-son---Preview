@@ -9,8 +9,9 @@
     "settings": "Settings",
     "logout": "Logout",
     "login": "Login",
-    "register": "Sign Up"
-  },  "common": {
+    "register": "Sign Up",
+    "adminPanel": "Admin Panel"
+  },"common": {
     "loading": "Loading...",
     "error": "Error occurred",
     "tryAgain": "Try Again",

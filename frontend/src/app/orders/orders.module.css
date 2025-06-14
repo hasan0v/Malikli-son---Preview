@@ -1,5 +1,5 @@
 /* Tiffany Blue Brand Colors */
-:root {
+/* :root {
   --tiffany-blue: #0ABAB5;
   --tiffany-light: #81D8D4;
   --tiffany-dark: #008B8B;
@@ -18,7 +18,7 @@
   --warning-color: #F39C12;
   --error-color: #E74C3C;
   --info-color: #3498DB;
-}
+} */
 
 .ordersPage {
   min-height: 100vh;
