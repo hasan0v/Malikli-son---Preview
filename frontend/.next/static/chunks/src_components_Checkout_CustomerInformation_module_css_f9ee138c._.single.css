@@ -1,0 +1,470 @@
+/* [project]/src/components/Checkout/CustomerInformation.module.css [app-client] (css) */
+.CustomerInformation-module__b9ChUq__customerInformation {
+  max-width: 600px;
+}
+
+.CustomerInformation-module__b9ChUq__customerInformation h2 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.CustomerInformation-module__b9ChUq__formSection {
+  margin-bottom: 2.5rem;
+}
+
+.CustomerInformation-module__b9ChUq__sectionTitle {
+  color: #0f766e;
+  border-bottom: 2px solid #81e6d94d;
+  margin-bottom: 1.25rem;
+  padding-bottom: .75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.CustomerInformation-module__b9ChUq__sectionTitle:after {
+  content: "";
+  background: linear-gradient(90deg, #14b8a6 0%, #5eead4 100%);
+  border-radius: 1px;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.CustomerInformation-module__b9ChUq__formGrid {
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  display: grid;
+}
+
+.CustomerInformation-module__b9ChUq__formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.CustomerInformation-module__b9ChUq__formGroup.CustomerInformation-module__b9ChUq__fullWidth {
+  grid-column: 1 / -1;
+}
+
+.CustomerInformation-module__b9ChUq__label {
+  color: #0d9488;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+  font-weight: 600;
+  display: block;
+}
+
+.CustomerInformation-module__b9ChUq__required {
+  color: #ef4444;
+}
+
+.CustomerInformation-module__b9ChUq__input {
+  color: #0d9488;
+  background: #ffffffe6;
+  border: 2px solid #81e6d94d;
+  border-radius: 12px;
+  width: 100%;
+  padding: .875rem 1rem;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+.CustomerInformation-module__b9ChUq__input:focus {
+  background: #fff;
+  border-color: #14b8a6;
+  outline: none;
+  box-shadow: 0 0 0 3px #81e6d933;
+}
+
+.CustomerInformation-module__b9ChUq__input::placeholder {
+  color: #0d948880;
+}
+
+.CustomerInformation-module__b9ChUq__input.CustomerInformation-module__b9ChUq__error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px #ef44441a;
+}
+
+.CustomerInformation-module__b9ChUq__select {
+  color: #0d9488;
+  cursor: pointer;
+  background: #ffffffe6;
+  border: 2px solid #81e6d94d;
+  border-radius: 12px;
+  width: 100%;
+  padding: .875rem 1rem;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+.CustomerInformation-module__b9ChUq__select:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px #3b82f61a;
+}
+
+.CustomerInformation-module__b9ChUq__errorMessage {
+  color: #ef4444;
+  align-items: center;
+  gap: .25rem;
+  margin-top: .5rem;
+  font-size: .875rem;
+  display: flex;
+}
+
+.CustomerInformation-module__b9ChUq__checkboxGroup {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.CustomerInformation-module__b9ChUq__checkbox {
+  cursor: pointer;
+  height: 1.25rem;
+}
+
+.CustomerInformation-module__b9ChUq__checkboxLabel {
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+  font-size: .875rem;
+}
+
+.CustomerInformation-module__b9ChUq__billingSection {
+  opacity: 1;
+  margin-top: 1.5rem;
+  transition: opacity .3s;
+}
+
+.CustomerInformation-module__b9ChUq__billingSection.CustomerInformation-module__b9ChUq__hidden {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.CustomerInformation-module__b9ChUq__autoSaveStatus {
+  color: #0d9488;
+  margin-top: .5rem;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressesSection {
+  background: linear-gradient(135deg, #81e6d91a 0%, #a7f3d014 100%);
+  border: 1px solid #81e6d933;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressesTitle {
+  color: #0f766e;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.CustomerInformation-module__b9ChUq__loadingAddresses {
+  text-align: center;
+  color: #6b7280;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressesList {
+  flex-direction: column;
+  gap: .75rem;
+  display: flex;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressItem {
+  background: #fff;
+  border: 1px solid #81e6d94d;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: all .2s;
+  display: flex;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressItem:hover {
+  border-color: #14b8a6;
+  box-shadow: 0 2px 8px #14b8a61a;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressInfo {
+  flex: 1;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressName {
+  color: #0f766e;
+  margin-bottom: .25rem;
+  font-weight: 600;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressText {
+  color: #6b7280;
+  font-size: .875rem;
+  line-height: 1.4;
+}
+
+.CustomerInformation-module__b9ChUq__useSavedAddressBtn {
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  border: none;
+  border-radius: 6px;
+  margin-left: 1rem;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.CustomerInformation-module__b9ChUq__useSavedAddressBtn:hover {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px #14b8a64d;
+}
+
+.CustomerInformation-module__b9ChUq__useSavedAddressBtn:active {
+  transform: translateY(0);
+}
+
+.CustomerInformation-module__b9ChUq__selectedAddress {
+  background: linear-gradient(135deg, #81e6d91a 0%, #a7f3d014 100%);
+  border-color: #14b8a6;
+}
+
+.CustomerInformation-module__b9ChUq__defaultBadge {
+  color: #fff;
+  background: #14b8a6;
+  border-radius: 12px;
+  margin-left: .5rem;
+  padding: .125rem .5rem;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.CustomerInformation-module__b9ChUq__savedAddressActions {
+  gap: .5rem;
+  margin-left: 1rem;
+  display: flex;
+}
+
+.CustomerInformation-module__b9ChUq__deleteSavedAddressBtn {
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border: none;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.CustomerInformation-module__b9ChUq__deleteSavedAddressBtn:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px #ef44444d;
+}
+
+.CustomerInformation-module__b9ChUq__addNewAddressBtn {
+  color: #0f766e;
+  cursor: pointer;
+  background: linear-gradient(135deg, #81e6d91a 0%, #a7f3d014 100%);
+  border: 2px dashed #14b8a6;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: 600;
+  transition: all .2s;
+}
+
+.CustomerInformation-module__b9ChUq__addNewAddressBtn:hover {
+  background: linear-gradient(135deg, #81e6d933 0%, #a7f3d026 100%);
+  border-color: #0d9488;
+  transform: translateY(-1px);
+}
+
+.CustomerInformation-module__b9ChUq__selectedAddressDisplay {
+  background: linear-gradient(135deg, #81e6d91a 0%, #a7f3d014 100%);
+  border: 1px solid #14b8a6;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.CustomerInformation-module__b9ChUq__selectedAddressHeader {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.CustomerInformation-module__b9ChUq__selectedAddressTitle {
+  color: #0f766e;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.CustomerInformation-module__b9ChUq__selectedAddressDetails {
+  background: #fff;
+  border: 1px solid #81e6d94d;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.CustomerInformation-module__b9ChUq__selectedAddressRow {
+  color: #374151;
+  margin-bottom: .5rem;
+  line-height: 1.5;
+}
+
+.CustomerInformation-module__b9ChUq__selectedAddressRow:last-child {
+  margin-bottom: 0;
+}
+
+.CustomerInformation-module__b9ChUq__addressFormHeader {
+  margin-bottom: 1.5rem;
+}
+
+.CustomerInformation-module__b9ChUq__addressModeNote {
+  color: #6b7280;
+  margin-top: .5rem;
+  font-size: .875rem;
+  font-style: italic;
+}
+
+@media (width <= 1024px) {
+  .CustomerInformation-module__b9ChUq__customerInformation {
+    max-width: 100%;
+  }
+
+  .CustomerInformation-module__b9ChUq__customerInformation h2 {
+    font-size: 1.5rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__sectionTitle {
+    font-size: 1.125rem;
+  }
+}
+
+@media (width <= 768px) {
+  .CustomerInformation-module__b9ChUq__formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__customerInformation h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.375rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__sectionTitle {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__checkboxGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .75rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__formSection {
+    margin-bottom: 2rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__input, .CustomerInformation-module__b9ChUq__select {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (width <= 640px) {
+  .CustomerInformation-module__b9ChUq__customerInformation h2 {
+    font-size: 1.25rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__sectionTitle {
+    font-size: .95rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__checkboxGroup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__input, .CustomerInformation-module__b9ChUq__select {
+    padding: .875rem 1rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__label {
+    font-size: .875rem;
+  }
+}
+
+@media (width <= 480px) {
+  .CustomerInformation-module__b9ChUq__customerInformation h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__sectionTitle {
+    margin-bottom: .875rem;
+    font-size: .9rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__formSection {
+    margin-bottom: 1.5rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__formGroup {
+    margin-bottom: 1rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__input, .CustomerInformation-module__b9ChUq__select {
+    padding: .75rem;
+    font-size: .95rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__label {
+    margin-bottom: .375rem;
+    font-size: .8rem;
+  }
+}
+
+@media (width <= 360px) {
+  .CustomerInformation-module__b9ChUq__customerInformation h2 {
+    font-size: 1rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__sectionTitle {
+    font-size: .85rem;
+  }
+
+  .CustomerInformation-module__b9ChUq__input, .CustomerInformation-module__b9ChUq__select {
+    padding: .625rem;
+    font-size: .9rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_Checkout_CustomerInformation_module_css_f9ee138c._.single.css.map*/

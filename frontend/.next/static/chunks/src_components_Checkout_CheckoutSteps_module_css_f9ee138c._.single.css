@@ -1,0 +1,268 @@
+/* [project]/src/components/Checkout/CheckoutSteps.module.css [app-client] (css) */
+.CheckoutSteps-module__49SFbG__checkoutSteps {
+  margin-bottom: 2rem;
+}
+
+.CheckoutSteps-module__49SFbG__stepsContainer {
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.CheckoutSteps-module__49SFbG__steps {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.CheckoutSteps-module__49SFbG__steps:before {
+  content: "";
+  z-index: 1;
+  background: linear-gradient(90deg, #81e6d94d 0%, #5eead44d 100%);
+  border-radius: 2px;
+  height: 3px;
+  position: absolute;
+  top: 25px;
+  left: 60px;
+  right: 60px;
+}
+
+.CheckoutSteps-module__49SFbG__step {
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem;
+  transition: all .3s;
+  display: flex;
+  position: relative;
+}
+
+.CheckoutSteps-module__49SFbG__step:hover {
+  transform: translateY(-2px);
+}
+
+.CheckoutSteps-module__49SFbG__stepNumber {
+  color: #0d9488;
+  backdrop-filter: blur(10px);
+  background: #ffffffe6;
+  border: 3px solid #81e6d966;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: .75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all .4s;
+  display: flex;
+  box-shadow: 0 4px 16px #81e6d933;
+}
+
+.CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__completed .CheckoutSteps-module__49SFbG__stepNumber {
+  color: #fff;
+  background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+  border-color: #14b8a6;
+  box-shadow: 0 6px 20px #0d94884d, 0 2px 8px #14b8a633;
+}
+
+.CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__current .CheckoutSteps-module__49SFbG__stepNumber {
+  color: #0f766e;
+  background: linear-gradient(135deg, #5eead4 0%, #2dd4bf 100%);
+  border-color: #14b8a6;
+  animation: 2s infinite CheckoutSteps-module__49SFbG__pulse;
+  box-shadow: 0 8px 24px #5eead466, 0 0 0 4px #81e6d933;
+}
+
+@keyframes CheckoutSteps-module__49SFbG__pulse {
+  0%, 100% {
+    box-shadow: 0 8px 24px #5eead466, 0 0 0 4px #81e6d933;
+  }
+
+  50% {
+    box-shadow: 0 8px 24px #5eead499, 0 0 0 6px #81e6d94d;
+  }
+}
+
+.CheckoutSteps-module__49SFbG__checkmark {
+  font-size: 1.4rem;
+  animation: .3s ease-out CheckoutSteps-module__49SFbG__checkmarkPop;
+}
+
+@keyframes CheckoutSteps-module__49SFbG__checkmarkPop {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.CheckoutSteps-module__49SFbG__stepLabel {
+  text-align: center;
+  color: #0d9488;
+  opacity: .7;
+  font-size: .9rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__completed .CheckoutSteps-module__49SFbG__stepLabel, .CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__current .CheckoutSteps-module__49SFbG__stepLabel {
+  color: #0f766e;
+  opacity: 1;
+}
+
+.CheckoutSteps-module__49SFbG__connector {
+  z-index: 2;
+  background: #81e6d94d;
+  width: 20px;
+  height: 3px;
+  transition: all .4s;
+  position: absolute;
+  top: 25px;
+  left: calc(100% - 10px);
+}
+
+.CheckoutSteps-module__49SFbG__connectorCompleted {
+  background: linear-gradient(90deg, #14b8a6 0%, #5eead4 100%);
+  box-shadow: 0 2px 8px #14b8a64d;
+}
+
+.CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__disabled {
+  opacity: .5;
+  cursor: not-allowed !important;
+}
+
+.CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__disabled:hover {
+  transform: none !important;
+}
+
+.CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__disabled .CheckoutSteps-module__49SFbG__stepNumber {
+  color: #fff;
+  background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+  border-color: #9ca3af;
+}
+
+.CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__disabled .CheckoutSteps-module__49SFbG__stepLabel {
+  color: #9ca3af;
+}
+
+@media (width <= 1024px) {
+  .CheckoutSteps-module__49SFbG__stepsContainer {
+    max-width: 500px;
+  }
+
+  .CheckoutSteps-module__49SFbG__stepNumber {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__stepLabel {
+    font-size: .9rem;
+  }
+}
+
+@media (width <= 768px) {
+  .CheckoutSteps-module__49SFbG__checkoutSteps {
+    margin-bottom: 1.5rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__stepsContainer {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__steps {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__steps:before, .CheckoutSteps-module__49SFbG__connector {
+    display: none;
+  }
+
+  .CheckoutSteps-module__49SFbG__step {
+    backdrop-filter: blur(10px);
+    background: #ffffffe6;
+    border: 2px solid #81e6d94d;
+    border-radius: 16px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 4px 16px #81e6d91a;
+  }
+
+  .CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__completed, .CheckoutSteps-module__49SFbG__step.CheckoutSteps-module__49SFbG__current {
+    background: #f0fdfaf2;
+    border-color: #14b8a6;
+    box-shadow: 0 6px 20px #14b8a633;
+  }
+
+  .CheckoutSteps-module__49SFbG__stepNumber {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__stepLabel {
+    text-align: left;
+    flex: 1;
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+@media (width <= 480px) {
+  .CheckoutSteps-module__49SFbG__stepNumber {
+    width: 35px;
+    height: 35px;
+    margin-right: .75rem;
+    font-size: .9rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__stepLabel {
+    font-size: .9rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__step {
+    padding: 1rem 1.25rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__checkoutSteps {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (width <= 360px) {
+  .CheckoutSteps-module__49SFbG__stepNumber {
+    width: 32px;
+    height: 32px;
+    margin-right: .625rem;
+    font-size: .8rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__stepLabel {
+    font-size: .8rem;
+  }
+
+  .CheckoutSteps-module__49SFbG__step {
+    padding: .875rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_Checkout_CheckoutSteps_module_css_f9ee138c._.single.css.map*/

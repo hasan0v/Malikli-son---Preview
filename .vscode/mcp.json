@@ -1,0 +1,43 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "supabase-access-token",
+      "description": "Supabase personal access token",
+      "password": true
+    }
+  ],
+  "servers": {
+    "supabase": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@supabase/mcp-server-supabase@latest"],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_63c963b79778f9a221984075bbae8c0b094dc5e4"
+      }
+    },
+    
+    "memoryBank": {
+      "command": "node",
+      "args": ["C:/Users/alien/Downloads/memory-bank-MCP-main/dist/index.js"],
+      "env": {
+        "GEMINI_API_KEY": "AIzaSyCMhkDcFOnp1NKPwbNvOGqpAH3PdkOzbPA"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/alien/Desktop",
+        "c:\\Users\\alien\\Desktop\\Me\\Github\\Malikli\\app",
+        "c:\\Users\\alien\\Downloads",
+      ]
+    },
+    
+    "Context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    }
+  }
+}

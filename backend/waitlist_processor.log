@@ -1,0 +1,234 @@
+2025-06-14 16:23:57,078 - INFO - Created user account for: waitlist.test@gmail.com
+2025-06-14 16:24:00,392 - INFO - Welcome email sent to: waitlist.test@gmail.com
+2025-06-14 16:24:00,727 - INFO - Marked subscriber as processed: waitlist.test@gmail.com
+2025-06-14 16:24:00,728 - INFO - Successfully processed subscriber: waitlist.test@gmail.com
+2025-06-14 16:24:01,374 - INFO - Created user account for: test.user@malikli.com
+2025-06-14 16:24:04,640 - INFO - Welcome email sent to: test.user@malikli.com
+2025-06-14 16:24:04,742 - INFO - Marked subscriber as processed: test.user@malikli.com
+2025-06-14 16:24:04,742 - INFO - Successfully processed subscriber: test.user@malikli.com
+2025-06-14 16:24:05,542 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 16:24:08,021 - INFO - Welcome email sent to: alex.johnson@example.com
+2025-06-14 16:24:08,096 - INFO - Marked subscriber as processed: alex.johnson@example.com
+2025-06-14 16:24:08,096 - INFO - Successfully processed subscriber: alex.johnson@example.com
+2025-06-14 16:24:08,756 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 16:24:11,720 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 16:24:12,474 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 16:24:13,252 - INFO - Created user account for: john.doe@example.com
+2025-06-14 16:24:15,799 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 16:24:16,520 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 16:24:54,044 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 16:24:56,760 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 16:24:57,503 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 16:24:58,272 - INFO - Created user account for: john.doe@example.com
+2025-06-14 16:25:01,157 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 16:25:01,916 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 16:26:02,815 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 16:26:05,400 - INFO - Welcome email sent to: jane.smith@example.com
+2025-06-14 16:26:05,475 - INFO - Marked subscriber as processed: jane.smith@example.com
+2025-06-14 16:26:05,475 - INFO - Successfully processed subscriber: jane.smith@example.com
+2025-06-14 16:26:06,298 - INFO - Created user account for: john.doe@example.com
+2025-06-14 16:26:08,859 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 16:26:09,602 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 16:27:10,586 - INFO - Created user account for: john.doe@example.com
+2025-06-14 16:27:13,794 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 16:27:14,756 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 16:28:15,696 - INFO - Created user account for: john.doe@example.com
+2025-06-14 16:28:18,299 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 16:28:19,027 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 17:13:57,069 - ERROR - Error creating user account for gulnar.hesenova123@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:13:57,793 - ERROR - Error creating user account for ahesenov418@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:13:58,568 - ERROR - Error creating user account for waitlist.test@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:13:59,298 - ERROR - Error creating user account for test.user@malikli.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:14:00,101 - ERROR - Error creating user account for alex.johnson@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:14:00,860 - ERROR - Error creating user account for jane.smith@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:14:01,649 - ERROR - Error creating user account for john.doe@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:29,038 - INFO - Created user account for: gulnar.hesenova123@gmail.com
+2025-06-14 17:20:29,128 - ERROR - Error sending welcome email to gulnar.hesenova123@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:29,938 - ERROR - Email failed for gulnar.hesenova123@gmail.com, user account deleted
+2025-06-14 17:20:30,593 - INFO - Created user account for: ahesenov418@gmail.com
+2025-06-14 17:20:30,674 - ERROR - Error sending welcome email to ahesenov418@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:31,434 - ERROR - Email failed for ahesenov418@gmail.com, user account deleted
+2025-06-14 17:20:32,143 - INFO - Created user account for: waitlist.test@gmail.com
+2025-06-14 17:20:32,222 - ERROR - Error sending welcome email to waitlist.test@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:32,967 - ERROR - Email failed for waitlist.test@gmail.com, user account deleted
+2025-06-14 17:20:33,645 - INFO - Created user account for: test.user@malikli.com
+2025-06-14 17:20:33,720 - ERROR - Error sending welcome email to test.user@malikli.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:34,505 - ERROR - Email failed for test.user@malikli.com, user account deleted
+2025-06-14 17:20:35,152 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 17:20:35,225 - ERROR - Error sending welcome email to alex.johnson@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:35,970 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 17:20:36,648 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 17:20:36,720 - ERROR - Error sending welcome email to jane.smith@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:37,446 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 17:20:38,127 - INFO - Created user account for: john.doe@example.com
+2025-06-14 17:20:38,199 - ERROR - Error sending welcome email to john.doe@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:20:38,928 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 17:21:49,466 - INFO - Created user account for: gulnar.hesenova123@gmail.com
+2025-06-14 17:21:49,542 - ERROR - Error sending welcome email to gulnar.hesenova123@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:21:50,521 - ERROR - Email failed for gulnar.hesenova123@gmail.com, user account deleted
+2025-06-14 17:21:51,354 - INFO - Created user account for: ahesenov418@gmail.com
+2025-06-14 17:21:51,431 - ERROR - Error sending welcome email to ahesenov418@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:21:52,236 - ERROR - Email failed for ahesenov418@gmail.com, user account deleted
+2025-06-14 17:21:52,924 - INFO - Created user account for: waitlist.test@gmail.com
+2025-06-14 17:21:53,003 - ERROR - Error sending welcome email to waitlist.test@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:21:53,819 - ERROR - Email failed for waitlist.test@gmail.com, user account deleted
+2025-06-14 17:21:54,518 - INFO - Created user account for: test.user@malikli.com
+2025-06-14 17:21:54,602 - ERROR - Error sending welcome email to test.user@malikli.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:21:55,562 - ERROR - Email failed for test.user@malikli.com, user account deleted
+2025-06-14 17:21:56,300 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 17:21:56,378 - ERROR - Error sending welcome email to alex.johnson@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:21:57,175 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 17:21:57,894 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 17:21:57,969 - ERROR - Error sending welcome email to jane.smith@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:21:58,748 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 17:21:59,394 - INFO - Created user account for: john.doe@example.com
+2025-06-14 17:21:59,470 - ERROR - Error sending welcome email to john.doe@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:22:00,226 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 17:23:36,512 - INFO - Created user account for: gulnar.hesenova123@gmail.com
+2025-06-14 17:23:36,591 - ERROR - Error sending welcome email to gulnar.hesenova123@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:23:37,338 - ERROR - Email failed for gulnar.hesenova123@gmail.com, user account deleted
+2025-06-14 17:23:38,009 - INFO - Created user account for: ahesenov418@gmail.com
+2025-06-14 17:23:38,087 - ERROR - Error sending welcome email to ahesenov418@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:23:38,816 - ERROR - Email failed for ahesenov418@gmail.com, user account deleted
+2025-06-14 17:23:39,483 - INFO - Created user account for: waitlist.test@gmail.com
+2025-06-14 17:23:39,555 - ERROR - Error sending welcome email to waitlist.test@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:23:40,280 - ERROR - Email failed for waitlist.test@gmail.com, user account deleted
+2025-06-14 17:23:40,952 - INFO - Created user account for: test.user@malikli.com
+2025-06-14 17:23:41,024 - ERROR - Error sending welcome email to test.user@malikli.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:23:41,751 - ERROR - Email failed for test.user@malikli.com, user account deleted
+2025-06-14 17:23:42,431 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 17:23:42,504 - ERROR - Error sending welcome email to alex.johnson@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:23:43,246 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 17:23:43,879 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 17:23:43,951 - ERROR - Error sending welcome email to jane.smith@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:23:44,689 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 17:23:45,340 - INFO - Created user account for: john.doe@example.com
+2025-06-14 17:23:45,412 - ERROR - Error sending welcome email to john.doe@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:23:46,149 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 17:24:45,523 - INFO - Created user account for: gulnar.hesenova123@gmail.com
+2025-06-14 17:24:45,602 - ERROR - Error sending welcome email to gulnar.hesenova123@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:24:46,395 - ERROR - Email failed for gulnar.hesenova123@gmail.com, user account deleted
+2025-06-14 17:24:47,164 - INFO - Created user account for: ahesenov418@gmail.com
+2025-06-14 17:24:47,238 - ERROR - Error sending welcome email to ahesenov418@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:24:48,059 - ERROR - Email failed for ahesenov418@gmail.com, user account deleted
+2025-06-14 17:24:48,839 - INFO - Created user account for: waitlist.test@gmail.com
+2025-06-14 17:24:48,913 - ERROR - Error sending welcome email to waitlist.test@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:24:49,665 - ERROR - Email failed for waitlist.test@gmail.com, user account deleted
+2025-06-14 17:24:50,362 - INFO - Created user account for: test.user@malikli.com
+2025-06-14 17:24:50,439 - ERROR - Error sending welcome email to test.user@malikli.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:24:51,165 - ERROR - Email failed for test.user@malikli.com, user account deleted
+2025-06-14 17:24:51,839 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 17:24:51,911 - ERROR - Error sending welcome email to alex.johnson@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:24:52,629 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 17:24:53,339 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 17:24:53,411 - ERROR - Error sending welcome email to jane.smith@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:24:54,131 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 17:24:54,781 - INFO - Created user account for: john.doe@example.com
+2025-06-14 17:24:54,853 - ERROR - Error sending welcome email to john.doe@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 17:24:55,583 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:27:07,852 - INFO - Created user account for: gulnar.hesenova123@gmail.com
+2025-06-14 18:27:07,927 - ERROR - Error sending welcome email to gulnar.hesenova123@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 18:27:08,838 - ERROR - Email failed for gulnar.hesenova123@gmail.com, user account deleted
+2025-06-14 18:27:09,503 - INFO - Created user account for: ahesenov418@gmail.com
+2025-06-14 18:27:09,624 - ERROR - Error sending welcome email to ahesenov418@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 18:27:10,349 - ERROR - Email failed for ahesenov418@gmail.com, user account deleted
+2025-06-14 18:27:11,036 - INFO - Created user account for: waitlist.test@gmail.com
+2025-06-14 18:27:11,108 - ERROR - Error sending welcome email to waitlist.test@gmail.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 18:27:11,819 - ERROR - Email failed for waitlist.test@gmail.com, user account deleted
+2025-06-14 18:27:12,476 - INFO - Created user account for: test.user@malikli.com
+2025-06-14 18:27:12,549 - ERROR - Error sending welcome email to test.user@malikli.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 18:27:13,278 - ERROR - Email failed for test.user@malikli.com, user account deleted
+2025-06-14 18:27:13,963 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 18:27:14,036 - ERROR - Error sending welcome email to alex.johnson@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 18:27:14,838 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 18:27:15,480 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:27:15,552 - ERROR - Error sending welcome email to jane.smith@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 18:27:16,272 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:27:16,892 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:27:16,963 - ERROR - Error sending welcome email to john.doe@example.com: 'WaitlistSubscriber' object has no attribute 'get_source_display'
+2025-06-14 18:27:17,678 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:28:06,478 - INFO - Created user account for: gulnar.hesenova123@gmail.com
+2025-06-14 18:28:10,869 - INFO - Welcome email sent to: gulnar.hesenova123@gmail.com
+2025-06-14 18:28:10,945 - INFO - Marked subscriber as processed: gulnar.hesenova123@gmail.com
+2025-06-14 18:28:10,946 - INFO - Successfully processed subscriber: gulnar.hesenova123@gmail.com
+2025-06-14 18:28:12,278 - INFO - Created user account for: ahesenov418@gmail.com
+2025-06-14 18:28:15,455 - INFO - Welcome email sent to: ahesenov418@gmail.com
+2025-06-14 18:28:15,528 - INFO - Marked subscriber as processed: ahesenov418@gmail.com
+2025-06-14 18:28:15,528 - INFO - Successfully processed subscriber: ahesenov418@gmail.com
+2025-06-14 18:28:16,199 - INFO - Created user account for: waitlist.test@gmail.com
+2025-06-14 18:28:19,494 - INFO - Welcome email sent to: waitlist.test@gmail.com
+2025-06-14 18:28:19,566 - INFO - Marked subscriber as processed: waitlist.test@gmail.com
+2025-06-14 18:28:19,567 - INFO - Successfully processed subscriber: waitlist.test@gmail.com
+2025-06-14 18:28:20,252 - INFO - Created user account for: test.user@malikli.com
+2025-06-14 18:28:23,943 - INFO - Welcome email sent to: test.user@malikli.com
+2025-06-14 18:28:24,037 - INFO - Marked subscriber as processed: test.user@malikli.com
+2025-06-14 18:28:24,038 - INFO - Successfully processed subscriber: test.user@malikli.com
+2025-06-14 18:28:24,774 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 18:28:27,418 - ERROR - Error sending welcome email to alex.johnson@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:28:28,138 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 18:28:28,797 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:28:31,461 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:28:32,186 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:28:32,884 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:28:35,493 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:28:36,198 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:34:21,359 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 18:34:24,222 - ERROR - Error sending welcome email to alex.johnson@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:34:24,926 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 18:34:25,613 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:34:28,158 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:34:28,863 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:34:29,484 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:34:32,174 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:34:32,876 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:35:33,707 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 18:35:36,554 - ERROR - Error sending welcome email to alex.johnson@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:35:37,253 - ERROR - Email failed for alex.johnson@example.com, user account deleted
+2025-06-14 18:35:37,967 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:35:40,729 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:35:41,422 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:35:42,077 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:35:44,756 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:35:45,451 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:36:46,278 - INFO - Created user account for: alex.johnson@example.com
+2025-06-14 18:36:49,073 - INFO - Welcome email sent to: alex.johnson@example.com
+2025-06-14 18:36:49,143 - INFO - Marked subscriber as processed: alex.johnson@example.com
+2025-06-14 18:36:49,143 - INFO - Successfully processed subscriber: alex.johnson@example.com
+2025-06-14 18:36:49,815 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:36:52,370 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:36:53,063 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:36:53,760 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:36:56,386 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:36:57,092 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:37:57,967 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:38:00,815 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:38:01,520 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:38:02,212 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:38:04,896 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:38:05,588 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:39:06,429 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:39:09,112 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:39:09,821 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:39:10,449 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:39:13,053 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:39:13,753 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:40:14,516 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:40:17,236 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:40:17,930 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:40:18,598 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:40:21,221 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:40:21,932 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:41:22,760 - INFO - Created user account for: jane.smith@example.com
+2025-06-14 18:41:25,473 - ERROR - Error sending welcome email to jane.smith@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:41:26,174 - ERROR - Email failed for jane.smith@example.com, user account deleted
+2025-06-14 18:41:26,844 - INFO - Created user account for: john.doe@example.com
+2025-06-14 18:41:29,469 - ERROR - Error sending welcome email to john.doe@example.com: (450, b'Invalid `to` field. Please use our testing email address instead of domains like `example.com`. See our documentation for more information.')
+2025-06-14 18:41:30,172 - ERROR - Email failed for john.doe@example.com, user account deleted
+2025-06-14 18:50:17,325 - INFO - Created user account for: vivitev825@nab4.com
+2025-06-14 18:50:20,905 - INFO - Welcome email sent to: vivitev825@nab4.com
+2025-06-14 18:50:20,978 - INFO - Marked subscriber as processed: vivitev825@nab4.com
+2025-06-14 18:50:20,978 - INFO - Successfully processed subscriber: vivitev825@nab4.com
+2025-06-14 19:17:23,822 - INFO - Created user account for: liliroh226@finfave.com
+2025-06-14 19:17:27,338 - INFO - Welcome email sent to: liliroh226@finfave.com
+2025-06-14 19:17:27,470 - INFO - Marked subscriber as processed: liliroh226@finfave.com
+2025-06-14 19:17:27,470 - INFO - Successfully processed subscriber: liliroh226@finfave.com

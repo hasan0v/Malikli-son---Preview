@@ -1,0 +1,307 @@
+"use client";
+
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
+import { useAppDispatch, useAppSelector } from '../../store/hooks';
+import { logout } from '../../store/authSlice';
+import styles from './Navbar.module.css';
+import { CartItem } from '../../store/cartSlice';
+import CartSidebar from '../Cart/CartSidebar'; // Still needed for commented code
+import LanguageSwitcher from '../LanguageSwitcher';
+import { useI18n } from '../../hooks/useI18n';
+
+export default function Navbar() {
+  const { t } = useI18n();
+  // Initialize with false and only update after hydration
+  const [mounted, setMounted] = useState(false);
+  const [scrolled, setScrolled] = useState(false);  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // const [cartSidebarOpen, setCartSidebarOpen] = useState(false); // Commented out for Buy Now flow
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
+    const pathname = usePathname();
+  const dispatch = useAppDispatch();
+  // const cartItems = useSelector((state: RootState) => state.cart.items); // Commented out for Buy Now flow
+  const { isAuthenticated, user } = useAppSelector((state) => state.auth);
+  
+  // Force scrolled appearance when mobile menu is open
+  const isScrolledOrMenuOpen = scrolled || mobileMenuOpen;
+  // Only calculate total items on client-side to avoid hydration mismatch - commented out for Buy Now flow
+  /* const totalItems = mounted 
+    ? cartItems.reduce((total: number, item: CartItem) => total + item.quantity, 0)
+    : 0; */
+
+  // Mark component as mounted after hydration
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Handle scroll event to change navbar appearance
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+    
+    // Initial check
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [scrolled]);  // Only apply transparent style on homepage and when not scrolled or menu open
+  const isHomePage = pathname === '/';
+  
+  // Only apply client-side effects after hydration
+  const navbarClass = !mounted ? styles.navbar : (
+    isHomePage
+      ? isScrolledOrMenuOpen
+        ? `${styles.navbar} ${mobileMenuOpen ? styles.mobileOpen : ''}`
+        : `${styles.navbar} ${styles.transparent}`
+      : styles.navbar
+  );  /* Commented out for Buy Now flow
+  const handleCartClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCartSidebarOpen(true);
+  };
+  */
+
+  const handleUserMenuToggle = () => {
+    setUserMenuOpen(!userMenuOpen);
+  };
+
+  const handleLogout = () => {
+    dispatch(logout());
+    setUserMenuOpen(false);
+  };
+
+  // Close user menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (userMenuOpen && !(event.target as Element).closest('.user-menu-container')) {
+        setUserMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [userMenuOpen]);
+
+  return (
+    <>
+      <nav className={navbarClass}>
+        <div className={styles.navContainer}>
+          <Link href="/" className={styles.logoContainer}>
+            {/* Use standard logo on server render, then conditionally apply styles once mounted */}          <Image 
+              src="/logo.png" 
+              alt="Malikli1992 Logo" 
+              width={150} 
+              height={40} 
+              className={mounted && isHomePage && !isScrolledOrMenuOpen ? styles.logoWhite : styles.logo}
+              priority
+            />
+          </Link>          <div className={styles.navLinks}>
+            <Link href="https://www.malikli1992.store/shipping.html" className={styles.navLink}>
+              {t('nav.delivery')}
+            </Link>
+            <Link href="https://www.malikli1992.store/about.html" className={styles.navLink}>
+              {t('nav.about')}
+            </Link>
+            <Link href="https://www.malikli1992.store/contact.html" className={styles.navLink}>
+              {t('nav.contact')}
+            </Link>
+          </div><div className={styles.navIcons}>
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+            
+            {/* User Authentication Section */}
+            {isAuthenticated && user ? (
+              <div className={`${styles.userMenuContainer} user-menu-container`}>
+                <button 
+                  className={styles.userButton}
+                  onClick={handleUserMenuToggle}
+                >                  <div className={styles.userAvatar}>
+                    {(() => {
+                      const firstName = user.first_name?.trim();
+                      const lastName = user.last_name?.trim();
+                      
+                      if (firstName && lastName) {
+                        return `${firstName[0].toUpperCase()}${lastName[0].toUpperCase()}`;
+                      } else if (firstName) {
+                        return firstName[0].toUpperCase();
+                      } else if (lastName) {
+                        return lastName[0].toUpperCase();
+                      } else if (user.username) {
+                        return user.username[0].toUpperCase();
+                      } else {
+                        return 'У';
+                      }
+                    })()}
+                  </div>                  <span className={styles.userName}>
+                    {(() => {
+                      const firstName = user.first_name?.trim();
+                      const lastName = user.last_name?.trim();
+                      
+                      if (firstName && lastName) {
+                        return `${firstName} ${lastName}`;
+                      } else if (firstName) {
+                        return firstName;
+                      } else if (lastName) {
+                        return lastName;
+                      } else {
+                        return user.username;
+                      }
+                    })()}
+                  </span>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 20 20" 
+                    fill="currentColor" 
+                    className={`${styles.chevron} ${userMenuOpen ? styles.chevronUp : ''}`}
+                  >
+                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                  </svg>
+                </button>
+                  {userMenuOpen && (
+                  <div className={styles.userDropdown}>                    <Link 
+                      href="/profile" 
+                      className={styles.dropdownItem}
+                      onClick={() => setUserMenuOpen(false)}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={styles.dropdownIcon}>
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z" clipRule="evenodd" />
+                      </svg>
+                      {t('nav.profile')}
+                    </Link>
+                    <Link 
+                      href="/orders" 
+                      className={styles.dropdownItem}
+                      onClick={() => setUserMenuOpen(false)}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={styles.dropdownIcon}>
+                        <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                      </svg>
+                      {t('nav.orders')}
+                    </Link>
+                    {/* <Link 
+                      href="/favorites" 
+                      className={styles.dropdownItem}
+                      onClick={() => setUserMenuOpen(false)}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={styles.dropdownIcon}>
+                        <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                      </svg>
+                      Избранное
+                    </Link> */}
+                    {/* <div className={styles.dropdownDivider}></div> */}
+                    {/* <Link 
+                      href="/settings" 
+                      className={styles.dropdownItem}
+                      onClick={() => setUserMenuOpen(false)}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={styles.dropdownIcon}>
+                        <path fillRule="evenodd" d="M7.84 1.804A1 1 0 018.82 1h2.36a1 1 0 01.98.804l.331 1.652a6.993 6.993 0 011.929 1.115l1.598-.54a1 1 0 011.186.447l1.18 2.044a1 1 0 01-.205 1.251l-1.267 1.113a7.047 7.047 0 010 2.228l1.267 1.113a1 1 0 01.205 1.251l-1.18 2.044a1 1 0 01-1.186.447l-1.598-.54a6.993 6.993 0 01-1.929 1.115l-.33 1.652a1 1 0 01-.98.804H8.82a1 1 0 01-.98-.804l-.331-1.652a6.993 6.993 0 01-1.929-1.115l-1.598.54a1 1 0 01-1.186-.447l-1.18-2.044a1 1 0 01.205-1.251l1.267-1.114a7.05 7.05 0 010-2.227L1.821 7.773a1 1 0 01-.205-1.251l1.18-2.044a1 1 0 011.186-.447l1.598.54A6.993 6.993 0 017.51 3.456l.33-1.652zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+                      </svg>
+                      Настройки
+                    </Link> */}                    <button 
+                      className={styles.dropdownItem}
+                      onClick={handleLogout}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={styles.dropdownIcon}>
+                        <path fillRule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clipRule="evenodd" />
+                      </svg>
+                      {t('nav.logout')}
+                    </button>
+                  </div>
+                )}
+              </div>            ) : (
+              <Link href="/auth/login" className={styles.iconLink}>
+                <span className={`${styles.iconSvg} ${mounted && isHomePage && !isScrolledOrMenuOpen ? styles.iconLight : ''}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
+                  </svg>
+                </span>
+              </Link>
+            )}
+          </div>
+
+          <button          className={styles.mobileMenuButton}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <span className={`${styles.iconSvg} ${mounted && isHomePage && !isScrolledOrMenuOpen ? styles.iconLight : ''}`}>
+              {mobileMenuOpen ? (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                  <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                  <path fillRule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clipRule="evenodd" />
+                </svg>
+              )}
+            </span>
+          </button>        </div>
+
+      {/* Mobile menu overlay */}
+      {mounted && (
+        <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.open : ''} ${mobileMenuOpen ? styles.dark : ''}`}>
+          <div className={`${styles.mobileMenuLinks} ${mobileMenuOpen ? styles.dark : ''}`}>
+            <Link href="/delivery" onClick={() => setMobileMenuOpen(false)}>
+              {t('nav.delivery')}
+            </Link>
+            <Link href="https://www.malikli1992.store/about.html" onClick={() => setMobileMenuOpen(false)}>
+              {t('nav.about')}
+            </Link>
+            <Link href="https://www.malikli1992.store/contact.html" onClick={() => setMobileMenuOpen(false)}>
+              {t('nav.contact')}
+            </Link>
+            
+            {/* Language Switcher for Mobile - Commented out */}
+            {/* 
+            <div className={styles.mobileLangSection}>
+              <LanguageSwitcher />
+            </div>
+            */}
+            
+            {/* Auth section for mobile - only show login/register when not authenticated */}
+            {!isAuthenticated && (
+              <div className={styles.mobileAuthSection}>
+                <Link href="/auth/login" onClick={() => setMobileMenuOpen(false)} className={styles.mobileAuthAction}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={styles.mobileActionIcon}>
+                    <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
+                  </svg>
+                  {t('nav.login')}
+                </Link>
+                <Link href="/auth/register" onClick={() => setMobileMenuOpen(false)} className={styles.mobileAuthAction}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={styles.mobileActionIcon}>
+                    <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
+                  </svg>
+                  {t('nav.register')}
+                </Link>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+      </nav>{/* Cart sidebar - commented out for Buy Now flow */}
+      {/* <CartSidebar isOpen={cartSidebarOpen} onClose={() => setCartSidebarOpen(false)} /> */}
+        {/* Fixed cart button at bottom right - commented out for Buy Now flow */}
+      {/* 
+      <button 
+        className={styles.fixedCartButton}
+        onClick={handleCartClick}
+        aria-label="Open cart"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+          <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+        </svg>
+        {mounted && totalItems > 0 && (
+          <span className={styles.fixedCartCount}>{totalItems}</span>
+        )}
+      </button>
+      */}
+    </>
+  );
+}
