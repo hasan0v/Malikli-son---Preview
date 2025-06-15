@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {  // Your existing Next.js config (if any)
+const nextConfig = {
+  // Your existing Next.js config (if any)
   experimental: {
     // Enable optimizations
     optimizePackageImports: ['@heroicons/react', '@headlessui/react'],
-    // If you are using Turbopack, ensure CSS processing is compatible
-    // For Tailwind CSS v4, direct PostCSS plugin usage might differ
-    // from v3. Consider if specific Turbopack flags are needed
-    // or if relying on the default Next.js CSS processing is intended.
-  },// Configure allowed image domains for next/image
+  },
+  
+  // Configure allowed image domains for next/image
   images: {
     // Use remotePatterns instead of deprecated domains
     remotePatterns: [
@@ -21,7 +20,9 @@ const nextConfig = {  // Your existing Next.js config (if any)
     minimumCacheTTL: 31536000, // 1 year cache
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },  // Performance optimizations
+  },
+  
+  // Performance optimizations
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
@@ -39,7 +40,7 @@ const nextConfig = {  // Your existing Next.js config (if any)
     },
   },
   
-  // Configure headers for better caching
+  // Configure headers for better caching and security
   async headers() {
     return [
       {
@@ -56,6 +57,38 @@ const nextConfig = {  // Your existing Next.js config (if any)
           {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
+          },
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+        ],
+      },
+      // Fix for CSS MIME type issues
+      {
+        source: '/_next/static/css/(.*)',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/css; charset=utf-8',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Fix for JS MIME type issues
+      {
+        source: '/_next/static/chunks/(.*)',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/javascript; charset=utf-8',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
@@ -75,7 +108,8 @@ const nextConfig = {  // Your existing Next.js config (if any)
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
           },
-        ],      },
+        ],
+      },
     ];
   },
 

@@ -4,7 +4,10 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import { logout } from '@/store/authSlice';
+import ProtectedRoute from '@/components/ProtectedRoute';
 import { useI18n } from '../../../hooks/useI18n';
+import { API_BASE_URL } from '@/lib/api/config';
 import styles from '../auth.module.css';
 
 export default function ChangePasswordPage() {
@@ -62,7 +65,7 @@ export default function ChangePasswordPage() {
     setErrors({});
 
     try {
-      const response = await fetch('http://localhost:8000/api/v1/auth/change-password/', {
+      const response = await fetch(`${API_BASE_URL}/auth/change-password/`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -7,6 +7,7 @@ import { fetchUserProfile, logout } from '@/store/authSlice';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import LoadingCircle from '@/components/LoadingCircle';
 import { useI18n } from '../../hooks/useI18n';
+import { API_BASE_URL } from '@/lib/api/config';
 import styles from './profile.module.css';
 
 function ProfileContent() {
@@ -43,7 +44,7 @@ function ProfileContent() {
   const handleSave = async () => {
     try {
       const token = localStorage.getItem('access_token');
-      const response = await fetch('http://localhost:8000/api/v1/auth/profile/', {
+      const response = await fetch(`${API_BASE_URL}/auth/profile/`, {
         method: 'PATCH',
         headers: {
           'Authorization': `Bearer ${token}`,

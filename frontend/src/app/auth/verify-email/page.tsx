@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useI18n } from '../../../hooks/useI18n';
+import { API_BASE_URL } from '@/lib/api/config';
 import styles from '../auth.module.css';
 
 export default function VerifyEmailPage() {
@@ -30,7 +31,7 @@ export default function VerifyEmailPage() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:8000/api/v1/auth/verify-email/', {
+      const response = await fetch(`${API_BASE_URL}/auth/verify-email/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

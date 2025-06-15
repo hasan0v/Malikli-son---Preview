@@ -7,7 +7,7 @@ import { RootState } from '@/store/store';
 import { useI18n } from '@/hooks/useI18n';
 import styles from './adminOrderDetails.module.css';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000/api/v1';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://malikli1992.store/api/v1';
 
 interface AdminOrderDetail {
   order_id: string;

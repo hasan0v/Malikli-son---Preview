@@ -243,22 +243,25 @@ SIMPLE_JWT = {
 }
 
 
-# CORS Settings
+# CORS Settings - Updated to handle both www and non-www domains
 # For development, allow localhost and 127.0.0.1 on port 3000
 if DEBUG:
     CORS_ALLOWED_ORIGINS = [
         "http://127.0.0.1:3000",
         "http://localhost:3000",
         "https://malikli1992.store",
+        "https://www.malikli1992.store",  # Added www support
         "https://app.malikli1992.store",
     ]
 else:
-    # Production settings from environment variable
-    CORS_ALLOWED_ORIGINS_STRING = os.getenv('CORS_ALLOWED_ORIGINS', '')
+    # Production settings - include both www and non-www by default
+    CORS_ALLOWED_ORIGINS_STRING = os.getenv('CORS_ALLOWED_ORIGINS', 'https://malikli1992.store,https://www.malikli1992.store')
     CORS_ALLOWED_ORIGINS = [origin.strip() for origin in CORS_ALLOWED_ORIGINS_STRING.split(',') if origin.strip()]
 
 # Additional CORS settings for proper functionality
 CORS_ALLOW_CREDENTIALS = True
+# Updated to handle redirect scenarios
+CORS_ALLOW_ALL_ORIGINS = False  # Keep this False for security
 CORS_ALLOWED_HEADERS = [
     'accept',
     'accept-encoding',

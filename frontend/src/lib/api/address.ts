@@ -35,7 +35,7 @@ export interface AddressResponse {
 
 // Save a new address for the authenticated user
 export const saveAddress = async (addressData: CreateAddressRequest, token: string): Promise<AddressResponse> => {
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://malikli1992.store/api/v1';
   
   const response = await fetch(`${API_BASE}/auth/addresses/`, {
     method: 'POST',
@@ -65,7 +65,7 @@ export const saveAddress = async (addressData: CreateAddressRequest, token: stri
 
 // Get all addresses for the authenticated user
 export const getUserAddresses = async (token: string): Promise<AddressResponse[]> => {
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://malikli1992.store/api/v1';
   
   const response = await fetch(`${API_BASE}/auth/addresses/`, {
     method: 'GET',
@@ -102,7 +102,7 @@ export const getUserAddresses = async (token: string): Promise<AddressResponse[]
 
 // Update an existing address
 export const updateAddress = async (addressId: number, addressData: Partial<CreateAddressRequest>, token: string): Promise<AddressResponse> => {
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://malikli1992.store/api/v1';
   const response = await fetch(`${API_BASE}/auth/addresses/${addressId}/`, {
     method: 'PATCH',
     headers: {
@@ -122,7 +122,7 @@ export const updateAddress = async (addressId: number, addressData: Partial<Crea
 
 // Delete an address
 export const deleteAddress = async (addressId: number, token: string): Promise<void> => {
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://malikli1992.store/api/v1';
   const response = await fetch(`${API_BASE}/auth/addresses/${addressId}/`, {
     method: 'DELETE',
     headers: {

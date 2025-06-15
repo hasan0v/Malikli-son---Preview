@@ -1,7 +1,7 @@
 // API service file for common API functionality
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://malikli1992.store/api/v1';
 
 // Create axios instance with default config
 const apiClient = axios.create({

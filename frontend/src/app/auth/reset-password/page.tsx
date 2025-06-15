@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { useI18n } from '../../../hooks/useI18n';
+import { API_BASE_URL } from '@/lib/api/config';
 import styles from '../auth.module.css';
 
 export default function ResetPasswordPage() {
@@ -55,7 +56,7 @@ export default function ResetPasswordPage() {
     if (!validateForm() || !token) return;
 
     try {
-      const response = await fetch('http://localhost:8000/api/v1/auth/password-reset/confirm/', {
+      const response = await fetch(`${API_BASE_URL}/auth/password-reset/confirm/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
