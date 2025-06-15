@@ -66,15 +66,23 @@
 - [ ] Nginx configuration is deployed
 - [ ] Nginx configuration passes syntax test
 - [ ] Nginx is restarted successfully
-- [ ] SSL certificate is installed
+
+### 🔒 SSL Certificate Installation
+- [ ] Update email address in `install-ssl.sh` script
+- [ ] Domain DNS is pointing to server IP
+- [ ] HTTP site is accessible (required for SSL verification)
+- [ ] Run SSL installation script: `sudo ./install-ssl.sh`
+- [ ] SSL certificate is obtained successfully
+- [ ] Nginx SSL configuration is applied
 - [ ] HTTPS redirect is working
+- [ ] Certificate auto-renewal is configured
 
 ## Post-Deployment Verification
 
 ### 🔍 Application Testing
-- [ ] Frontend loads at https://app.malikli.store
-- [ ] API responds at https://app.malikli.store/api/v1/
-- [ ] Django admin loads at https://app.malikli.store/admin/
+- [ ] Frontend loads at https://app.malikli1992.store
+- [ ] API responds at https://app.malikli1992.store/api/v1/
+- [ ] Django admin loads at https://app.malikli1992.store/admin/
 - [ ] User registration works
 - [ ] Email sending works
 - [ ] File uploads work (products, images)

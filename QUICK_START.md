@@ -129,12 +129,12 @@ CORS_ALLOWED_ORIGINS=https://app.malikli1992.store
 EMAIL_HOST_PASSWORD=your-resend-key
 RESEND_API_KEY=your-resend-key
 DEFAULT_FROM_EMAIL=no-reply@malikli.store
-FRONTEND_URL=https://app.malikli.store
+FRONTEND_URL=https://app.malikli1992.store
 ```
 
 ### Frontend (.env.local)
 ```bash
-NEXT_PUBLIC_API_URL=https://app.malikli.store/api/v1
+NEXT_PUBLIC_API_URL=https://app.malikli1992.store/api/v1
 ```
 
 ## 🔧 Common Commands

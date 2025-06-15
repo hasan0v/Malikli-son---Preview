@@ -1,6 +1,9 @@
 // src/store/authSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 
+// API Base URL from environment variables
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+
 export interface User {
   id: number;
   username: string;
@@ -34,9 +37,8 @@ const initialState: AuthState = {
 
 // Async thunks for API calls
 export const loginUser = createAsyncThunk(
-  'auth/login',
-  async (credentials: { username: string; password: string }, { rejectWithValue }) => {
-    try {      const response = await fetch('http://localhost:8000/api/v1/auth/login/', {
+  'auth/login',  async (credentials: { username: string; password: string }, { rejectWithValue }) => {
+    try {      const response = await fetch(`${API_BASE_URL}/auth/login/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +75,7 @@ export const registerUser = createAsyncThunk(
     last_name: string;
     phone_number?: string;
   }, { rejectWithValue }) => {
-    try {      const response = await fetch('http://localhost:8000/api/v1/auth/register/', {
+    try {      const response = await fetch(`${API_BASE_URL}/auth/register/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -103,7 +105,7 @@ export const fetchUserProfile = createAsyncThunk(
       
       if (!token) {
         return rejectWithValue({ message: 'Нет токена авторизации' });
-      }      const response = await fetch('http://localhost:8000/api/v1/auth/profile/', {
+      }      const response = await fetch(`${API_BASE_URL}/auth/profile/`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
@@ -135,7 +137,7 @@ export const refreshAccessToken = createAsyncThunk(
       
       if (!refreshToken) {
         return rejectWithValue({ message: 'Нет refresh токена' });
-      }      const response = await fetch('http://localhost:8000/api/v1/auth/login/refresh/', {
+      }      const response = await fetch(`${API_BASE_URL}/auth/login/refresh/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -161,7 +163,7 @@ export const refreshAccessToken = createAsyncThunk(
 export const requestPasswordReset = createAsyncThunk(
   'auth/requestPasswordReset',
   async (email: string, { rejectWithValue }) => {
-    try {      const response = await fetch('http://localhost:8000/api/v1/auth/password-reset/', {
+    try {      const response = await fetch(`${API_BASE_URL}/auth/password-reset/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

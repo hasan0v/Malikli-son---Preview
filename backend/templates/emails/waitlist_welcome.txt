@@ -5,7 +5,7 @@ Thank you for joining our waitlist{% if source %} through {{ source }}{% endif %
 YOUR LOGIN CREDENTIALS
 =======================
 
-Email Address: {{ email }}
+Username: {{ user_name }}
 Temporary Password: {{ password }}
 
 LOGIN TO YOUR ACCOUNT
