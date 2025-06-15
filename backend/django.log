@@ -2248,3 +2248,366 @@ INFO 2025-06-15 21:06:42,697 autoreload 40004 56032 C:\Users\alien\Downloads\Mal
 INFO 2025-06-15 21:06:43,883 autoreload 62888 36356 Watching for file changes with StatReloader
 INFO 2025-06-15 21:06:46,098 autoreload 62888 36356 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
 INFO 2025-06-15 21:06:47,328 autoreload 52992 68144 Watching for file changes with StatReloader
+INFO 2025-06-15 21:27:57,902 basehttp 52992 21976 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 21:27:59,197 basehttp 52992 21976 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:27:59,207 basehttp 52992 21976 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 21:27:59,314 basehttp 52992 38760 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 21:27:59,715 basehttp 52992 21976 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:28:00,325 basehttp 52992 38760 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:37:36,084 basehttp 52992 67628 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:37:36,624 basehttp 52992 67628 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:37:37,609 basehttp 52992 67628 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:38:45,343 basehttp 52992 67628 "OPTIONS /api/v1/auth/register/ HTTP/1.1" 200 0
+ERROR 2025-06-15 21:38:46,710 log 52992 67628 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_user_phone_number_key"
+DETAIL:  Key (phone_number)=() already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son - Preview\backend\users\views.py", line 36, in perform_create
+    user = serializer.save()
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son - Preview\backend\users\serializers.py", line 61, in create
+    user = User.objects.create_user(**validated_data)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\auth\models.py", line 175, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\auth\models.py", line 163, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "users_user_phone_number_key"
+DETAIL:  Key (phone_number)=() already exists.
+
+ERROR 2025-06-15 21:38:46,731 basehttp 52992 67628 "POST /api/v1/auth/register/ HTTP/1.1" 500 225680
+ERROR 2025-06-15 21:39:15,310 log 52992 67628 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_user_phone_number_key"
+DETAIL:  Key (phone_number)=() already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son - Preview\backend\users\views.py", line 36, in perform_create
+    user = serializer.save()
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son - Preview\backend\users\serializers.py", line 61, in create
+    user = User.objects.create_user(**validated_data)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\auth\models.py", line 175, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\auth\models.py", line 163, in _create_user
+    user.save(using=self._db)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "users_user_phone_number_key"
+DETAIL:  Key (phone_number)=() already exists.
+
+ERROR 2025-06-15 21:39:15,315 basehttp 52992 67628 "POST /api/v1/auth/register/ HTTP/1.1" 500 225723
+INFO 2025-06-15 21:46:57,971 basehttp 52992 71392 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:46:58,737 basehttp 52992 71392 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:46:59,108 basehttp 52992 72036 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:47:05,150 basehttp 52992 72036 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 21:47:05,365 basehttp 52992 72036 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:47:05,372 basehttp 52992 72036 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 21:47:05,376 basehttp 52992 72036 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:47:14,316 basehttp 52992 50596 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 21:47:14,318 basehttp 52992 50596 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:47:14,322 basehttp 52992 50596 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 21:47:14,324 basehttp 52992 50596 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:47:14,426 basehttp 52992 50596 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 21:47:14,428 basehttp 52992 50596 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:56:31,991 basehttp 52992 35716 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:56:32,477 basehttp 52992 35716 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:56:33,073 basehttp 52992 66976 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:56:40,242 basehttp 52992 70172 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:56:40,248 basehttp 52992 70172 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:56:40,353 basehttp 52992 70172 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:04:00,833 basehttp 52992 62856 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:04:01,289 basehttp 52992 62856 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:04:02,301 basehttp 52992 39840 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:04:25,825 basehttp 52992 62656 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:04:25,830 basehttp 52992 62656 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:04:25,930 basehttp 52992 62656 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:15:36,892 basehttp 52992 64544 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:15:37,475 basehttp 52992 64544 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:15:37,995 basehttp 52992 74720 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:17:21,232 basehttp 52992 33520 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:17:21,237 basehttp 52992 33520 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:17:21,241 basehttp 52992 33520 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:17:21,244 basehttp 52992 33520 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:17:21,342 basehttp 52992 33520 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:17:21,345 basehttp 52992 33520 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:22:37,299 basehttp 52992 30312 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:22:37,866 basehttp 52992 30312 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:22:38,451 basehttp 52992 68184 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:22:44,723 basehttp 52992 68184 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:22:44,728 basehttp 52992 68184 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:22:44,738 basehttp 52992 68184 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:22:44,743 basehttp 52992 68184 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:22:44,849 basehttp 52992 68184 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:22:44,855 basehttp 52992 68184 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:28:03,323 basehttp 52992 36296 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:28:03,786 basehttp 52992 36296 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:28:04,563 basehttp 52992 66132 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:31:41,957 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:31:41,967 basehttp 52992 71052 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:31:42,071 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:31:54,282 basehttp 52992 71052 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 22:31:56,132 basehttp 52992 71052 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 22:31:56,141 basehttp 52992 71052 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 22:31:56,570 basehttp 52992 71052 "GET /api/v1/auth/profile/ HTTP/1.1" 200 639
+INFO 2025-06-15 22:31:56,579 basehttp 52992 71052 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 22:31:57,479 basehttp 52992 71052 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 22:32:48,810 basehttp 52992 71052 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 22:32:49,362 basehttp 52992 71052 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 22:32:59,604 basehttp 52992 71052 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 22:32:59,835 basehttp 52992 71052 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 411
+INFO 2025-06-15 22:33:11,511 basehttp 52992 71052 "OPTIONS /api/v1/orders/create-direct/ HTTP/1.1" 200 0
+INFO 2025-06-15 22:33:11,591 views 52992 71052 === CREATE DIRECT ORDER REQUEST ===
+INFO 2025-06-15 22:33:11,593 views 52992 71052 Request data: {'product_id': 47, 'quantity': 1, 'shipping_address_id': 5, 'billing_address_id': 5, 'shipping_method_id': 1, 'customer_notes': '', 'product_variant_id': 97, 'color': 'Deep Blue', 'color_code': '#1e2f34', 'size': 'L'}
+INFO 2025-06-15 22:33:11,593 views 52992 71052 User authenticated: True
+INFO 2025-06-15 22:33:11,594 views 52992 71052 User: Malikli
+INFO 2025-06-15 22:33:13,497 views 52992 71052 === ORDER CREATED SUCCESSFULLY ===
+INFO 2025-06-15 22:33:13,497 views 52992 71052 Order ID: e49f10e9-4e0f-4144-8409-cfdd6ae7b0c2
+INFO 2025-06-15 22:33:13,656 basehttp 52992 71052 "POST /api/v1/orders/create-direct/ HTTP/1.1" 201 2203
+INFO 2025-06-15 22:33:33,092 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:33:33,617 basehttp 52992 71052 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:33:34,361 basehttp 52992 74604 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:33:49,688 basehttp 52992 74604 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:33:50,208 basehttp 52992 74604 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:33:50,214 basehttp 52992 74604 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:33:50,314 basehttp 52992 71052 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:33:50,653 basehttp 52992 74604 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:33:50,838 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:33:53,605 basehttp 52992 71052 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:33:53,608 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:33:53,612 basehttp 52992 71052 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:33:53,614 basehttp 52992 71052 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:33:53,720 basehttp 52992 71052 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:33:53,722 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:34:25,204 basehttp 52992 71052 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:34:25,207 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:34:25,213 basehttp 52992 71052 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:34:25,216 basehttp 52992 71052 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:34:25,313 basehttp 52992 71052 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:34:25,316 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:34:33,412 basehttp 52992 71052 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:34:33,420 basehttp 52992 74604 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:34:33,522 basehttp 52992 74604 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:37:10,487 basehttp 52992 75096 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:37:10,491 basehttp 52992 75096 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:37:10,498 basehttp 52992 75096 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:37:10,502 basehttp 52992 75096 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:37:10,598 basehttp 52992 75096 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:37:10,603 basehttp 52992 75096 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:54:59,012 basehttp 52992 19848 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:54:59,489 basehttp 52992 19848 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:55:00,112 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:55:02,481 basehttp 52992 21572 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:02,967 basehttp 52992 21572 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 22:55:30,405 basehttp 52992 21572 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:30,411 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:55:30,425 basehttp 52992 21572 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:30,430 basehttp 52992 21572 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:55:30,528 basehttp 52992 21572 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:30,531 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:55:49,383 basehttp 52992 21572 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:49,387 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:55:49,394 basehttp 52992 21572 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:49,398 basehttp 52992 21572 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:55:49,498 basehttp 52992 21572 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:49,501 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:55:53,982 basehttp 52992 21572 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:53,987 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:55:53,997 basehttp 52992 21572 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:54,004 basehttp 52992 21572 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:55:54,100 basehttp 52992 21572 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 22:55:54,102 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:56:03,420 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 22:56:03,930 basehttp 52992 21572 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 22:56:04,402 basehttp 52992 21572 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
