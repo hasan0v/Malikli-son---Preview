@@ -49,6 +49,18 @@ if not DEBUG:
     
     # Additional security headers
     X_FRAME_OPTIONS = 'DENY'
+    
+    # Content Security Policy to block unwanted third-party scripts
+    SECURE_CONTENT_SECURITY_POLICY = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; "
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+        "font-src 'self' https://fonts.gstatic.com; "
+        "img-src 'self' data: https: blob:; "
+        "connect-src 'self' https://api.malikli1992.com https://media.malikli1992.com; "
+        "frame-src 'none'; "
+        "object-src 'none'; "
+    )
 
 
 # Application definition
@@ -79,12 +91,16 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', # Should be high, but after SecurityMiddleware if it has implications
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',  # Cache middleware for better performance
+    'backend.middleware.ResponseTimeMiddleware',  # Custom response time middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',  # Cache middleware for better performance
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'backend.middleware.CacheHeadersMiddleware',  # Custom cache headers middleware
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -185,7 +201,18 @@ REST_FRAMEWORK = {
         'rest_framework.filters.OrderingFilter',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 20,  # Increased from 10 for better performance
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '1000/hour',
+        'user': '2000/hour'
+    },
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+    ],
 }
 
 # Simple JWT Settings - Extended for 72-hour login
@@ -217,10 +244,37 @@ SIMPLE_JWT = {
 
 
 # CORS Settings
-CORS_ALLOWED_ORIGINS_STRING = os.getenv('CORS_ALLOWED_ORIGINS', 'http://localhost:3000,http://127.0.0.1:3000')
-CORS_ALLOWED_ORIGINS = [origin.strip() for origin in CORS_ALLOWED_ORIGINS_STRING.split(',') if origin.strip()]
-# CORS_ALLOW_ALL_ORIGINS = True # Use for extreme debugging, then narrow down
-# CORS_ALLOW_CREDENTIALS = True # If you need to send cookies (e.g., for frontend sessions with backend)
+# For development, allow localhost and 127.0.0.1 on port 3000
+if DEBUG:
+    CORS_ALLOWED_ORIGINS = [
+        "http://127.0.0.1:3000",
+        "http://localhost:3000",
+        "https://malikli1992.store",
+        "https://app.malikli1992.store",
+    ]
+else:
+    # Production settings from environment variable
+    CORS_ALLOWED_ORIGINS_STRING = os.getenv('CORS_ALLOWED_ORIGINS', '')
+    CORS_ALLOWED_ORIGINS = [origin.strip() for origin in CORS_ALLOWED_ORIGINS_STRING.split(',') if origin.strip()]
+
+# Additional CORS settings for proper functionality
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'cache-control',
+    'if-modified-since',
+    'range',
+    'pragma',
+    'expires',
+]
 
 
 # Cloudflare R2 / S3 Storage Settings
@@ -388,3 +442,48 @@ LOGGING = {
         },
     },
 }
+
+
+# ============================================================================
+# CACHE CONFIGURATION FOR PERFORMANCE
+# ============================================================================
+
+# Cache configuration
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache' if os.getenv('REDIS_URL') else 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': os.getenv('REDIS_URL', 'locmem://'),
+        'TIMEOUT': 300,  # 5 minutes default timeout
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        } if os.getenv('REDIS_URL') else {},
+        'KEY_PREFIX': 'malikli',
+        'VERSION': 1,
+    }
+}
+
+# Cache middleware settings
+CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_SECONDS = 300  # 5 minutes
+CACHE_MIDDLEWARE_KEY_PREFIX = 'malikli'
+
+# Session cache configuration for better performance
+if os.getenv('REDIS_URL'):
+    SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+    SESSION_CACHE_ALIAS = 'default'
+
+# Database optimization settings
+if 'default' in DATABASES:
+    DATABASES['default']['CONN_MAX_AGE'] = 600  # Connection pooling - reuse connections for 10 minutes
+    
+    # Add PostgreSQL-specific optimization options
+    if 'postgresql' in DATABASES['default'].get('ENGINE', ''):
+        DATABASES['default']['OPTIONS'] = DATABASES['default'].get('OPTIONS', {})
+        DATABASES['default']['OPTIONS'].update({
+            'connect_timeout': 10,
+            'options': '-c default_transaction_isolation=read_committed'
+        })
+
+# ============================================================================
+# END CACHE CONFIGURATION
+# ============================================================================

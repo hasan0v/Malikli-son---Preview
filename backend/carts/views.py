@@ -61,8 +61,11 @@ class CartViewSet(mixins.RetrieveModelMixin,
                   viewsets.GenericViewSet):
     queryset = Cart.objects.all().prefetch_related(
         'items__drop_product__product',
-        'items__drop_product__variant'
-    )
+        'items__drop_product__variant',
+        'items__product_variant__product',
+        'items__product_variant__size',
+        'items__product_variant__color'
+    ).select_related('user')
     serializer_class = CartSerializer
     permission_classes = [AllowAny] # Anyone can interact with a cart
     lookup_field = 'cart_id' # Use cart_id (UUID) for lookup

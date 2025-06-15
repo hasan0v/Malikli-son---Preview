@@ -48,8 +48,8 @@
     "login": {
       "title": "Welcome",
       "subtitle": "Sign in to your account",
-      "username": "Username or Email",
-      "usernamePlaceholder": "Enter username or email",
+      "username": "Username",
+      "usernamePlaceholder": "Enter username",
       "password": "Password",
       "passwordPlaceholder": "Enter password",
       "rememberMe": "Remember me",
@@ -219,13 +219,19 @@
     },
     "quantity": {
       "label": "Quantity:"
-    },
-    "buttons": {
+    },    "buttons": {
       "buyNow": "Buy Now",
       "addToCart": "Add to Cart",
       "processing": "Processing...",
       "adding": "Adding..."
-    },    "relatedProducts": {
+    },    "about": "About This Product",
+    "readMore": "Read More",    "story": {
+      "title": "The Inspiration",
+      "crafted": "Handcrafted with Love",
+      "explore": "Explore Details"
+    },
+    "addingToCart": "Adding to Cart...",
+    "relatedProducts": {
       "title": "Related Products"
     }
   },  "productCard": {

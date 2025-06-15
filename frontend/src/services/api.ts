@@ -9,11 +9,16 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 15000, // 15 second timeout
+  maxRedirects: 3,
+  // Enable request compression
+  decompress: true,
 });
 
 // Request interceptor for logging and adding auth token if needed
 apiClient.interceptors.request.use(
-  (config) => {    // Get auth token from localStorage if in browser environment
+  (config) => {
+    // Get auth token from localStorage if in browser environment
     if (typeof window !== 'undefined') {
       const token = localStorage.getItem('access_token');
       if (token) {
@@ -38,8 +43,21 @@ apiClient.interceptors.response.use(
       if (error.response.status === 401) {
         console.error('Authentication error. Please login again.');
         // Could trigger logout or redirect to login here
+        if (typeof window !== 'undefined') {
+          localStorage.removeItem('access_token');
+          localStorage.removeItem('refresh_token');
+        }
+      }
+      if (error.response.status >= 500) {
+        console.error('Server error. Please try again later.');
       }
     }
+    
+    // Handle network errors
+    if (error.code === 'ECONNABORTED') {
+      console.error('Request timeout. Please check your connection.');
+    }
+    
     console.error('API Response Error:', error.response?.data || error.message);
     return Promise.reject(error);
   }

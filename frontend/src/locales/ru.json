@@ -48,8 +48,8 @@
     "login": {
       "title": "Добро пожаловать",
       "subtitle": "Войдите в свой аккаунт",
-      "username": "Имя пользователя или Email",
-      "usernamePlaceholder": "Введите имя пользователя или email",
+      "username": "Имя пользователя",
+      "usernamePlaceholder": "Введите имя пользователя",
       "password": "Пароль",
       "passwordPlaceholder": "Введите пароль",
       "rememberMe": "Запомнить меня",
@@ -219,13 +219,19 @@
     },
     "quantity": {
       "label": "Количество:"
-    },
-    "buttons": {
+    },    "buttons": {
       "buyNow": "Купить сейчас",
       "addToCart": "В корзину",
       "processing": "Обрабатываем...",
       "adding": "Добавляем..."
-    },    "relatedProducts": {
+    },    "about": "О товаре",
+    "readMore": "Подробнее",    "story": {
+      "title": "Вдохновение",
+      "crafted": "Создано с Любовью",
+      "explore": "Подробнее"
+    },
+    "addingToCart": "Добавляем в корзину...",
+    "relatedProducts": {
       "title": "Похожие товары"
     }
   },  "productCard": {

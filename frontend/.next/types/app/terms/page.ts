@@ -1,4 +1,4 @@
-// File: C:\Users\alien\Downloads\Malikli-son - Preview\frontend\src\app\terms\page.tsx
+// File: c:\Users\alien\Downloads\Malikli-son - Preview\frontend\src\app\terms\page.tsx
 import * as entry from '../../../../src/app/terms/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -495,6 +495,104 @@
   background-color: #07a5b0;
 }
 
+/* Enhanced Product Grid - One product per row layout */
+.enhancedProductGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Collection section improvements for new layout */
+.enhanced {
+  background: linear-gradient(135deg, #fafafa 0%, #f8fafc 100%) !important;
+  border-radius: 20px !important;
+  padding: 3rem 2rem !important;
+  margin-bottom: 3rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid rgba(10, 186, 181, 0.1) !important;
+}
+
+.enhanced .collection-title {
+  font-size: 3rem !important;
+  margin-bottom: 3rem !important;
+  background: linear-gradient(135deg, #001f3f 0%, #0ABAB5 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.enhanced .collection-title:after {
+  background: linear-gradient(135deg, #0ABAB5 0%, #0891b2 100%) !important;
+  width: 120px !important;
+  height: 5px !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .enhancedProductGrid {
+    gap: 1.5rem;
+  }
+    .enhanced {
+    padding: 2rem 1.5rem !important;
+    margin-bottom: 2rem !important;
+    border-radius: 16px !important;
+  }
+  
+  .enhanced .collection-title {
+    font-size: 2.25rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .enhanced .collection-title:after {
+    width: 80px !important;
+    height: 4px !important;
+  }
+}
+
+@media (max-width: 640px) {  .enhanced {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .enhanced .collection-title {
+    font-size: 2rem !important;
+  }
+}
+
+/* Animation for enhanced grid items */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.enhancedProductGrid > * {
+  animation: slideInFromLeft 0.6s ease-out;
+}
+
+.enhancedProductGrid > *:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.enhancedProductGrid > *:nth-child(3n) {
+  animation-delay: 0.2s;
+}
+
+/* Global styles for enhanced layout */
+.enhancedProductGrid {
+  --tiffany-blue: #0ABAB5;
+  --tiffany-blue-dark: #0891b2;
+  --navy: #001f3f;
+  --charcoal: #1e293b;
+  --light-gray: #f8fafc;
+  --border-light: #e2e8f0;
+}
+
 /* Loading States */
 .sliderLoading {
   height: 100vh;

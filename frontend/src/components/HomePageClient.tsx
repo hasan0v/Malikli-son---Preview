@@ -1,14 +1,26 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import dynamic from 'next/dynamic';
 import styles from '../app/home.module.css';
 import Link from 'next/link';
-import { getProducts, getCategories, categoryToSliderItem } from '../services/productService';
+import { getAllProducts, getProductsForLCP, getCategories, categoryToSliderItem } from '../services/productService';
 import { Product, GroupedProducts } from '../types/product';
-import ImageSlider from '../components/ImageSlider';
 import ProductGrid from '../components/ProductGrid';
+import EnhancedProductGrid from '../components/EnhancedProductGrid';
 import LoadingCircle from '../components/LoadingCircle';
 import { useI18n } from '../hooks/useI18n';
+import { getPrimaryImageUrl } from '../utils/imageUtils';
+
+// Dynamic imports for non-critical components to reduce initial bundle size
+const ImageSlider = dynamic(() => import('../components/ImageSlider'), {
+  loading: () => <div className="h-96 bg-gray-200 animate-pulse rounded-lg" />,
+  ssr: false,
+});
+
+const ImagePreloader = dynamic(() => import('../components/ImagePreloader'), {
+  ssr: false,
+});
 
 const HomePageClient = () => {
   const { t } = useI18n();
@@ -26,10 +38,27 @@ const HomePageClient = () => {
   const [isLoadingProducts, setIsLoadingProducts] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    const loadData = async () => {
+  useEffect(() => {    const loadData = async () => {
       try {
-        // Load slider data first
+        // Load critical products immediately for LCP
+        setIsLoadingProducts(true);
+        const criticalProducts = await getProductsForLCP();
+        setProducts(criticalProducts);
+        setIsLoadingProducts(false);
+        
+        // Load remaining products in background
+        setTimeout(async () => {
+          try {
+            const allProducts = await getAllProducts();
+            if (allProducts.length > criticalProducts.length) {
+              setProducts(allProducts);
+            }
+          } catch (error) {
+            console.warn('Failed to load additional products:', error);
+          }
+        }, 100);
+        
+        // Load slider data after critical content (lower priority for LCP)
         setIsLoadingSlider(true);
         const categories = await getCategories(true);
         
@@ -45,12 +74,8 @@ const HomePageClient = () => {
         
         setSliderItems(items);
         setIsLoadingSlider(false);
-
-        // Load products
-        setIsLoadingProducts(true);
-        const productsData = await getProducts();
-        setProducts(productsData);
-        setIsLoadingProducts(false);      } catch (err) {
+        
+      } catch (err) {
         console.error('Error loading homepage data:', err);
         setError(t('common.error'));
         setIsLoadingSlider(false);
@@ -59,16 +84,21 @@ const HomePageClient = () => {
     };
 
     loadData();
-  }, []);
+  }, []);  const groupedProducts = useMemo(() => {
+    return products.reduce<GroupedProducts>((acc, product) => {
+      const categoryName = product.category_name || 'Uncategorized';
+      if (!acc[categoryName]) {
+        acc[categoryName] = [];
+      }
+      acc[categoryName].push(product);
+      return acc;
+    }, {});
+  }, [products]);
 
-  const groupedProducts = products.reduce<GroupedProducts>((acc, product) => {
-    const categoryName = product.category_name || 'Uncategorized';
-    if (!acc[categoryName]) {
-      acc[categoryName] = [];
-    }
-    acc[categoryName].push(product);
-    return acc;
-  }, {});
+  // Get critical images for preloading (first 4 products)
+  const criticalImages = useMemo(() => {
+    return products.slice(0, 4).map(product => getPrimaryImageUrl(product)).filter(Boolean);
+  }, [products]);
   if (error) {
     return (
       <div className={styles["page-container"]}>
@@ -88,11 +118,13 @@ const HomePageClient = () => {
         </div>
       </div>
     );
-  }
-  return (
+  }  return (
     <div className={styles["page-container"]}>
+      {/* Preload critical images for LCP */}
+      <ImagePreloader images={criticalImages} />
+      
       {/* Featured categories slider at the top */}
-      {/* <div className={styles.sliderContainer}>        {isLoadingSlider ? (
+      {/* <div className={styles.sliderContainer}>{isLoadingSlider ? (
           <div className={styles.sliderLoading}>
             <LoadingCircle 
               size="large" 
@@ -124,9 +156,9 @@ const HomePageClient = () => {
           </div>
         ) : (          <>
             {Object.entries(groupedProducts).map(([categoryName, productsInCategory]) => (
-              <section key={categoryName} className={styles["collection-section"]}>
+              <section key={categoryName} className={`${styles["collection-section"]} ${styles.enhanced || 'enhanced'}`}>
                 <h2 className={styles["collection-title"]}>{categoryName}</h2>
-                <ProductGrid 
+                <EnhancedProductGrid 
                   products={productsInCategory} 
                   styles={styles} 
                 />

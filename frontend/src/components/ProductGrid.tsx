@@ -50,10 +50,9 @@ const ProductGrid: React.FC<ProductGridProps> = ({
   if (!products || products.length === 0) {
     return <p>{t('home.noProducts')}</p>;
   }
-
   return (
     <div className={styles.productGrid || ''}>
-      {products.map(product => {
+      {products.map((product, index) => {
         const { color, colorName, size, sizeName } = getProductVariantInfo(product);
         const availableColors = extractAvailableColors(product);
         const availableSizes = extractAvailableSizes(product);
@@ -72,6 +71,8 @@ const ProductGrid: React.FC<ProductGridProps> = ({
             availableColors={availableColors}
             availableSizes={availableSizes}
             product={product}
+            priority={index < 4} // Prioritize first 4 images for LCP
+            index={index}
           />
         );
       })}

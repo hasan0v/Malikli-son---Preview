@@ -15,13 +15,18 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet): # ReadOnly for now, admin can create via Django Admin
-    queryset = Category.objects.filter(is_active=True, parent_category__isnull=True) # Top-level categories
+    queryset = Category.objects.filter(is_active=True, parent_category__isnull=True).prefetch_related('subcategories').select_related() # Top-level categories with optimized queries
     serializer_class = CategorySerializer
     permission_classes = [permissions.AllowAny] # Categories are public
     lookup_field = 'slug' # Allow lookup by slug
 
 class ProductViewSet(viewsets.ReadOnlyModelViewSet): # ReadOnly for now
-    queryset = Product.objects.filter(is_archived=False).prefetch_related('variants', 'images', 'category')
+    queryset = Product.objects.filter(is_archived=False).select_related('category').prefetch_related(
+        'variants__size', 
+        'variants__color', 
+        'variants__images',
+        'images'
+    )
     serializer_class = ProductSerializer
     permission_classes = [permissions.AllowAny]
     lookup_field = 'slug'
@@ -30,6 +35,7 @@ class ProductViewSet(viewsets.ReadOnlyModelViewSet): # ReadOnly for now
     filterset_class = ProductFilter # <--- USE YOUR CUSTOM FILTERSET CLASS
     search_fields = ['name', 'description', 'category__name']
     ordering_fields = ['name', 'base_price', 'created_at']
+    ordering = ['-created_at']  # Default ordering
 
     @action(detail=True, methods=['post'], url_path='create-variants', permission_classes=[permissions.IsAdminUser])
     def create_variants(self, request, slug=None):

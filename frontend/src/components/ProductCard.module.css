@@ -16,13 +16,19 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Image Container */
+/* Image Container - Increased size for better visual impact */
 .imageContainer {
   position: relative;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 0.85; /* Slightly taller than square to give more space for image */
   overflow: hidden;
   background: #f8fafc;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .productImage {
@@ -32,8 +38,23 @@
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Priority images should load instantly without transitions for LCP optimization */
+.productImage[data-priority="true"] {
+  transition: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  animation: none !important;
+}
+
 .productCard:hover .productImage {
   transform: scale(1.05);
+}
+
+/* Priority images get hover effect after initial load */
+.productCard:hover .productImage[data-priority="true"] {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 /* Quick Add Overlay */
@@ -72,21 +93,21 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Product Info Section */
+/* Product Info Section - Reduced padding and spacing */
 .productInfo {
-  padding: 20px;
+  padding: 12px 16px 16px; /* Reduced top and side padding */
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px; /* Reduced gap between elements */
   flex-grow: 1;
 }
 
-/* Product Name */
+/* Product Name - Slightly smaller */
 .productName {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px; /* Reduced from 16px */
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.3; /* Tighter line height */
   color: #1f2937;
 }
 
@@ -100,29 +121,42 @@
   color: #0ABAB5;
 }
 
-/* Price Container */
+/* Price Container - Reduced margin */
 .priceContainer {
-  margin: 4px 0;
+  margin: 2px 0; /* Reduced from 4px */
 }
 
-.price {
-  font-size: 18px;
+.currentPrice {
+  font-size: 16px; /* Slightly smaller */
   font-weight: 700;
   color: #0ABAB5;
 }
 
-/* Color Options */
+.originalPrice {
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+/* Color Selection - More compact */
+.colorSelection {
+  margin: 6px 0; /* Reduced margin */
+}
+
+/* Color Options - Smaller swatches */
 .colorOptions {
   display: flex;
-  gap: 8px;
+  gap: 6px; /* Reduced gap */
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 4px; /* Reduced top margin */
 }
 
 .colorSwatch {
-  width: 32px;
-  height: 32px;
+  width: 28px; /* Reduced from 32px */
+  height: 28px; /* Reduced from 32px */
   border-radius: 50%;
   border: 2px solid #e5e7eb;
   cursor: pointer;
@@ -136,30 +170,40 @@
   border-color: #9ca3af;
 }
 
-.colorSwatch.selectedColor {
+.colorSwatch.selectedSwatch { /* Updated class name to match component */
   border-color: #0ABAB5;
   border-width: 3px;
   transform: scale(1.15);
 }
 
-.colorSwatch.selectedColor::after {
+.colorSwatch.selectedSwatch::after {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 12px;
-  height: 12px;
+  width: 10px; /* Reduced from 12px */
+  height: 10px; /* Reduced from 12px */
   background: #ffffff;
   border-radius: 50%;
   opacity: 0.9;
 }
 
-/* Size Options */
+/* Checkmark for selected color swatch */
+.checkmark {
+  pointer-events: none;
+}
+
+/* Size Selection - More compact */
+.sizeSelection {
+  margin: 6px 0; /* Added margin for consistency */
+}
+
+/* Size Options - Smaller buttons */
 .sizeOptions {
   display: flex;
-  gap: 6px;
-  margin-top: 10px;
+  gap: 4px; /* Reduced gap */
+  margin-top: 4px; /* Reduced top margin */
   flex-wrap: wrap;
 }
 
@@ -167,13 +211,13 @@
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   color: #64748b;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 6px 10px; /* Reduced padding */
+  border-radius: 6px; /* Smaller border radius */
+  font-size: 12px; /* Reduced font size */
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-width: 36px;
+  min-width: 32px; /* Reduced min-width */
   text-align: center;
 }
 
@@ -191,18 +235,18 @@
   box-shadow: 0 2px 4px rgba(10, 186, 181, 0.3);
 }
 
-/* Add to Cart Button */
+/* Buy Now Button - More compact */
 .addToCartButton {
   background: linear-gradient(135deg, #0ABAB5 0%, #0891b2 100%);
   color: #ffffff;
   border: none;
-  padding: 14px 20px;
-  border-radius: 10px;
-  font-size: 15px;
+  padding: 10px 16px; /* Reduced padding */
+  border-radius: 8px; /* Smaller border radius */
+  font-size: 13px; /* Reduced font size */
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: auto;
+  margin-top: 8px; /* Reduced from auto to specific margin */
   box-shadow: 0 2px 8px rgba(10, 186, 181, 0.3);
 }
 
@@ -224,34 +268,49 @@
   box-shadow: none;
 }
 
+/* Variant Badge Styles */
+.variantBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .productInfo {
-    padding: 16px;
-    gap: 10px;
+    padding: 10px 12px 12px; /* Further reduced for mobile */
+    gap: 6px; /* Reduced gap */
   }
   
   .productName {
-    font-size: 15px;
+    font-size: 13px; /* Smaller on mobile */
   }
   
-  .price {
-    font-size: 16px;
+  .currentPrice {
+    font-size: 14px; /* Smaller on mobile */
   }
   
   .colorSwatch {
-    width: 28px;
-    height: 28px;
+    width: 24px; /* Smaller on mobile */
+    height: 24px;
   }
   
   .sizeButton {
-    padding: 6px 10px;
-    font-size: 13px;
+    padding: 5px 8px; /* Smaller padding */
+    font-size: 11px; /* Smaller font */
+    min-width: 28px;
   }
   
   .addToCartButton {
-    padding: 12px 16px;
-    font-size: 14px;
+    padding: 8px 12px; /* Smaller padding */
+    font-size: 12px; /* Smaller font */
   }
 }
 

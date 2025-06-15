@@ -557,3 +557,1694 @@ INFO 2025-06-15 03:21:29,419 autoreload 62040 67128 C:\Users\alien\Downloads\Mal
 INFO 2025-06-15 03:21:30,663 autoreload 72016 72672 Watching for file changes with StatReloader
 INFO 2025-06-15 03:26:13,176 autoreload 72016 72672 C:\Users\alien\Downloads\Malikli-son - Preview\backend\users\authentication.py changed, reloading.
 INFO 2025-06-15 03:26:14,356 autoreload 60064 61892 Watching for file changes with StatReloader
+INFO 2025-06-15 12:00:00,420 autoreload 60064 61892 C:\Users\alien\Downloads\Malikli-son - Preview\backend\drops\migrations\0001_initial.py changed, reloading.
+INFO 2025-06-15 12:00:01,700 autoreload 52396 47360 Watching for file changes with StatReloader
+INFO 2025-06-15 12:00:47,436 basehttp 52396 17516 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-15 12:00:47,639 basehttp 52396 17516 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4374
+INFO 2025-06-15 12:00:47,903 basehttp 52396 69812 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-06-15 12:00:47,909 basehttp 52396 72516 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-06-15 12:00:47,911 basehttp 52396 17516 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-06-15 12:00:47,912 basehttp 52396 52820 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-06-15 12:00:47,914 basehttp 52396 60324 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-06-15 12:00:47,921 basehttp 52396 71988 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-06-15 12:00:47,933 basehttp 52396 60324 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-06-15 12:00:49,292 basehttp 52396 60324 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 12:00:59,224 basehttp 52396 70176 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4650
+INFO 2025-06-15 12:01:07,825 basehttp 52396 70176 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-06-15 12:01:08,395 basehttp 52396 70176 "GET /admin/ HTTP/1.1" 200 23550
+INFO 2025-06-15 12:01:08,452 basehttp 52396 70176 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-06-15 12:01:08,473 basehttp 52396 20776 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-06-15 12:01:08,474 basehttp 52396 70176 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-06-15 12:01:08,476 basehttp 52396 65420 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-06-15 12:01:08,476 basehttp 52396 73692 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-06-15 12:01:19,153 basehttp 52396 73692 "GET /admin/products/product/ HTTP/1.1" 200 23402
+INFO 2025-06-15 12:01:19,223 basehttp 52396 73692 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-06-15 12:01:19,237 basehttp 52396 20776 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-06-15 12:01:19,248 basehttp 52396 73692 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-06-15 12:01:19,251 basehttp 52396 49684 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-06-15 12:01:19,256 basehttp 52396 29076 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-06-15 12:01:19,263 basehttp 52396 20776 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-06-15 12:01:19,275 basehttp 52396 73692 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-06-15 12:01:19,275 basehttp 52396 29076 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-06-15 12:01:19,276 basehttp 52396 20776 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-06-15 12:01:19,301 basehttp 52396 70176 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-06-15 12:01:19,331 basehttp 52396 49684 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-06-15 12:01:19,351 basehttp 52396 49684 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-06-15 12:01:20,067 basehttp 52396 65420 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 12:01:20,107 basehttp 52396 65420 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-06-15 12:01:39,526 basehttp 52396 65420 "GET /admin/products/product/45/change/ HTTP/1.1" 200 91182
+INFO 2025-06-15 12:01:39,586 basehttp 52396 65420 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-06-15 12:01:39,592 basehttp 52396 49684 "GET /static/admin/css/vendor/select2/select2.css HTTP/1.1" 200 17358
+INFO 2025-06-15 12:01:39,618 basehttp 52396 49684 "GET /static/admin/css/autocomplete.css HTTP/1.1" 200 9185
+INFO 2025-06-15 12:01:39,621 basehttp 52396 65420 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-06-15 12:01:39,642 basehttp 52396 65420 "GET /static/admin/js/vendor/select2/i18n/ru.js HTTP/1.1" 200 1171
+INFO 2025-06-15 12:01:39,671 basehttp 52396 65420 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2025-06-15 12:01:39,697 basehttp 52396 49684 "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.1" 200 173566
+INFO 2025-06-15 12:01:39,706 basehttp 52396 20776 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-06-15 12:01:39,708 basehttp 52396 65420 "GET /static/admin/js/autocomplete.js HTTP/1.1" 200 1060
+INFO 2025-06-15 12:01:39,722 basehttp 52396 65420 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-06-15 12:01:39,739 basehttp 52396 65420 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-06-15 12:01:39,985 basehttp 52396 70176 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 12:01:40,150 basehttp 52396 70176 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+INFO 2025-06-15 12:08:19,598 autoreload 52396 47360 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 12:08:20,794 autoreload 56472 68388 Watching for file changes with StatReloader
+INFO 2025-06-15 12:08:22,996 autoreload 56472 68388 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 12:08:24,097 autoreload 70808 62304 Watching for file changes with StatReloader
+INFO 2025-06-15 12:17:43,006 autoreload 70808 62304 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 12:17:44,725 autoreload 65484 66596 Watching for file changes with StatReloader
+INFO 2025-06-15 12:19:58,529 autoreload 65484 66596 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 12:19:59,915 autoreload 68896 65836 Watching for file changes with StatReloader
+INFO 2025-06-15 12:20:33,769 autoreload 58324 57240 Watching for file changes with StatReloader
+INFO 2025-06-15 12:24:03,811 basehttp 58324 72780 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 12:24:06,266 basehttp 58324 72780 "GET /api/v1/products/ HTTP/1.1" 200 6879
+INFO 2025-06-15 12:24:28,258 basehttp 58324 72780 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3126
+INFO 2025-06-15 12:27:29,506 autoreload 58324 57240 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:27:30,982 autoreload 41504 72804 Watching for file changes with StatReloader
+INFO 2025-06-15 12:27:38,907 autoreload 41504 72804 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:27:39,868 autoreload 34904 65284 Watching for file changes with StatReloader
+INFO 2025-06-15 12:27:51,707 autoreload 34904 65284 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:27:53,012 autoreload 49260 64716 Watching for file changes with StatReloader
+INFO 2025-06-15 12:28:18,008 autoreload 49260 64716 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:28:18,893 autoreload 72800 23536 Watching for file changes with StatReloader
+INFO 2025-06-15 12:28:30,806 autoreload 72800 23536 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:28:32,066 autoreload 72564 17908 Watching for file changes with StatReloader
+INFO 2025-06-15 12:28:52,273 autoreload 72564 17908 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:28:53,614 autoreload 61028 17872 Watching for file changes with StatReloader
+INFO 2025-06-15 12:29:50,031 autoreload 61028 17872 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\admin.py changed, reloading.
+INFO 2025-06-15 12:29:51,224 autoreload 65208 72872 Watching for file changes with StatReloader
+INFO 2025-06-15 12:30:15,911 autoreload 65208 72872 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\admin.py changed, reloading.
+INFO 2025-06-15 12:30:17,005 autoreload 16952 73328 Watching for file changes with StatReloader
+INFO 2025-06-15 12:30:30,458 autoreload 16952 73328 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\admin.py changed, reloading.
+INFO 2025-06-15 12:30:31,583 autoreload 57800 63504 Watching for file changes with StatReloader
+INFO 2025-06-15 12:30:41,558 autoreload 57800 63504 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\admin.py changed, reloading.
+INFO 2025-06-15 12:30:42,593 autoreload 61272 72780 Watching for file changes with StatReloader
+INFO 2025-06-15 12:32:14,982 basehttp 61272 71492 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3700
+ERROR 2025-06-15 12:33:03,388 image_utils 34644 70972 Error compressing image: division by zero
+ERROR 2025-06-15 12:33:04,169 image_utils 34644 70972 Error compressing image: division by zero
+ERROR 2025-06-15 12:33:07,101 image_utils 34644 70972 Error compressing image: division by zero
+ERROR 2025-06-15 12:33:07,133 image_utils 34644 70972 Error compressing image: division by zero
+ERROR 2025-06-15 12:33:07,173 image_utils 34644 70972 Error compressing image: division by zero
+ERROR 2025-06-15 12:33:07,195 image_utils 34644 70972 Error compressing image: division by zero
+INFO 2025-06-15 12:35:38,574 basehttp 61272 71492 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 12:35:38,879 basehttp 61272 71492 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 12:35:41,606 basehttp 61272 55884 "GET /api/v1/products/ HTTP/1.1" 200 6879
+INFO 2025-06-15 12:35:43,873 basehttp 61272 71492 "GET /api/v1/products/ HTTP/1.1" 200 6879
+INFO 2025-06-15 12:35:51,700 basehttp 61272 71492 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3700
+INFO 2025-06-15 12:35:53,028 basehttp 61272 55884 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3700
+INFO 2025-06-15 12:47:12,717 autoreload 61272 72780 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\image_utils.py changed, reloading.
+INFO 2025-06-15 12:47:14,230 autoreload 39304 67412 Watching for file changes with StatReloader
+INFO 2025-06-15 12:47:32,955 autoreload 39304 67412 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\image_utils.py changed, reloading.
+INFO 2025-06-15 12:47:34,283 autoreload 72684 33152 Watching for file changes with StatReloader
+INFO 2025-06-15 12:48:10,698 autoreload 72684 33152 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\image_utils.py changed, reloading.
+INFO 2025-06-15 12:48:11,810 autoreload 54180 73704 Watching for file changes with StatReloader
+INFO 2025-06-15 12:50:21,932 autoreload 54180 73704 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\image_utils.py changed, reloading.
+INFO 2025-06-15 12:50:22,875 autoreload 32908 70968 Watching for file changes with StatReloader
+INFO 2025-06-15 12:52:00,099 autoreload 32908 70968 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\image_utils.py changed, reloading.
+INFO 2025-06-15 12:52:01,392 autoreload 72780 49396 Watching for file changes with StatReloader
+INFO 2025-06-15 12:52:15,974 image_utils 72208 67004 Image compressed: image -> image_compressed.jpg
+INFO 2025-06-15 12:52:15,974 image_utils 72208 67004 Size: 25691 bytes -> 10468 bytes
+INFO 2025-06-15 12:52:15,974 image_utils 72208 67004 Compression: 59.3% reduction
+INFO 2025-06-15 12:52:16,765 image_utils 72208 67004 Image compressed: test-compression.jpg -> test-compression_compressed.jpg
+INFO 2025-06-15 12:52:16,765 image_utils 72208 67004 Size: 22046 bytes -> 9180 bytes
+INFO 2025-06-15 12:52:16,765 image_utils 72208 67004 Compression: 58.4% reduction
+INFO 2025-06-15 12:52:18,373 image_utils 72208 67004 Image compressed: image -> image_compressed.jpg
+INFO 2025-06-15 12:52:18,373 image_utils 72208 67004 Size: 42300 bytes -> 3636 bytes
+INFO 2025-06-15 12:52:18,374 image_utils 72208 67004 Compression: 91.4% reduction
+INFO 2025-06-15 12:52:18,419 image_utils 72208 67004 Image compressed: image -> image_compressed.jpg
+INFO 2025-06-15 12:52:18,419 image_utils 72208 67004 Size: 42300 bytes -> 9980 bytes
+INFO 2025-06-15 12:52:18,419 image_utils 72208 67004 Compression: 76.4% reduction
+INFO 2025-06-15 12:52:18,472 image_utils 72208 67004 Image compressed: image -> image_compressed.jpg
+INFO 2025-06-15 12:52:18,472 image_utils 72208 67004 Size: 42300 bytes -> 20695 bytes
+INFO 2025-06-15 12:52:18,472 image_utils 72208 67004 Compression: 51.1% reduction
+INFO 2025-06-15 12:52:18,497 image_utils 72208 67004 Image compressed: image -> image_compressed.jpg
+INFO 2025-06-15 12:52:18,498 image_utils 72208 67004 Size: 42300 bytes -> 25167 bytes
+INFO 2025-06-15 12:52:18,498 image_utils 72208 67004 Compression: 40.5% reduction
+INFO 2025-06-15 12:54:18,708 autoreload 72780 49396 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:54:19,953 autoreload 64128 52916 Watching for file changes with StatReloader
+INFO 2025-06-15 12:57:29,707 autoreload 64128 52916 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:57:31,055 autoreload 23036 15636 Watching for file changes with StatReloader
+INFO 2025-06-15 12:57:37,817 autoreload 23036 15636 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:57:38,891 autoreload 69452 28768 Watching for file changes with StatReloader
+INFO 2025-06-15 12:57:53,984 autoreload 69452 28768 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:57:54,931 autoreload 14652 67804 Watching for file changes with StatReloader
+INFO 2025-06-15 12:58:05,769 autoreload 14652 67804 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:58:07,017 autoreload 56960 33368 Watching for file changes with StatReloader
+INFO 2025-06-15 12:58:27,110 autoreload 56960 33368 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:58:28,097 autoreload 53816 48856 Watching for file changes with StatReloader
+INFO 2025-06-15 12:58:38,960 autoreload 53816 48856 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:58:40,105 autoreload 56424 64564 Watching for file changes with StatReloader
+INFO 2025-06-15 12:58:53,456 autoreload 56424 64564 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 12:58:54,528 autoreload 70136 72408 Watching for file changes with StatReloader
+INFO 2025-06-15 12:59:07,956 autoreload 70136 72408 C:\Users\alien\Downloads\Malikli-son - Preview\backend\drops\models.py changed, reloading.
+INFO 2025-06-15 12:59:09,267 autoreload 62236 71512 Watching for file changes with StatReloader
+INFO 2025-06-15 12:59:29,246 autoreload 62236 71512 C:\Users\alien\Downloads\Malikli-son - Preview\backend\drops\models.py changed, reloading.
+INFO 2025-06-15 12:59:30,299 autoreload 26768 20352 Watching for file changes with StatReloader
+INFO 2025-06-15 12:59:43,518 autoreload 26768 20352 C:\Users\alien\Downloads\Malikli-son - Preview\backend\drops\models.py changed, reloading.
+INFO 2025-06-15 12:59:44,566 autoreload 72588 70204 Watching for file changes with StatReloader
+INFO 2025-06-15 13:01:15,403 autoreload 72588 70204 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\admin.py changed, reloading.
+INFO 2025-06-15 13:01:16,410 autoreload 64544 71268 Watching for file changes with StatReloader
+INFO 2025-06-15 13:01:28,738 autoreload 64544 71268 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\admin.py changed, reloading.
+INFO 2025-06-15 13:01:29,933 autoreload 27328 45804 Watching for file changes with StatReloader
+INFO 2025-06-15 13:02:55,051 image_utils 62744 36884 Successfully converted test_image.png to WebP format
+INFO 2025-06-15 13:02:55,079 image_utils 62744 36884 Successfully converted test_image.jpeg to WebP format
+INFO 2025-06-15 13:02:55,101 image_utils 62744 36884 Successfully converted test_image.png to WebP format
+INFO 2025-06-15 13:02:55,122 image_utils 62744 36884 Successfully converted test_image.png to WebP format
+INFO 2025-06-15 13:06:09,973 image_utils 38164 72692 Image resized to 1079x1920
+INFO 2025-06-15 13:06:10,300 image_utils 38164 72692 Successfully converted products/samurai-spirit/IMG_0691-min.png to WebP format
+INFO 2025-06-15 13:06:13,481 image_utils 38164 72692 Image resized to 1079x1920
+INFO 2025-06-15 13:06:13,805 image_utils 38164 72692 Successfully converted products/immortal-defiance/IMG_0702-min.png to WebP format
+INFO 2025-06-15 13:06:16,116 image_utils 38164 72692 Image resized to 1079x1920
+INFO 2025-06-15 13:06:16,554 image_utils 38164 72692 Successfully converted products/samurai-spirit/IMG_0695.png to WebP format
+INFO 2025-06-15 13:06:18,793 image_utils 38164 72692 Image resized to 1079x1920
+INFO 2025-06-15 13:06:19,068 image_utils 38164 72692 Successfully converted products/immortal-defiance/IMG_0698-min.png to WebP format
+INFO 2025-06-15 13:06:21,198 image_utils 38164 72692 Image resized to 1079x1920
+INFO 2025-06-15 13:06:21,496 image_utils 38164 72692 Successfully converted products/immortal-defiance/IMG_0706-min.png to WebP format
+INFO 2025-06-15 13:06:24,674 image_utils 38164 72692 Image resized to 1079x1920
+INFO 2025-06-15 13:06:24,954 image_utils 38164 72692 Successfully converted products/samurai-spirit/IMG_0688-min.png to WebP format
+INFO 2025-06-15 13:06:27,846 image_utils 38164 72692 Image resized to 1079x1920
+INFO 2025-06-15 13:06:28,174 image_utils 38164 72692 Successfully converted products/samurai-spirit/IMG_0692-min.png to WebP format
+INFO 2025-06-15 13:06:29,411 image_utils 38164 72692 Image resized to 1920x1358
+INFO 2025-06-15 13:06:31,972 image_utils 38164 72692 Image resized to 1185x1200
+INFO 2025-06-15 13:06:32,136 image_utils 38164 72692 Successfully converted drop_banners/malikli-drop/lion_colorblack_3_1_of_1_mhlngYj.png to WebP format
+INFO 2025-06-15 13:07:13,797 autoreload 27328 45804 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\image_utils.py changed, reloading.
+INFO 2025-06-15 13:07:15,052 autoreload 36200 34392 Watching for file changes with StatReloader
+INFO 2025-06-15 13:07:53,040 basehttp 36200 66012 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 13:07:53,041 basehttp 36200 66012 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 13:07:53,677 basehttp 36200 69128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-15 13:07:53,677 basehttp 36200 66012 "GET /api/v1/auth/profile/ HTTP/1.1" 200 269
+INFO 2025-06-15 13:07:53,716 basehttp 36200 69128 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4374
+INFO 2025-06-15 13:07:53,751 basehttp 36200 66012 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 13:07:53,914 basehttp 36200 54480 - Broken pipe from ('127.0.0.1', 60512)
+WARNING 2025-06-15 13:07:53,981 basehttp 36200 69128 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 13:07:54,208 basehttp 36200 66012 - Broken pipe from ('127.0.0.1', 60508)
+INFO 2025-06-15 13:08:00,846 basehttp 36200 69128 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-06-15 13:08:01,319 basehttp 36200 69128 "GET /admin/ HTTP/1.1" 200 23550
+INFO 2025-06-15 13:08:07,086 basehttp 36200 69128 "GET /admin/products/product/ HTTP/1.1" 200 23402
+INFO 2025-06-15 13:08:07,488 basehttp 36200 69128 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 13:08:17,341 basehttp 36200 69128 "GET /admin/products/productimage/ HTTP/1.1" 200 29852
+INFO 2025-06-15 13:08:17,771 basehttp 36200 69128 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 13:08:44,051 basehttp 36200 69128 "GET /admin/products/product/46/change/ HTTP/1.1" 200 102985
+INFO 2025-06-15 13:08:44,453 basehttp 36200 69128 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 13:10:21,592 autoreload 36200 34392 C:\Users\alien\Downloads\Malikli-son - Preview\backend\drops\models.py changed, reloading.
+INFO 2025-06-15 13:10:22,899 autoreload 67492 50580 Watching for file changes with StatReloader
+INFO 2025-06-15 13:10:53,578 image_utils 67492 58836 Image resized to 1079x1920
+INFO 2025-06-15 13:10:53,894 image_utils 67492 58836 Successfully converted IMG_0688.png to WebP format
+ERROR 2025-06-15 13:10:56,684 log 67492 58836 Internal Server Error: /admin/products/product/46/change/
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "created_at" of relation "products_productimage" violates not-null constraint
+DETAIL:  Failing row contains (48, null, 0, f, null, 46, null, products/samurai/IMG_0688.webp).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\options.py", line 1987, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\options.py", line 1895, in _changeform_view
+    self.save_related(request, form, formsets, not add)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\options.py", line 1342, in save_related
+    self.save_formset(request, form, formset, change=change)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\options.py", line 1330, in save_formset
+    formset.save()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\models.py", line 796, in save
+    return self.save_existing_objects(commit) + self.save_new_objects(commit)
+                                                ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\models.py", line 959, in save_new_objects
+    self.new_objects.append(self.save_new(form, commit=commit))
+                            ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\models.py", line 1157, in save_new
+    return super().save_new(form, commit=commit)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\models.py", line 769, in save_new
+    return form.save(commit=commit)
+           ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py", line 302, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "created_at" of relation "products_productimage" violates not-null constraint
+DETAIL:  Failing row contains (48, null, 0, f, null, 46, null, products/samurai/IMG_0688.webp).
+
+ERROR 2025-06-15 13:10:56,699 basehttp 67492 58836 "POST /admin/products/product/46/change/ HTTP/1.1" 500 264850
+WARNING 2025-06-15 13:10:57,168 basehttp 67492 58836 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 13:11:34,829 autoreload 67492 50580 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:11:35,845 autoreload 65404 73000 Watching for file changes with StatReloader
+INFO 2025-06-15 13:11:47,675 autoreload 65404 73000 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:11:48,589 autoreload 70312 69416 Watching for file changes with StatReloader
+INFO 2025-06-15 13:13:46,775 image_utils 70312 73364 Image resized to 1079x1920
+INFO 2025-06-15 13:13:47,074 image_utils 70312 73364 Successfully converted IMG_0688.png to WebP format
+INFO 2025-06-15 13:13:49,994 basehttp 70312 73364 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 13:13:52,312 basehttp 70312 73364 "GET /admin/products/product/ HTTP/1.1" 200 23616
+INFO 2025-06-15 13:13:52,773 basehttp 70312 73364 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR 2025-06-15 13:14:22,477 log 70312 73364 Internal Server Error: /admin/products/product/46/change/
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+psycopg2.errors.InvalidCursorName: cursor "_django_curs_73364_sync_7" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 2171, in cursor_iter
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+                ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 2171, in <lambda>
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+                              ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+         ^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: cursor "_django_curs_73364_sync_7" does not exist
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1081, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1058, in render_value_in_context
+    value = str(value)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\utils.py", line 79, in __str__
+    return self.as_widget()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\boundfield.py", line 108, in as_widget
+    return widget.render(
+           ~~~~~~~~~~~~~^
+        name=self.html_initial_name if only_initial else self.html_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        renderer=self.form.renderer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 329, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\widgets.py", line 329, in get_context
+    "rendered_widget": self.widget.render(name, value, attrs),
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 329, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 830, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 781, in get_context
+    context["widget"]["optgroups"] = self.optgroups(
+                                     ~~~~~~~~~~~~~~^
+        name, context["widget"]["value"], attrs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 721, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+                                               ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\models.py", line 1424, in __iter__
+    for obj in queryset:
+               ^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\query.py", line 502, in _iterator
+    yield from iterable
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\query.py", line 123, in __iter__
+    for row in compiler.results_iter(results):
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1537, in apply_converters
+    for row in map(list, rows):
+               ~~~^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 2174, in cursor_iter
+    cursor.close()
+    ~~~~~~~~~~~~^^
+psycopg2.errors.InvalidCursorName: cursor "_django_curs_73364_sync_7" does not exist
+
+ERROR 2025-06-15 13:14:22,497 basehttp 70312 73364 "GET /admin/products/product/46/change/ HTTP/1.1" 500 692429
+INFO 2025-06-15 13:14:53,789 basehttp 70312 73364 "GET /admin/products/product/46/change/ HTTP/1.1" 200 106937
+INFO 2025-06-15 13:14:54,192 basehttp 70312 73364 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 13:19:19,213 autoreload 70312 69416 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:19:20,176 autoreload 21444 68092 Watching for file changes with StatReloader
+INFO 2025-06-15 13:19:35,300 autoreload 21444 68092 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:19:36,293 autoreload 65328 73132 Watching for file changes with StatReloader
+INFO 2025-06-15 13:19:46,355 autoreload 65328 73132 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:19:47,110 autoreload 60796 68164 Watching for file changes with StatReloader
+INFO 2025-06-15 13:19:53,701 autoreload 60796 68164 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:19:54,645 autoreload 16860 63628 Watching for file changes with StatReloader
+INFO 2025-06-15 13:20:18,277 autoreload 16860 63628 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:20:19,263 autoreload 60484 66140 Watching for file changes with StatReloader
+INFO 2025-06-15 13:20:23,771 autoreload 60484 66140 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:20:24,815 autoreload 72684 15860 Watching for file changes with StatReloader
+INFO 2025-06-15 13:20:39,291 autoreload 72684 15860 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:20:40,098 autoreload 73116 17448 Watching for file changes with StatReloader
+INFO 2025-06-15 13:20:42,460 autoreload 73116 17448 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:20:43,454 autoreload 67616 59596 Watching for file changes with StatReloader
+INFO 2025-06-15 13:20:47,707 autoreload 67616 59596 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:20:48,757 autoreload 17416 72756 Watching for file changes with StatReloader
+INFO 2025-06-15 13:23:57,954 autoreload 17416 72756 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:23:59,142 autoreload 23536 51492 Watching for file changes with StatReloader
+INFO 2025-06-15 13:24:31,531 autoreload 23536 51492 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:24:32,946 autoreload 22980 71152 Watching for file changes with StatReloader
+INFO 2025-06-15 13:24:56,468 autoreload 22980 71152 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:24:57,469 autoreload 73400 67704 Watching for file changes with StatReloader
+INFO 2025-06-15 13:25:18,704 autoreload 73400 67704 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\models.py changed, reloading.
+INFO 2025-06-15 13:25:19,779 autoreload 50240 69176 Watching for file changes with StatReloader
+INFO 2025-06-15 13:25:30,976 autoreload 50240 69176 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\views.py changed, reloading.
+INFO 2025-06-15 13:25:32,078 autoreload 50224 49912 Watching for file changes with StatReloader
+INFO 2025-06-15 13:25:44,627 autoreload 50224 49912 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\views.py changed, reloading.
+INFO 2025-06-15 13:25:46,086 autoreload 68204 72196 Watching for file changes with StatReloader
+INFO 2025-06-15 13:26:10,909 autoreload 68204 72196 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 13:26:11,987 autoreload 70940 72508 Watching for file changes with StatReloader
+INFO 2025-06-15 13:26:22,152 autoreload 70940 72508 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 13:26:23,314 autoreload 18444 72816 Watching for file changes with StatReloader
+INFO 2025-06-15 13:26:35,708 autoreload 18444 72816 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 13:26:36,925 autoreload 64332 22656 Watching for file changes with StatReloader
+INFO 2025-06-15 13:26:47,069 autoreload 64332 22656 C:\Users\alien\Downloads\Malikli-son - Preview\backend\carts\views.py changed, reloading.
+INFO 2025-06-15 13:26:48,248 autoreload 40488 66452 Watching for file changes with StatReloader
+INFO 2025-06-15 13:34:20,296 autoreload 40488 66452 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 13:34:21,744 autoreload 71592 58060 Watching for file changes with StatReloader
+INFO 2025-06-15 13:34:42,923 basehttp 71592 39416 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 13:34:42,934 basehttp 71592 39416 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 13:34:45,923 basehttp 71592 39416 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 13:34:45,933 basehttp 71592 39416 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 13:37:24,857 autoreload 71592 58060 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 13:37:25,909 autoreload 71800 24824 Watching for file changes with StatReloader
+INFO 2025-06-15 13:37:38,560 basehttp 71800 36056 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 13:37:38,575 basehttp 71800 36056 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 13:38:11,112 autoreload 71800 24824 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 13:38:12,169 autoreload 68808 13248 Watching for file changes with StatReloader
+INFO 2025-06-15 13:38:54,575 basehttp 68808 69764 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 13:38:54,583 basehttp 68808 69764 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 13:39:08,070 basehttp 68808 69764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 13:39:08,738 basehttp 68808 69764 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 13:39:16,168 basehttp 68808 69764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 13:39:16,205 basehttp 68808 69764 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 13:40:58,157 basehttp 68808 69764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 13:40:58,747 basehttp 68808 69764 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 13:46:35,724 basehttp 68808 26056 "POST /admin/products/product/46/change/ HTTP/1.1" 200 107396
+INFO 2025-06-15 13:46:36,490 basehttp 68808 26056 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 13:46:37,296 basehttp 68808 26056 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 13:52:38,062 basehttp 68808 63676 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 13:52:38,599 basehttp 68808 63676 "GET /api/v1/products/ HTTP/1.1" 200 7186
+INFO 2025-06-15 13:52:46,057 basehttp 68808 63676 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 13:52:55,445 autoreload 68808 13248 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 13:52:57,274 autoreload 35456 36736 Watching for file changes with StatReloader
+INFO 2025-06-15 13:54:39,900 basehttp 35456 70516 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 13:54:40,453 basehttp 35456 70516 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 13:56:17,526 basehttp 35456 54532 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 13:56:17,533 basehttp 35456 54532 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 13:59:27,662 basehttp 35456 52772 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 13:59:27,684 basehttp 35456 52772 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:00:01,198 basehttp 35456 34628 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:00:01,687 basehttp 35456 34628 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:01:41,186 basehttp 35456 34628 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:03:37,612 autoreload 63980 60576 Watching for file changes with StatReloader
+INFO 2025-06-15 14:03:53,865 basehttp 63980 70432 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:03:54,305 basehttp 63980 70432 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:03:55,225 basehttp 63980 23740 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:08:34,143 basehttp 63980 54428 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:08:34,153 basehttp 63980 54428 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:08:34,253 basehttp 63980 54428 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:10:59,355 basehttp 63980 67196 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:10:59,820 basehttp 63980 67196 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:11:00,515 basehttp 63980 37780 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:18:49,828 basehttp 63980 30544 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:18:50,297 basehttp 63980 30544 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:18:51,024 basehttp 63980 72736 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:33:44,871 basehttp 63980 47384 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:33:44,990 basehttp 63980 50868 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:33:45,431 basehttp 63980 47384 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:33:46,390 basehttp 63980 50868 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:33:46,548 basehttp 63980 65328 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:33:46,643 basehttp 63980 59280 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:34:31,283 basehttp 63980 59280 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:34:31,327 basehttp 63980 59280 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:34:31,414 basehttp 63980 59280 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:39:37,781 basehttp 63980 56708 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:39:38,195 basehttp 63980 56708 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 14:39:38,911 basehttp 63980 44772 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 7186
+INFO 2025-06-15 14:40:50,363 basehttp 63980 44772 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3195
+INFO 2025-06-15 14:41:53,735 basehttp 63980 44772 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3938
+INFO 2025-06-15 14:42:33,291 basehttp 63980 67704 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 14:42:34,342 basehttp 63980 67704 "GET /admin/products/product/ HTTP/1.1" 200 23616
+INFO 2025-06-15 14:42:34,892 basehttp 63980 67704 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 14:43:56,829 basehttp 63980 67704 "GET /admin/products/product/46/change/ HTTP/1.1" 200 106937
+WARNING 2025-06-15 14:43:57,175 basehttp 63980 67704 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 14:44:33,685 basehttp 63980 67704 "GET /admin/products/product/46/delete/ HTTP/1.1" 200 19483
+WARNING 2025-06-15 14:44:34,004 basehttp 63980 67704 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 14:45:11,047 basehttp 63980 67704 "GET /admin/products/product/46/change/ HTTP/1.1" 200 106937
+WARNING 2025-06-15 14:45:11,370 basehttp 63980 67704 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 14:46:22,280 basehttp 63980 67704 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 14:46:23,077 basehttp 63980 67704 "GET /admin/products/product/ HTTP/1.1" 200 23616
+WARNING 2025-06-15 14:46:23,556 basehttp 63980 67704 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 15:06:59,987 basehttp 63980 27896 "GET /admin/products/product/46/change/ HTTP/1.1" 200 107324
+INFO 2025-06-15 15:07:00,409 basehttp 63980 27896 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 15:07:00,788 basehttp 63980 65208 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 15:11:47,370 basehttp 63980 65208 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 15:11:48,302 basehttp 63980 65208 "GET /admin/products/product/ HTTP/1.1" 200 23616
+WARNING 2025-06-15 15:11:48,663 basehttp 63980 65208 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 15:12:02,461 basehttp 63980 74592 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3195
+INFO 2025-06-15 15:12:06,404 basehttp 63980 74592 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6960
+INFO 2025-06-15 15:12:06,804 basehttp 63980 74592 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 15:12:07,573 basehttp 63980 35884 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 6960
+INFO 2025-06-15 15:12:14,591 basehttp 63980 35884 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3712
+INFO 2025-06-15 15:12:25,091 basehttp 63980 35884 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3712
+INFO 2025-06-15 15:12:55,876 basehttp 63980 65208 "GET /admin/products/product/46/change/ HTTP/1.1" 200 106011
+WARNING 2025-06-15 15:12:56,189 basehttp 63980 65208 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 15:12:56,749 basehttp 63980 68260 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 15:13:16,922 basehttp 63980 68260 - Broken pipe from ('127.0.0.1', 52873)
+INFO 2025-06-15 15:13:19,709 basehttp 63980 65208 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 15:13:20,530 basehttp 63980 65208 "GET /admin/products/product/ HTTP/1.1" 200 23616
+WARNING 2025-06-15 15:13:20,855 basehttp 63980 65208 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3225
+INFO 2025-06-15 15:13:34,935 basehttp 63980 35884 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3712
+INFO 2025-06-15 15:13:51,082 basehttp 63980 75504 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3712
+INFO 2025-06-15 15:15:05,308 basehttp 63980 75504 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6960
+INFO 2025-06-15 15:15:05,315 basehttp 63980 75504 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 15:15:05,417 basehttp 63980 75504 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 6960
+INFO 2025-06-15 15:15:48,552 basehttp 63980 75024 "GET /admin/products/productimage/ HTTP/1.1" 200 28396
+INFO 2025-06-15 15:15:53,068 basehttp 63980 65208 "GET /admin/products/product/46/change/ HTTP/1.1" 200 95340
+INFO 2025-06-15 15:23:00,762 basehttp 63980 63680 "GET /admin/products/product/ HTTP/1.1" 200 23402
+INFO 2025-06-15 15:23:01,518 basehttp 63980 63680 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 15:23:19,437 basehttp 63980 63680 "GET /admin/products/product/45/change/ HTTP/1.1" 200 91320
+INFO 2025-06-15 15:23:34,269 basehttp 63980 63680 "POST /admin/products/product/45/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 15:23:35,132 basehttp 63980 63680 "GET /admin/products/product/ HTTP/1.1" 200 23621
+INFO 2025-06-15 15:24:44,538 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:24:54,198 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:25:08,254 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:25:10,566 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:25:10,781 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:25:10,966 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:25:11,150 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:25:11,341 basehttp 63980 73960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:33:49,684 basehttp 63980 74808 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:33:50,057 basehttp 63980 74808 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 15:33:50,740 basehttp 63980 73592 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:34:16,065 basehttp 63980 73592 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:16,837 basehttp 63980 73592 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 15:34:16,857 basehttp 63980 73592 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:17,013 basehttp 63980 73592 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:34:17,029 basehttp 63980 73592 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:17,465 basehttp 63980 73592 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 15:34:37,348 basehttp 63980 73592 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:37,351 basehttp 63980 74808 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:37,355 basehttp 63980 73592 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:34:37,355 basehttp 63980 74808 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:34:37,374 basehttp 63980 73592 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:37,374 basehttp 63980 74808 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:37,761 basehttp 63980 75168 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:37,764 basehttp 63980 75168 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 15:34:37,972 basehttp 63980 73592 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:34:37,973 basehttp 63980 74808 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:34:37,983 basehttp 63980 74808 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:37,983 basehttp 63980 73592 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:38,088 basehttp 63980 74808 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:38,090 basehttp 63980 75168 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 15:34:38,421 basehttp 63980 73592 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 15:34:39,134 basehttp 63980 75168 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:40:26,323 basehttp 63980 53708 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:40:26,766 basehttp 63980 71744 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:40:26,786 basehttp 63980 53708 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 15:40:27,693 basehttp 63980 71744 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 15:40:27,841 basehttp 63980 53708 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:45:06,446 basehttp 63980 53708 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:45:06,451 basehttp 63980 53708 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:45:06,472 basehttp 63980 53708 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 15:45:06,474 basehttp 63980 53708 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:45:06,485 basehttp 63980 53708 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 15:45:06,489 basehttp 63980 53708 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 15:45:06,571 basehttp 63980 53708 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:45:06,573 basehttp 63980 53708 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 15:45:06,613 basehttp 63980 53708 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 15:45:06,616 basehttp 63980 53708 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:45:59,801 basehttp 63980 53708 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 15:46:00,010 basehttp 63980 53708 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:46:00,720 basehttp 63980 53708 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 15:46:08,900 basehttp 63980 53708 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:46:09,122 basehttp 63980 53708 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 832
+INFO 2025-06-15 15:51:06,303 basehttp 63980 53708 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:51:07,000 basehttp 63980 53708 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 15:52:46,805 basehttp 63980 53708 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 832
+INFO 2025-06-15 15:54:16,041 basehttp 63980 67296 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:17,248 basehttp 63980 67296 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 15:54:17,287 basehttp 63980 67296 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:17,442 basehttp 63980 67296 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 15:54:17,458 basehttp 63980 67296 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:17,849 basehttp 63980 70852 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:17,851 basehttp 63980 70852 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:18,148 basehttp 63980 67296 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 15:54:19,203 basehttp 63980 70852 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:54:19,211 basehttp 63980 67296 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:19,211 basehttp 63980 70852 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:19,311 basehttp 63980 67296 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:19,312 basehttp 63980 75472 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:19,650 basehttp 63980 70852 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 351
+INFO 2025-06-15 15:54:19,921 basehttp 63980 67296 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 6732
+INFO 2025-06-15 15:54:27,620 basehttp 63980 67296 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 15:54:27,846 basehttp 63980 67296 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 832
+INFO 2025-06-15 15:58:25,320 basehttp 63980 69360 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 832
+INFO 2025-06-15 15:59:39,861 basehttp 63980 37384 "GET /admin/products/product/45/change/ HTTP/1.1" 200 91320
+INFO 2025-06-15 15:59:40,322 basehttp 63980 37384 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 15:59:40,922 basehttp 63980 37384 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 15:59:57,544 basehttp 63980 37384 "POST /admin/products/product/45/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 15:59:58,348 basehttp 63980 37384 "GET /admin/products/product/ HTTP/1.1" 200 23621
+INFO 2025-06-15 16:00:26,695 basehttp 63980 37384 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:00:27,506 basehttp 63980 37384 "GET /admin/products/product/ HTTP/1.1" 200 23616
+INFO 2025-06-15 16:00:37,883 basehttp 63980 37384 "GET /admin/products/product/add/ HTTP/1.1" 200 50772
+INFO 2025-06-15 16:01:06,507 basehttp 63980 37384 "GET /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 9404
+INFO 2025-06-15 16:01:14,251 basehttp 63980 37384 "POST /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 370
+INFO 2025-06-15 16:01:56,086 basehttp 63980 37384 "POST /admin/products/product/add/ HTTP/1.1" 200 51915
+INFO 2025-06-15 16:02:29,353 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=size HTTP/1.1" 200 204
+INFO 2025-06-15 16:02:33,117 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=color HTTP/1.1" 200 373
+INFO 2025-06-15 16:06:16,459 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=color HTTP/1.1" 200 373
+INFO 2025-06-15 16:06:20,389 basehttp 63980 37384 "GET /admin/products/color/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5717
+INFO 2025-06-15 16:06:20,984 basehttp 63980 37384 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 16:07:07,072 basehttp 63980 37384 "POST /admin/products/color/add/?_to_field=id&_popup=1 HTTP/1.1" 200 371
+INFO 2025-06-15 16:07:09,913 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=size HTTP/1.1" 200 204
+INFO 2025-06-15 16:07:55,626 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=size HTTP/1.1" 200 204
+INFO 2025-06-15 16:07:57,643 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=size HTTP/1.1" 200 204
+INFO 2025-06-15 16:08:00,366 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=size HTTP/1.1" 200 204
+INFO 2025-06-15 16:08:03,611 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=color HTTP/1.1" 200 408
+INFO 2025-06-15 16:08:05,799 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=color HTTP/1.1" 200 408
+INFO 2025-06-15 16:08:07,484 basehttp 63980 37384 "GET /admin/autocomplete/?app_label=products&model_name=productvariant&field_name=color HTTP/1.1" 200 408
+INFO 2025-06-15 16:09:26,994 image_utils 63980 37384 Image resized to 1079x1920
+INFO 2025-06-15 16:09:27,559 image_utils 63980 37384 Successfully converted IMG_0683-min.png to WebP format
+INFO 2025-06-15 16:09:31,210 image_utils 63980 37384 Image resized to 1079x1920
+INFO 2025-06-15 16:09:31,550 image_utils 63980 37384 Successfully converted IMG_0677-min.png to WebP format
+INFO 2025-06-15 16:09:32,591 image_utils 63980 37384 Image resized to 1079x1920
+INFO 2025-06-15 16:09:32,874 image_utils 63980 37384 Successfully converted IMG_0680-min.png to WebP format
+INFO 2025-06-15 16:09:33,825 image_utils 63980 37384 Image resized to 1079x1920
+INFO 2025-06-15 16:09:34,170 image_utils 63980 37384 Successfully converted IMG_0678-min.png to WebP format
+INFO 2025-06-15 16:09:35,047 image_utils 63980 37384 Image resized to 1079x1920
+INFO 2025-06-15 16:09:35,419 image_utils 63980 37384 Successfully converted IMG_0681-min.png to WebP format
+INFO 2025-06-15 16:09:36,778 image_utils 63980 37384 Image resized to 1079x1920
+INFO 2025-06-15 16:09:37,188 image_utils 63980 37384 Successfully converted IMG_0679-min.png to WebP format
+INFO 2025-06-15 16:09:38,089 image_utils 63980 37384 Image resized to 1079x1920
+INFO 2025-06-15 16:09:38,390 image_utils 63980 37384 Successfully converted IMG_0685-min.png to WebP format
+INFO 2025-06-15 16:09:39,167 basehttp 63980 37384 "POST /admin/products/product/add/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:09:41,018 basehttp 63980 37384 "GET /admin/products/product/ HTTP/1.1" 200 24484
+INFO 2025-06-15 16:11:32,538 basehttp 63980 37384 "GET /admin/products/product/47/change/ HTTP/1.1" 200 109129
+INFO 2025-06-15 16:11:33,321 basehttp 63980 37384 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 16:12:06,713 basehttp 63980 37384 "POST /admin/products/product/47/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:12:07,616 basehttp 63980 37384 "GET /admin/products/product/ HTTP/1.1" 200 24486
+INFO 2025-06-15 16:12:42,115 basehttp 63980 63600 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:42,125 basehttp 63980 22960 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:43,203 basehttp 63980 63600 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:12:43,291 basehttp 63980 63600 "OPTIONS /api/v1/products/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:43,291 basehttp 63980 22960 "OPTIONS /api/v1/products/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:44,878 basehttp 63980 22960 "GET /api/v1/products/ HTTP/1.1" 200 10176
+INFO 2025-06-15 16:12:45,586 basehttp 63980 22960 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:45,608 basehttp 63980 63600 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:45,746 basehttp 63980 22960 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:12:45,761 basehttp 63980 22960 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:46,249 basehttp 63980 22960 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:12:46,259 basehttp 63980 63600 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10176
+INFO 2025-06-15 16:12:46,384 basehttp 63980 63600 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 16:12:46,993 basehttp 63980 63600 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10176
+INFO 2025-06-15 16:19:00,868 basehttp 63980 70628 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:19:00,874 basehttp 63980 53500 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 16:19:01,583 basehttp 63980 70628 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:19:02,046 basehttp 63980 53500 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10176
+INFO 2025-06-15 16:19:02,077 basehttp 63980 70628 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:19:02,579 basehttp 63980 53500 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:19:02,765 basehttp 63980 70628 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10176
+INFO 2025-06-15 16:20:05,174 basehttp 63980 75484 "GET /admin/products/product/47/change/ HTTP/1.1" 200 109137
+INFO 2025-06-15 16:20:05,951 basehttp 63980 75484 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 16:20:06,987 basehttp 63980 75484 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 16:21:35,757 image_utils 63980 75484 Image resized to 1482x1920
+INFO 2025-06-15 16:21:36,299 image_utils 63980 75484 Successfully converted IMG_0685-cropped.png to WebP format
+INFO 2025-06-15 16:21:39,593 basehttp 63980 75484 "POST /admin/products/product/47/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:21:40,871 basehttp 63980 75484 "GET /admin/products/product/ HTTP/1.1" 200 24486
+INFO 2025-06-15 16:21:50,438 basehttp 63980 70628 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:21:50,442 basehttp 63980 70628 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:21:50,451 basehttp 63980 70628 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 16:21:50,453 basehttp 63980 70628 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10176
+INFO 2025-06-15 16:21:50,463 basehttp 63980 70628 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:21:50,467 basehttp 63980 53500 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:21:50,467 basehttp 63980 70628 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 16:21:50,469 basehttp 63980 70628 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:21:50,571 basehttp 63980 70628 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 16:21:50,574 basehttp 63980 70628 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10176
+INFO 2025-06-15 16:21:55,334 basehttp 63980 70628 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:21:55,334 basehttp 63980 53500 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:21:55,859 basehttp 63980 53500 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3447
+INFO 2025-06-15 16:22:17,831 basehttp 63980 53500 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:22:17,838 basehttp 63980 53500 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:22:17,850 basehttp 63980 53500 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 16:22:17,853 basehttp 63980 53500 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10176
+INFO 2025-06-15 16:22:17,890 basehttp 63980 53500 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 16:22:17,893 basehttp 63980 53500 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:22:17,913 basehttp 63980 53500 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:22:17,919 basehttp 63980 53500 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:22:45,912 basehttp 63980 74728 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10180
+INFO 2025-06-15 16:22:46,356 basehttp 63980 74728 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:22:47,034 basehttp 63980 70816 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10180
+INFO 2025-06-15 16:22:54,044 basehttp 63980 70816 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3447
+INFO 2025-06-15 16:23:22,690 basehttp 63980 64792 "GET /admin/products/product/ HTTP/1.1" 200 24263
+WARNING 2025-06-15 16:23:23,669 basehttp 63980 64792 "GET /favicon.ico HTTP/1.1" 404 3114
+ERROR 2025-06-15 16:23:31,868 log 63980 75484 Internal Server Error: /admin/products/product/47/change/
+Traceback (most recent call last):
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1081, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\template\base.py", line 1058, in render_value_in_context
+    value = str(value)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\utils.py", line 79, in __str__
+    return self.as_widget()
+           ~~~~~~~~~~~~~~^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\boundfield.py", line 108, in as_widget
+    return widget.render(
+           ~~~~~~~~~~~~~^
+        name=self.html_initial_name if only_initial else self.html_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        renderer=self.form.renderer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 329, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\contrib\admin\widgets.py", line 329, in get_context
+    "rendered_widget": self.widget.render(name, value, attrs),
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 329, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 830, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 781, in get_context
+    context["widget"]["optgroups"] = self.optgroups(
+                                     ~~~~~~~~~~~~~~^
+        name, context["widget"]["value"], attrs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\widgets.py", line 721, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+                                               ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\forms\models.py", line 1424, in __iter__
+    for obj in queryset:
+               ^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\query.py", line 502, in _iterator
+    yield from iterable
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\query.py", line 123, in __iter__
+    for row in compiler.results_iter(results):
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1537, in apply_converters
+    for row in map(list, rows):
+               ~~~^^^^^^^^^^^^
+  File "C:\Users\alien\Downloads\Malikli-son\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 2174, in cursor_iter
+    cursor.close()
+    ~~~~~~~~~~~~^^
+psycopg2.errors.InvalidCursorName: cursor "_django_curs_75484_sync_14" does not exist
+
+ERROR 2025-06-15 16:23:31,900 basehttp 63980 75484 "GET /admin/products/product/47/change/ HTTP/1.1" 500 668518
+INFO 2025-06-15 16:24:38,221 basehttp 63980 75484 "GET /admin/products/product/47/change/ HTTP/1.1" 200 109145
+INFO 2025-06-15 16:25:07,157 basehttp 63980 75484 "POST /admin/products/product/47/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:25:08,082 basehttp 63980 75484 "GET /admin/products/product/ HTTP/1.1" 200 24486
+INFO 2025-06-15 16:25:08,482 basehttp 63980 75484 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 16:35:41,127 basehttp 63980 56840 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10180
+INFO 2025-06-15 16:35:41,668 basehttp 63980 56840 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:35:42,399 basehttp 63980 66732 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10180
+INFO 2025-06-15 16:35:49,999 basehttp 63980 66732 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 16:35:50,466 basehttp 63980 66732 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 16:36:06,670 basehttp 63980 66732 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:36:06,670 basehttp 63980 56840 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:36:07,187 basehttp 63980 56840 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3484
+INFO 2025-06-15 16:36:35,248 basehttp 63980 17872 "GET /admin/products/product/46/change/ HTTP/1.1" 200 96898
+INFO 2025-06-15 16:36:35,692 basehttp 63980 17872 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 16:36:36,173 basehttp 63980 17872 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 16:37:56,034 image_utils 63980 17872 Image resized to 1408x1920
+INFO 2025-06-15 16:37:56,796 image_utils 63980 17872 Successfully converted IMG_0691-cropped.png to WebP format
+INFO 2025-06-15 16:37:58,848 basehttp 63980 17872 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:38:00,088 basehttp 63980 17872 "GET /admin/products/product/ HTTP/1.1" 200 24477
+INFO 2025-06-15 16:38:26,683 basehttp 63980 72600 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:38:27,130 basehttp 63980 72600 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:38:27,304 basehttp 63980 55780 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10160
+INFO 2025-06-15 16:38:27,815 basehttp 63980 55780 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:38:28,010 basehttp 63980 72600 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10160
+INFO 2025-06-15 16:39:01,025 basehttp 63980 17872 "GET /admin/products/product/45/change/ HTTP/1.1" 200 92625
+INFO 2025-06-15 16:41:01,336 image_utils 63980 17872 Image resized to 1306x1920
+INFO 2025-06-15 16:41:01,823 image_utils 63980 17872 Successfully converted IMG_0702-cropped.png to WebP format
+INFO 2025-06-15 16:41:03,179 image_utils 63980 17872 Image resized to 1079x1920
+INFO 2025-06-15 16:41:03,567 image_utils 63980 17872 Successfully converted IMG_0713-min.png to WebP format
+INFO 2025-06-15 16:41:04,586 image_utils 63980 17872 Image resized to 1079x1920
+INFO 2025-06-15 16:41:05,114 image_utils 63980 17872 Successfully converted IMG_0704.png to WebP format
+INFO 2025-06-15 16:41:06,177 image_utils 63980 17872 Image resized to 1079x1920
+INFO 2025-06-15 16:41:06,510 image_utils 63980 17872 Successfully converted IMG_0705-min.png to WebP format
+INFO 2025-06-15 16:41:07,749 basehttp 63980 17872 "POST /admin/products/product/45/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:41:08,951 basehttp 63980 17872 "GET /admin/products/product/ HTTP/1.1" 200 24482
+INFO 2025-06-15 16:41:13,708 basehttp 63980 72600 "OPTIONS /api/v1/products/arab-warrior/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:41:14,343 basehttp 63980 72600 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 16:42:13,094 basehttp 63980 72600 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3447
+INFO 2025-06-15 16:45:16,764 basehttp 63980 72600 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:45:16,765 basehttp 63980 72600 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:45:17,335 basehttp 63980 72600 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3464
+INFO 2025-06-15 16:45:18,530 basehttp 63980 65068 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:45:32,849 basehttp 63980 17872 "GET /admin/products/product/47/change/ HTTP/1.1" 200 109145
+INFO 2025-06-15 16:45:33,767 basehttp 63980 17872 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 16:47:13,625 basehttp 63980 17872 "POST /admin/products/product/47/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:47:14,534 basehttp 63980 17872 "GET /admin/products/product/ HTTP/1.1" 200 24486
+WARNING 2025-06-15 16:47:14,928 basehttp 63980 17872 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 16:47:22,300 basehttp 63980 65068 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10575
+INFO 2025-06-15 16:47:22,813 basehttp 63980 65068 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 16:47:23,022 basehttp 63980 72600 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10575
+INFO 2025-06-15 16:47:46,900 basehttp 63980 72600 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3442
+INFO 2025-06-15 16:48:50,188 basehttp 63980 17872 "GET /admin/products/product/47/change/ HTTP/1.1" 200 109138
+INFO 2025-06-15 16:49:45,429 basehttp 63980 17872 "POST /admin/products/product/47/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:49:46,314 basehttp 63980 17872 "GET /admin/products/product/ HTTP/1.1" 200 24486
+INFO 2025-06-15 16:50:11,788 basehttp 63980 72600 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:50:11,794 basehttp 63980 72600 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:50:11,800 basehttp 63980 72600 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:50:11,802 basehttp 63980 72600 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3442
+INFO 2025-06-15 16:50:11,815 basehttp 63980 72600 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:50:11,819 basehttp 63980 72600 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:52:39,204 basehttp 63980 72600 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:52:39,719 basehttp 63980 72600 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:53:31,193 basehttp 63980 17872 "GET /admin/products/product/47/change/ HTTP/1.1" 200 109146
+INFO 2025-06-15 16:53:31,897 basehttp 63980 17872 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 16:53:32,505 basehttp 63980 17872 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 16:54:42,947 basehttp 63980 17872 "POST /admin/products/product/47/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:54:43,857 basehttp 63980 17872 "GET /admin/products/product/ HTTP/1.1" 200 24486
+INFO 2025-06-15 16:54:48,420 basehttp 63980 72600 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 16:55:32,932 basehttp 63980 72600 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3464
+INFO 2025-06-15 16:56:07,197 basehttp 63980 17872 "GET /admin/products/product/45/change/ HTTP/1.1" 200 105207
+INFO 2025-06-15 16:59:02,273 basehttp 63980 19656 "GET /admin/products/product/46/change/ HTTP/1.1" 200 96858
+INFO 2025-06-15 16:59:02,744 basehttp 63980 19656 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 16:59:18,890 basehttp 63980 19656 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 16:59:19,789 basehttp 63980 19656 "GET /admin/products/product/ HTTP/1.1" 200 24477
+INFO 2025-06-15 16:59:22,147 basehttp 63980 71160 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:59:22,652 basehttp 63980 71160 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:59:27,244 basehttp 63980 71160 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:59:27,249 basehttp 63980 71160 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 16:59:27,252 basehttp 63980 29024 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:59:27,254 basehttp 63980 29024 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3464
+INFO 2025-06-15 16:59:27,265 basehttp 63980 29024 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 16:59:27,267 basehttp 63980 29024 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 16:59:36,643 basehttp 63980 74344 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3597
+INFO 2025-06-15 17:01:48,887 basehttp 63980 19656 "GET /admin/products/product/46/change/ HTTP/1.1" 200 96972
+WARNING 2025-06-15 17:01:49,879 basehttp 63980 19656 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 17:01:52,719 basehttp 63980 29024 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 17:02:15,965 basehttp 63980 19656 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 17:02:16,860 basehttp 63980 19656 "GET /admin/products/product/ HTTP/1.1" 200 24477
+WARNING 2025-06-15 17:02:17,384 basehttp 63980 19656 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 17:02:19,538 basehttp 63980 29024 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3565
+INFO 2025-06-15 17:02:22,711 basehttp 63980 29024 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:02:22,715 basehttp 63980 29024 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:02:22,726 basehttp 63980 29024 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:02:22,729 basehttp 63980 29024 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3565
+INFO 2025-06-15 17:02:22,740 basehttp 63980 29024 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:02:22,743 basehttp 63980 29024 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:18:05,097 basehttp 63980 69984 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:18:05,454 basehttp 63980 11584 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 17:18:05,567 basehttp 63980 69984 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:18:13,693 basehttp 63980 69984 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:19:42,275 basehttp 63980 35296 "GET /admin/products/product/46/change/ HTTP/1.1" 200 96940
+INFO 2025-06-15 17:19:42,697 basehttp 63980 35296 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 17:19:43,220 basehttp 63980 35296 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 17:21:46,219 basehttp 63980 35296 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 17:21:47,564 basehttp 63980 35296 "GET /admin/products/product/ HTTP/1.1" 200 24477
+INFO 2025-06-15 17:21:49,277 basehttp 63980 69984 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3490
+INFO 2025-06-15 17:24:23,045 basehttp 63980 35296 "GET /admin/products/product/46/change/ HTTP/1.1" 200 96883
+INFO 2025-06-15 17:24:43,112 basehttp 63980 35296 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 17:24:44,019 basehttp 63980 35296 "GET /admin/products/product/ HTTP/1.1" 200 24477
+INFO 2025-06-15 17:24:44,416 basehttp 63980 35296 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 17:24:46,068 basehttp 63980 69984 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:24:46,539 basehttp 63980 69984 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:24:49,599 basehttp 63980 69984 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:24:49,603 basehttp 63980 69984 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:24:49,625 basehttp 63980 69984 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:24:49,628 basehttp 63980 69984 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3490
+INFO 2025-06-15 17:24:49,751 basehttp 63980 69984 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:24:49,754 basehttp 63980 69984 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:24:59,655 basehttp 63980 73880 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 17:25:20,158 basehttp 63980 73880 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10581
+INFO 2025-06-15 17:25:20,593 basehttp 63980 73880 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 17:25:21,214 basehttp 63980 44252 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10581
+INFO 2025-06-15 17:25:27,619 basehttp 63980 44252 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:27:06,806 basehttp 63980 69984 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 17:30:04,272 basehttp 63980 34480 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10581
+INFO 2025-06-15 17:30:04,948 basehttp 63980 34480 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 17:30:05,702 basehttp 63980 71212 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10581
+INFO 2025-06-15 17:30:47,767 basehttp 63980 71212 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:35:50,661 basehttp 63980 69764 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:35:51,891 basehttp 63980 69764 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10581
+INFO 2025-06-15 17:35:52,346 basehttp 63980 69764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 17:35:53,042 basehttp 63980 74180 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10581
+INFO 2025-06-15 17:35:54,352 basehttp 63980 74180 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 17:36:09,677 basehttp 63980 74180 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 17:38:48,054 basehttp 63980 20776 "POST /admin/products/product/45/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 17:38:49,022 basehttp 63980 20776 "GET /admin/products/product/ HTTP/1.1" 200 24482
+INFO 2025-06-15 17:38:49,084 basehttp 63980 20776 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,084 basehttp 63980 72840 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,086 basehttp 63980 61472 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,304 basehttp 63980 61472 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,305 basehttp 63980 72840 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,321 basehttp 63980 61472 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,322 basehttp 63980 20776 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,329 basehttp 63980 20776 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,330 basehttp 63980 61472 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,334 basehttp 63980 61472 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,335 basehttp 63980 20776 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,339 basehttp 63980 20776 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,342 basehttp 63980 61472 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,342 basehttp 63980 32700 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:49,351 basehttp 63980 32700 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:50,186 basehttp 63980 72840 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 17:38:50,323 basehttp 63980 72840 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-06-15 17:38:50,384 basehttp 63980 72840 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+WARNING 2025-06-15 17:38:50,981 basehttp 63980 72840 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 17:38:52,938 basehttp 63980 74180 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:38:54,006 basehttp 63980 74180 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:38:54,725 basehttp 63980 74180 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:38:55,358 basehttp 63980 74180 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:38:56,021 basehttp 63980 74180 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:39:08,237 basehttp 63980 74180 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:39:16,278 basehttp 63980 70852 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3615
+INFO 2025-06-15 17:39:55,087 basehttp 63980 72840 "GET /admin/products/product/45/change/ HTTP/1.1" 200 105256
+INFO 2025-06-15 17:40:08,610 basehttp 63980 23720 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:40:08,977 basehttp 63980 65552 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3635
+INFO 2025-06-15 17:40:09,106 basehttp 63980 23720 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:41:08,003 basehttp 63980 72840 "POST /admin/products/product/45/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 17:41:09,261 basehttp 63980 72840 "GET /admin/products/product/ HTTP/1.1" 200 24482
+INFO 2025-06-15 17:41:11,993 basehttp 63980 23720 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:41:12,001 basehttp 63980 23720 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:41:12,013 basehttp 63980 23720 "OPTIONS /api/v1/products/arab-warrior/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:41:12,016 basehttp 63980 23720 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3635
+INFO 2025-06-15 17:41:12,031 basehttp 63980 23720 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:41:12,033 basehttp 63980 23720 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:41:20,357 basehttp 63980 70852 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3637
+INFO 2025-06-15 17:42:24,691 basehttp 63980 70852 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 17:42:25,138 basehttp 63980 70852 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 17:42:26,190 basehttp 63980 45768 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 17:43:52,214 basehttp 63980 45768 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:43:52,767 basehttp 63980 45768 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 17:43:52,816 basehttp 63980 45768 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:43:52,968 basehttp 63980 45768 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:43:53,008 basehttp 63980 45768 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:43:53,456 basehttp 63980 45768 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:45:49,386 basehttp 63980 45768 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 17:45:49,988 basehttp 63980 45768 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 17:45:49,996 basehttp 63980 45768 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 17:45:50,192 basehttp 63980 70852 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 17:45:50,515 basehttp 63980 45768 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 17:45:50,796 basehttp 63980 70852 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 17:50:07,518 basehttp 63980 70852 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 17:50:08,019 basehttp 63980 70852 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 17:50:53,991 basehttp 63980 70852 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 17:50:54,514 basehttp 63980 70852 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 17:50:55,613 basehttp 63980 73780 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 17:51:58,375 basehttp 63980 73780 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:51:58,379 basehttp 63980 70852 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:51:58,941 basehttp 63980 73780 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 17:52:30,076 basehttp 63980 73780 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:52:30,077 basehttp 63980 70852 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:52:31,137 basehttp 63980 70852 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 17:52:42,149 basehttp 63980 73780 "OPTIONS /api/v1/products/arab-warrior/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:52:42,150 basehttp 63980 70852 "OPTIONS /api/v1/products/arab-warrior/ HTTP/1.1" 200 0
+INFO 2025-06-15 17:52:42,670 basehttp 63980 73780 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3637
+INFO 2025-06-15 17:53:07,303 autoreload 63980 60576 C:\Users\alien\Downloads\Malikli-son - Preview\backend\products\migrations\0008_add_performance_indexes.py changed, reloading.
+INFO 2025-06-15 17:53:09,425 autoreload 45804 66772 Watching for file changes with StatReloader
+INFO 2025-06-15 18:00:07,044 basehttp 45804 63368 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:00:07,523 basehttp 45804 63368 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:00:08,171 basehttp 45804 68452 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:00:31,412 basehttp 45804 67252 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:00:31,862 basehttp 45804 30656 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:00:31,889 basehttp 45804 67252 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 18:00:32,412 basehttp 45804 30656 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:00:32,618 basehttp 45804 67252 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:06:53,636 basehttp 45804 68300 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 18:07:13,882 basehttp 45804 68300 "OPTIONS /api/v1/carts/merge/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:07:13,888 basehttp 45804 68300 "OPTIONS /api/v1/carts/merge/ HTTP/1.1" 200 0
+WARNING 2025-06-15 18:07:14,255 basehttp 45804 68300 "POST /api/v1/carts/merge/ HTTP/1.1" 404 32
+WARNING 2025-06-15 18:07:14,713 basehttp 45804 64564 "POST /api/v1/carts/merge/ HTTP/1.1" 404 32
+INFO 2025-06-15 18:07:19,025 basehttp 45804 64564 "OPTIONS /api/v1/carts/sync/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:07:22,058 basehttp 45804 64564 "POST /api/v1/carts/sync/ HTTP/1.1" 200 4357
+INFO 2025-06-15 18:07:46,355 basehttp 45804 64564 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3637
+INFO 2025-06-15 18:08:19,776 basehttp 45804 64564 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:08:20,227 basehttp 45804 68300 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+WARNING 2025-06-15 18:08:20,270 basehttp 45804 64564 "POST /api/v1/carts/merge/ HTTP/1.1" 404 32
+INFO 2025-06-15 18:08:20,738 basehttp 45804 68300 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:08:20,925 basehttp 45804 64564 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:15:50,336 basehttp 45804 70972 "GET /admin/users/waitlistsubscriber/ HTTP/1.1" 200 28692
+INFO 2025-06-15 18:15:50,757 basehttp 45804 70972 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2025-06-15 18:15:51,152 basehttp 45804 70972 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 18:16:51,181 basehttp 45804 68956 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:16:51,613 basehttp 45804 72268 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:16:52,160 basehttp 45804 72268 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:16:53,189 basehttp 45804 62768 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:16:53,565 basehttp 45804 68956 "GET /api/v1/carts/mine/ HTTP/1.1" 200 4311
+INFO 2025-06-15 18:18:05,976 basehttp 45804 59996 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:18:06,445 basehttp 45804 59996 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:18:07,110 basehttp 45804 73804 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:18:12,935 basehttp 45804 73804 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:18:12,962 basehttp 45804 73804 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:18:13,090 basehttp 45804 73804 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:20:55,182 basehttp 45804 73804 "OPTIONS /api/v1/carts/sync/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:20:57,596 basehttp 45804 73804 "POST /api/v1/carts/sync/ HTTP/1.1" 200 4355
+INFO 2025-06-15 18:21:14,145 basehttp 45804 73804 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:21:14,154 basehttp 45804 73804 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:21:14,353 basehttp 45804 73804 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:21:21,696 basehttp 45804 59996 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3637
+INFO 2025-06-15 18:21:24,684 basehttp 45804 73804 "POST /api/v1/carts/sync/ HTTP/1.1" 200 12655
+INFO 2025-06-15 18:21:34,404 basehttp 45804 73804 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 18:21:52,061 basehttp 45804 73804 "POST /api/v1/carts/sync/ HTTP/1.1" 200 12656
+INFO 2025-06-15 18:23:04,193 basehttp 45804 48700 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:23:04,309 basehttp 45804 48700 "OPTIONS /api/v1/carts/merge/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:23:04,553 basehttp 45804 74688 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+WARNING 2025-06-15 18:23:04,666 basehttp 45804 48700 "POST /api/v1/carts/merge/ HTTP/1.1" 404 32
+INFO 2025-06-15 18:23:06,895 basehttp 45804 48700 "GET /api/v1/carts/mine/ HTTP/1.1" 200 4311
+INFO 2025-06-15 18:25:20,586 basehttp 45804 22956 "GET /admin/users/waitlistsubscriber/ HTTP/1.1" 200 28692
+INFO 2025-06-15 18:25:21,273 basehttp 45804 22956 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 18:25:36,944 basehttp 45804 52596 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:25:37,591 basehttp 45804 42200 "GET /api/v1/auth/profile/ HTTP/1.1" 200 1073
+INFO 2025-06-15 18:25:37,622 basehttp 45804 42200 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:25:37,947 basehttp 45804 52596 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 18:25:38,090 basehttp 45804 42200 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 18:26:35,513 basehttp 45804 73804 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:26:35,968 basehttp 45804 73804 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:26:36,999 basehttp 45804 54740 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:27:31,179 basehttp 45804 58276 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 18:28:03,605 basehttp 45804 58276 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 18:28:50,704 basehttp 45804 58276 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:28:51,282 basehttp 45804 58276 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 18:28:51,357 basehttp 45804 58276 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:28:51,512 basehttp 45804 58276 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:28:52,104 basehttp 45804 58276 "OPTIONS /api/v1/carts/merge/ HTTP/1.1" 200 0
+WARNING 2025-06-15 18:28:52,699 basehttp 45804 58276 "POST /api/v1/carts/merge/ HTTP/1.1" 404 32
+INFO 2025-06-15 18:28:52,752 basehttp 45804 58276 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:28:53,197 basehttp 45804 58276 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 18:30:23,352 basehttp 45804 58276 "OPTIONS /api/v1/products/arab-warrior/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:30:23,354 basehttp 45804 58276 "OPTIONS /api/v1/products/arab-warrior/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:30:23,882 basehttp 45804 58276 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3637
+INFO 2025-06-15 18:44:17,227 basehttp 45804 71828 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:44:17,248 basehttp 45804 71828 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:44:17,487 basehttp 45804 71828 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 771
+INFO 2025-06-15 18:44:18,010 basehttp 45804 71828 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 18:44:18,013 basehttp 45804 71828 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 18:44:18,375 basehttp 45804 59416 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 18:44:18,699 basehttp 45804 71828 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:44:18,703 basehttp 45804 71828 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 18:44:18,703 basehttp 45804 59416 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 18:44:18,808 basehttp 45804 68196 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 18:44:18,808 basehttp 45804 59416 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 18:44:19,367 basehttp 45804 71828 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:44:19,531 basehttp 45804 59416 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:47:10,878 basehttp 45804 59416 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:47:10,909 basehttp 45804 59416 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 18:47:11,434 basehttp 45804 59416 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:47:11,434 basehttp 45804 71828 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:47:11,503 basehttp 45804 71828 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:47:11,506 basehttp 45804 59416 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 18:47:11,513 basehttp 45804 71828 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:47:11,514 basehttp 45804 59416 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 18:47:11,592 basehttp 45804 59416 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 18:47:11,594 basehttp 45804 59416 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:49:38,752 basehttp 45804 31784 "GET /admin/drops/drop/ HTTP/1.1" 200 23635
+INFO 2025-06-15 18:49:39,346 basehttp 45804 31784 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 18:49:43,091 basehttp 45804 31784 "GET /admin/products/product/ HTTP/1.1" 200 24263
+INFO 2025-06-15 18:50:16,646 basehttp 45804 31784 "GET /admin/products/product/47/change/ HTTP/1.1" 200 109125
+INFO 2025-06-15 18:55:02,385 basehttp 45804 69444 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:55:02,828 basehttp 45804 67172 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:55:02,842 basehttp 45804 69444 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 18:55:03,356 basehttp 45804 67172 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:55:03,548 basehttp 45804 69444 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:55:22,232 basehttp 45804 69248 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 18:55:22,810 basehttp 45804 71276 - Broken pipe from ('127.0.0.1', 53746)
+INFO 2025-06-15 18:55:23,433 basehttp 45804 69248 - Broken pipe from ('127.0.0.1', 53748)
+INFO 2025-06-15 18:55:24,077 basehttp 45804 67352 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:55:24,632 basehttp 45804 67352 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:55:25,881 basehttp 45804 67352 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:56:20,495 basehttp 45804 69444 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:56:20,499 basehttp 45804 69444 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 18:56:20,499 basehttp 45804 67172 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 18:56:20,503 basehttp 45804 67172 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:56:20,552 basehttp 45804 67172 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:56:20,557 basehttp 45804 69444 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 18:56:20,578 basehttp 45804 69444 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 18:56:20,584 basehttp 45804 67172 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:56:20,675 basehttp 45804 67172 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 18:56:20,728 basehttp 45804 67172 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:56:26,102 basehttp 45804 31732 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:56:26,129 basehttp 45804 31732 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:56:26,231 basehttp 45804 31732 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:58:12,777 basehttp 45804 75608 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:58:12,780 basehttp 45804 75608 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 18:58:12,885 basehttp 45804 75608 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 18:58:13,887 basehttp 45804 16764 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 18:58:13,887 basehttp 45804 75248 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+WARNING 2025-06-15 18:58:14,171 basehttp 45804 74256 "POST /api/v1/carts/merge/ HTTP/1.1" 401 82
+WARNING 2025-06-15 18:58:14,173 basehttp 45804 74256 "POST /api/v1/carts/merge/ HTTP/1.1" 401 82
+INFO 2025-06-15 18:58:15,655 basehttp 45804 72996 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 18:58:15,730 basehttp 45804 75248 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 18:58:15,732 basehttp 45804 74256 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 18:58:15,803 basehttp 45804 15008 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 19:02:05,039 basehttp 45804 74000 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:02:05,465 basehttp 45804 72540 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:02:05,499 basehttp 45804 74000 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:02:05,973 basehttp 45804 72540 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:02:06,235 basehttp 45804 74000 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:02:09,538 basehttp 45804 74000 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:02:09,543 basehttp 45804 74000 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:02:09,584 basehttp 45804 74000 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 19:02:09,598 basehttp 45804 74000 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:02:09,605 basehttp 45804 74000 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:02:09,609 basehttp 45804 72540 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:02:09,619 basehttp 45804 72540 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 19:02:09,623 basehttp 45804 72540 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:02:09,721 basehttp 45804 72540 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 19:02:09,727 basehttp 45804 72540 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:07:45,984 basehttp 45804 58176 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:07:46,432 basehttp 45804 73216 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:07:46,537 basehttp 45804 58176 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:07:47,117 basehttp 45804 73216 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:07:47,284 basehttp 45804 58176 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:08:51,988 basehttp 45804 58176 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:08:51,993 basehttp 45804 73216 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 19:08:52,005 basehttp 45804 73216 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:08:52,005 basehttp 45804 58176 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:08:52,665 basehttp 45804 73216 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:08:52,818 basehttp 45804 73216 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:08:52,886 basehttp 45804 58176 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 19:08:52,888 basehttp 45804 58176 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:08:53,401 basehttp 45804 59756 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 19:08:53,530 basehttp 45804 58176 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:08:55,255 basehttp 45804 41004 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:08:56,053 basehttp 45804 41004 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:08:56,580 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:09:01,957 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:09:01,962 basehttp 45804 74764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:09:02,064 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:09:55,452 basehttp 45804 67840 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:09:55,457 basehttp 45804 67840 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:09:55,560 basehttp 45804 67840 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:10:01,864 basehttp 45804 67840 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:13:53,638 basehttp 45804 58176 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:13:53,949 basehttp 45804 5800 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:13:54,159 basehttp 45804 5800 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:13:54,416 basehttp 45804 58176 - Broken pipe from ('127.0.0.1', 54793)
+INFO 2025-06-15 19:13:54,647 basehttp 45804 59756 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:13:54,650 basehttp 45804 59756 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:13:55,290 basehttp 45804 59756 - Broken pipe from ('127.0.0.1', 54896)
+INFO 2025-06-15 19:13:58,592 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:13:58,992 basehttp 45804 5800 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:13:59,129 basehttp 45804 74764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:13:59,439 basehttp 45804 5800 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:13:59,509 basehttp 45804 67840 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:13:59,515 basehttp 45804 67840 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:13:59,665 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:13:59,667 basehttp 45804 25120 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:14:00,099 basehttp 45804 67840 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:14:00,251 basehttp 45804 5800 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:14:01,308 basehttp 45804 25120 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:15:19,480 basehttp 45804 25120 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:19,485 basehttp 45804 25120 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:15:19,487 basehttp 45804 25120 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:19,492 basehttp 45804 25120 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:15:19,542 basehttp 45804 25120 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:19,548 basehttp 45804 25120 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:19,557 basehttp 45804 25120 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:15:19,569 basehttp 45804 25120 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:15:19,664 basehttp 45804 25120 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:19,671 basehttp 45804 25120 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:15:22,409 basehttp 45804 25120 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:22,417 basehttp 45804 25120 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:22,417 basehttp 45804 29560 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:15:22,421 basehttp 45804 29560 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:15:22,435 basehttp 45804 29560 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:22,440 basehttp 45804 29560 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:15:22,458 basehttp 45804 29560 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:22,475 basehttp 45804 29560 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:15:22,588 basehttp 45804 29560 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:22,593 basehttp 45804 29560 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:15:23,523 basehttp 45804 29560 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:23,525 basehttp 45804 29560 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:15:23,533 basehttp 45804 29560 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:23,535 basehttp 45804 29560 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:15:23,542 basehttp 45804 29560 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:23,546 basehttp 45804 25120 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:15:23,546 basehttp 45804 29560 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:23,550 basehttp 45804 25120 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:15:23,708 basehttp 45804 25120 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 19:15:23,714 basehttp 45804 25120 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:16:07,034 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:16:07,040 basehttp 45804 74764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:16:10,220 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:16:10,226 basehttp 45804 74764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:16:30,090 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:16:30,094 basehttp 45804 74764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:16:30,199 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:20:20,884 basehttp 45804 74764 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:20:21,339 basehttp 45804 74764 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:20:22,253 basehttp 45804 32036 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:25:22,781 basehttp 45804 32036 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:25:23,225 basehttp 45804 32036 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:25:24,280 basehttp 45804 38444 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:34:07,145 basehttp 45804 74744 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:34:07,588 basehttp 45804 74744 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:34:08,236 basehttp 45804 74736 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:25,316 basehttp 45804 73764 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 19:41:25,392 basehttp 45804 66284 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:41:25,460 basehttp 45804 55912 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 19:41:25,465 basehttp 45804 72300 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 19:41:25,470 basehttp 45804 69944 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:25,531 basehttp 45804 52620 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 19:41:25,539 basehttp 45804 55964 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:25,554 basehttp 45804 40124 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:25,918 basehttp 45804 69944 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:41:26,009 basehttp 45804 40124 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:41:26,058 basehttp 45804 55964 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:41:26,249 basehttp 45804 66284 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:26,566 basehttp 45804 69196 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:26,627 basehttp 45804 40124 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:36,924 basehttp 45804 22984 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:41:37,643 basehttp 45804 22984 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:41:37,744 basehttp 45804 72468 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:42:37,001 basehttp 45804 72468 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:42:38,143 basehttp 45804 72468 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 19:42:38,414 basehttp 45804 72468 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:42:38,575 basehttp 45804 72468 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:42:39,034 basehttp 45804 72468 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:42:39,485 basehttp 45804 72468 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:43:02,828 basehttp 45804 22984 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:43:02,829 basehttp 45804 72468 "OPTIONS /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:43:03,358 basehttp 45804 72468 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 19:45:56,766 basehttp 45804 72468 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 19:45:57,908 basehttp 45804 72468 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:45:57,976 basehttp 45804 72468 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 19:45:58,083 basehttp 45804 22984 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 19:45:58,495 basehttp 45804 72468 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:45:59,221 basehttp 45804 22984 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:47:38,225 basehttp 45804 22984 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:47:38,226 basehttp 45804 72468 "OPTIONS /api/v1/products/samurai/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:47:38,748 basehttp 45804 22984 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 19:49:22,277 basehttp 45804 22984 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 19:49:23,252 basehttp 45804 22984 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 19:51:26,437 basehttp 45804 22984 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:51:27,111 basehttp 45804 22984 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 486
+INFO 2025-06-15 19:51:27,322 basehttp 45804 72468 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10603
+INFO 2025-06-15 19:53:57,829 basehttp 45804 72468 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3483
+INFO 2025-06-15 19:54:18,495 basehttp 45804 72468 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 19:54:18,722 basehttp 45804 72468 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 771
+INFO 2025-06-15 20:08:12,989 basehttp 45804 3576 "GET /admin/ HTTP/1.1" 200 23768
+INFO 2025-06-15 20:08:22,013 basehttp 45804 3576 "GET /admin/products/product/ HTTP/1.1" 200 24263
+INFO 2025-06-15 20:08:23,045 basehttp 45804 3576 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2025-06-15 20:08:47,054 basehttp 45804 3576 "GET /admin/products/product/46/change/ HTTP/1.1" 200 96880
+INFO 2025-06-15 20:09:05,773 basehttp 45804 3576 "GET /admin/products/category/42/change/?_to_field=id&_popup=1 HTTP/1.1" 200 9474
+INFO 2025-06-15 20:09:26,629 basehttp 45804 3576 "POST /admin/products/category/42/change/?_to_field=id&_popup=1 HTTP/1.1" 200 456
+INFO 2025-06-15 20:09:37,271 basehttp 45804 3576 "POST /admin/products/product/46/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 20:09:38,925 basehttp 45804 3576 "GET /admin/products/product/ HTTP/1.1" 200 24479
+INFO 2025-06-15 20:10:00,843 basehttp 45804 27004 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10604
+INFO 2025-06-15 20:10:01,278 basehttp 45804 27004 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:10:02,148 basehttp 45804 59232 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10604
+INFO 2025-06-15 20:10:03,645 basehttp 45804 59232 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10604
+INFO 2025-06-15 20:10:03,655 basehttp 45804 59232 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:10:03,776 basehttp 45804 59232 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10604
+INFO 2025-06-15 20:10:11,757 basehttp 45804 3576 "GET /admin/products/product/45/change/ HTTP/1.1" 200 105259
+WARNING 2025-06-15 20:10:12,721 basehttp 45804 3576 "GET /favicon.ico HTTP/1.1" 404 3114
+INFO 2025-06-15 20:10:53,334 basehttp 45804 3576 "POST /admin/products/product/45/change/ HTTP/1.1" 302 0
+INFO 2025-06-15 20:10:54,203 basehttp 45804 3576 "GET /admin/products/product/ HTTP/1.1" 200 24482
+INFO 2025-06-15 20:11:07,917 basehttp 45804 59232 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10604
+INFO 2025-06-15 20:11:07,928 basehttp 45804 59232 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:11:20,737 basehttp 45804 73036 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10604
+INFO 2025-06-15 20:11:20,750 basehttp 45804 73036 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:11:20,849 basehttp 45804 73036 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10604
+INFO 2025-06-15 20:11:48,057 basehttp 45804 63168 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 20:11:48,529 basehttp 45804 63168 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 20:11:48,546 basehttp 45804 74464 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:11:49,208 basehttp 45804 74464 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:11:49,387 basehttp 45804 63168 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:12:26,023 basehttp 45804 63168 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 20:39:02,750 basehttp 45804 32468 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:39:03,521 basehttp 45804 42900 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 20:39:03,667 basehttp 45804 69904 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 20:39:03,667 basehttp 45804 70972 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 20:39:03,727 basehttp 45804 55464 "GET /api/v1/products/samurai/ HTTP/1.1" 200 3484
+INFO 2025-06-15 20:39:03,740 basehttp 45804 6304 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:39:03,799 basehttp 45804 63104 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:39:03,853 basehttp 45804 32468 "GET /api/v1/carts/mine/ HTTP/1.1" 200 214
+INFO 2025-06-15 20:39:04,202 basehttp 45804 6304 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:39:04,327 basehttp 45804 63104 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:39:04,844 basehttp 45804 70324 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:39:04,845 basehttp 45804 69904 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:39:04,854 basehttp 45804 70324 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:39:04,916 basehttp 45804 70972 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:39:05,095 basehttp 45804 70324 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:44:16,392 basehttp 45804 21220 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:44:17,532 basehttp 45804 21220 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:44:18,319 basehttp 45804 68204 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:49:57,770 basehttp 45804 66896 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 20:49:58,180 basehttp 45804 57664 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:49:58,252 basehttp 45804 66896 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 20:49:58,703 basehttp 45804 57664 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:49:58,872 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:50:01,761 basehttp 45804 66896 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:50:01,770 basehttp 45804 66896 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 20:50:01,770 basehttp 45804 57664 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 20:50:01,794 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:50:01,819 basehttp 45804 66896 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:50:01,830 basehttp 45804 66896 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 20:50:01,835 basehttp 45804 66896 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 20:50:01,837 basehttp 45804 57664 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:50:02,000 basehttp 45804 57664 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 20:50:02,020 basehttp 45804 57664 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:50:44,617 basehttp 45804 57664 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:50:45,069 basehttp 45804 57664 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:50:45,254 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:47,175 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:47,190 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:47,295 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:48,613 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:48,623 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:48,807 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:50,284 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:50,291 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:50,465 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:51,993 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:52,001 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:52,170 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:53,496 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:53,505 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:53,670 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:54,977 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:55,043 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:55,163 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:56,837 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:56,852 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:57,024 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:58,345 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:58,446 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:51:58,534 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:59,936 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:51:59,945 basehttp 45804 66896 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:52:00,100 basehttp 45804 66896 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:52:26,304 basehttp 45804 75372 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:52:26,309 basehttp 45804 75372 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:52:26,410 basehttp 45804 75372 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:53:19,720 basehttp 45804 75372 "GET /api/v1/products/zip-neck-t-shirt/ HTTP/1.1" 200 3429
+INFO 2025-06-15 20:54:01,651 basehttp 45804 18704 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:54:01,657 basehttp 45804 18704 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:54:01,763 basehttp 45804 18704 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:54:13,866 basehttp 45804 18704 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:54:14,972 basehttp 45804 18704 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 20:54:14,994 basehttp 45804 18704 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:54:15,152 basehttp 45804 18704 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 20:54:15,182 basehttp 45804 18704 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:54:15,356 basehttp 45804 70736 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:54:15,637 basehttp 45804 18704 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 20:54:16,021 basehttp 45804 70736 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 771
+INFO 2025-06-15 20:54:38,900 basehttp 45804 70736 "OPTIONS /api/v1/auth/addresses/4/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:54:39,418 basehttp 45804 70736 "DELETE /api/v1/auth/addresses/4/ HTTP/1.1" 204 0
+INFO 2025-06-15 20:54:51,989 basehttp 45804 70736 "PATCH /api/v1/auth/profile/ HTTP/1.1" 200 632
+INFO 2025-06-15 20:54:52,167 basehttp 45804 70736 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 20:55:10,204 basehttp 45804 18704 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 20:55:10,204 basehttp 45804 70736 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 20:55:10,972 basehttp 45804 70736 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:55:10,979 basehttp 45804 70736 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 20:55:10,980 basehttp 45804 18704 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 20:55:11,158 basehttp 45804 18704 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 20:55:11,160 basehttp 45804 18704 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 20:55:11,612 basehttp 45804 70736 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:55:11,780 basehttp 45804 18704 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:55:52,451 basehttp 45804 18704 "OPTIONS /api/v1/orders/create-direct/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:55:52,534 views 45804 18704 === CREATE DIRECT ORDER REQUEST ===
+INFO 2025-06-15 20:55:52,536 views 45804 18704 Request data: {'product_id': 47, 'quantity': 1, 'shipping_address_id': 4, 'billing_address_id': 4, 'shipping_method_id': 1, 'customer_notes': '', 'product_variant_id': 98, 'color': '#1e2f34', 'size': 'XL'}
+INFO 2025-06-15 20:55:52,536 views 45804 18704 User authenticated: True
+INFO 2025-06-15 20:55:52,536 views 45804 18704 User: Malikli
+ERROR 2025-06-15 20:55:53,113 views 45804 18704 === VALIDATION ERROR ===
+ERROR 2025-06-15 20:55:53,114 views 45804 18704 Validation errors: {'shipping_address_id': [ErrorDetail(string='Shipping address not found.', code='invalid')], 'billing_address_id': [ErrorDetail(string='Billing address not found.', code='invalid')]}
+ERROR 2025-06-15 20:55:53,114 views 45804 18704 Exception: {'shipping_address_id': [ErrorDetail(string='Shipping address not found.', code='invalid')], 'billing_address_id': [ErrorDetail(string='Billing address not found.', code='invalid')]}
+WARNING 2025-06-15 20:55:53,116 basehttp 45804 18704 "POST /api/v1/orders/create-direct/ HTTP/1.1" 400 147
+INFO 2025-06-15 20:56:25,890 basehttp 45804 18704 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:56:25,894 basehttp 45804 18704 "GET /api/v1/auth/profile/ HTTP/1.1" 200 988
+INFO 2025-06-15 20:56:25,984 basehttp 45804 18704 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:56:25,986 basehttp 45804 18704 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 771
+INFO 2025-06-15 20:56:26,013 basehttp 45804 18704 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 20:56:26,016 basehttp 45804 18704 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+WARNING 2025-06-15 20:56:28,548 basehttp 45804 18704 "DELETE /api/v1/auth/addresses/4/ HTTP/1.1" 404 48
+INFO 2025-06-15 20:58:41,384 basehttp 45804 44660 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:58:41,841 basehttp 45804 44660 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 20:58:42,506 basehttp 45804 63956 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 20:59:13,373 basehttp 45804 63956 "GET /api/v1/products/arab-warrior/ HTTP/1.1" 200 3635
+INFO 2025-06-15 21:00:16,089 basehttp 45804 63956 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:16,924 basehttp 45804 63956 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 21:00:16,959 basehttp 45804 63956 "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:17,116 basehttp 45804 63956 "GET /api/v1/auth/profile/ HTTP/1.1" 200 632
+INFO 2025-06-15 21:00:17,151 basehttp 45804 63956 "OPTIONS /api/v1/carts/mine/ HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:17,582 basehttp 45804 63956 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 21:00:17,594 basehttp 45804 63956 "OPTIONS /api/v1/auth/addresses/ HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:17,811 basehttp 45804 63956 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 411
+INFO 2025-06-15 21:00:19,085 basehttp 45804 63956 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:19,085 basehttp 45804 44660 "OPTIONS /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:19,669 basehttp 45804 44660 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:00:19,864 basehttp 45804 44660 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:19,866 basehttp 45804 63956 "OPTIONS /api/v1/categories/?is_featured=true HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:19,967 basehttp 45804 63956 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:19,968 basehttp 45804 63956 "OPTIONS /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 0
+INFO 2025-06-15 21:00:20,375 basehttp 45804 44660 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:00:20,544 basehttp 45804 63956 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:00:48,435 basehttp 45804 63956 "PATCH /api/v1/auth/profile/ HTTP/1.1" 200 639
+INFO 2025-06-15 21:00:48,677 basehttp 45804 63956 "GET /api/v1/auth/profile/ HTTP/1.1" 200 632
+INFO 2025-06-15 21:01:20,018 basehttp 45804 63956 "POST /api/v1/auth/login/ HTTP/1.1" 200 483
+INFO 2025-06-15 21:01:20,212 basehttp 45804 63956 "GET /api/v1/auth/profile/ HTTP/1.1" 200 639
+INFO 2025-06-15 21:01:20,676 basehttp 45804 63956 "GET /api/v1/carts/mine/ HTTP/1.1" 200 216
+INFO 2025-06-15 21:01:20,738 basehttp 45804 44660 "GET /api/v1/auth/addresses/ HTTP/1.1" 200 411
+INFO 2025-06-15 21:01:50,773 basehttp 45804 44660 "GET /api/v1/products/?page=1&page_size=8 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:01:51,408 basehttp 45804 44660 "GET /api/v1/categories/?is_featured=true HTTP/1.1" 200 488
+INFO 2025-06-15 21:01:51,556 basehttp 45804 63956 "GET /api/v1/products/?page=1&page_size=50 HTTP/1.1" 200 10602
+INFO 2025-06-15 21:06:17,296 autoreload 45804 66772 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 21:06:19,515 autoreload 71072 4748 Watching for file changes with StatReloader
+INFO 2025-06-15 21:06:22,326 autoreload 71072 4748 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 21:06:23,491 autoreload 53380 70172 Watching for file changes with StatReloader
+INFO 2025-06-15 21:06:30,225 autoreload 53380 70172 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 21:06:31,557 autoreload 8068 57880 Watching for file changes with StatReloader
+INFO 2025-06-15 21:06:33,609 autoreload 8068 57880 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 21:06:34,883 autoreload 40004 56032 Watching for file changes with StatReloader
+INFO 2025-06-15 21:06:42,697 autoreload 40004 56032 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 21:06:43,883 autoreload 62888 36356 Watching for file changes with StatReloader
+INFO 2025-06-15 21:06:46,098 autoreload 62888 36356 C:\Users\alien\Downloads\Malikli-son - Preview\backend\backend\settings.py changed, reloading.
+INFO 2025-06-15 21:06:47,328 autoreload 52992 68144 Watching for file changes with StatReloader

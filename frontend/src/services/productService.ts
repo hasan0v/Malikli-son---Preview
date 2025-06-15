@@ -10,6 +10,23 @@ interface PaginatedResponse<T> {
   results: T[];
 }
 
+// Cache for products and categories
+const cache = new Map<string, { data: any; timestamp: number }>();
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
+function getCachedData<T>(key: string): T | null {
+  const cached = cache.get(key);
+  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+    return cached.data;
+  }
+  cache.delete(key);
+  return null;
+}
+
+function setCachedData<T>(key: string, data: T): void {
+  cache.set(key, { data, timestamp: Date.now() });
+}
+
 export const categoryToSliderItem = (category: ProductCategory, index: number) => {
   // Use category image if available, otherwise use a placeholder
   const imageSrc = category.image || '/placeholder-slider.jpg';
@@ -25,15 +42,88 @@ export const categoryToSliderItem = (category: ProductCategory, index: number) =
 };
 
 /**
- * Fetch all products from the API
+ * Fetch all products from the API with caching and pagination support
  */
-export async function getProducts(): Promise<Product[]> {
+export async function getProducts(page: number = 1, pageSize: number = 20): Promise<Product[]> {
+  const cacheKey = `products_${page}_${pageSize}`;
+  
+  // Check cache first
+  const cachedData = getCachedData<Product[]>(cacheKey);
+  if (cachedData) {
+    return cachedData;
+  }
+  
   try {
-    const response = await apiClient.get<PaginatedResponse<Product>>('/products/');
-    // Return the results array from the paginated response
-    return response.data.results || [];
+    const response = await apiClient.get<PaginatedResponse<Product>>(`/products/?page=${page}&page_size=${pageSize}`);
+    const products = response.data.results || [];
+    
+    // Cache the results
+    setCachedData(cacheKey, products);
+    
+    return products;
   } catch (error) {
     console.error("Error fetching products:", error);
+    return []; // Return empty array on error
+  }
+}
+
+/**
+ * Fetch first page of products immediately for LCP optimization
+ */
+export async function getProductsForLCP(): Promise<Product[]> {
+  const cacheKey = 'products_lcp_first_page';
+  
+  // Check cache first
+  const cachedData = getCachedData<Product[]>(cacheKey);
+  if (cachedData) {
+    return cachedData;
+  }
+  
+  try {
+    // Get first 8 products only for immediate display
+    const response = await apiClient.get<PaginatedResponse<Product>>(`/products/?page=1&page_size=8`);
+    const products = response.data.results || [];
+    
+    // Cache the results
+    setCachedData(cacheKey, products);
+    
+    return products;
+  } catch (error) {
+    console.error("Error fetching LCP products:", error);
+    return []; // Return empty array on error
+  }
+}
+
+/**
+ * Fetch all products at once (for homepage)
+ */
+export async function getAllProducts(): Promise<Product[]> {
+  const cacheKey = 'all_products';
+  
+  // Check cache first
+  const cachedData = getCachedData<Product[]>(cacheKey);
+  if (cachedData) {
+    return cachedData;
+  }
+  
+  try {
+    let allProducts: Product[] = [];
+    let page = 1;
+    let hasNext = true;
+    
+    while (hasNext) {
+      const response = await apiClient.get<PaginatedResponse<Product>>(`/products/?page=${page}&page_size=50`);
+      allProducts = [...allProducts, ...(response.data.results || [])];
+      hasNext = !!response.data.next;
+      page++;
+    }
+    
+    // Cache the results
+    setCachedData(cacheKey, allProducts);
+    
+    return allProducts;
+  } catch (error) {
+    console.error("Error fetching all products:", error);
     return []; // Return empty array on error
   }
 }
@@ -42,9 +132,22 @@ export async function getProducts(): Promise<Product[]> {
  * Fetch a single product by slug
  */
 export async function getProductBySlug(slug: string): Promise<Product | null> {
+  const cacheKey = `product_${slug}`;
+  
+  // Check cache first
+  const cachedData = getCachedData<Product>(cacheKey);
+  if (cachedData) {
+    return cachedData;
+  }
+  
   try {
     const response = await apiClient.get(`/products/${slug}/`);
-    return response.data;
+    const product = response.data;
+    
+    // Cache the result
+    setCachedData(cacheKey, product);
+    
+    return product;
   } catch (error: any) {
     if (error.response?.status === 404) {
       return null;
@@ -59,13 +162,27 @@ export async function getProductBySlug(slug: string): Promise<Product | null> {
  * @param featured Optional flag to fetch only featured categories
  */
 export async function getCategories(featured?: boolean): Promise<ProductCategory[]> {
+  const cacheKey = `categories_${featured ? 'featured' : 'all'}`;
+  
+  // Check cache first
+  const cachedData = getCachedData<ProductCategory[]>(cacheKey);
+  if (cachedData) {
+    return cachedData;
+  }
+  
   try {
     let url = '/categories/';
     if (featured) {
       url += '?is_featured=true';
     }
-      const response = await apiClient.get<PaginatedResponse<ProductCategory>>(url);
-    return response.data.results || [];
+    
+    const response = await apiClient.get<PaginatedResponse<ProductCategory>>(url);
+    const categories = response.data.results || [];
+    
+    // Cache the results
+    setCachedData(cacheKey, categories);
+    
+    return categories;
   } catch (error) {
     console.error("Error fetching categories:", error);
     return []; // Return empty array on error
@@ -73,14 +190,34 @@ export async function getCategories(featured?: boolean): Promise<ProductCategory
 }
 
 /**
- * Fetch products by category slug
+ * Fetch products by category slug with caching
  */
-export async function getProductsByCategory(categorySlug: string): Promise<Product[]> {
+export async function getProductsByCategory(categorySlug: string, page: number = 1): Promise<Product[]> {
+  const cacheKey = `products_category_${categorySlug}_${page}`;
+  
+  // Check cache first
+  const cachedData = getCachedData<Product[]>(cacheKey);
+  if (cachedData) {
+    return cachedData;
+  }
+  
   try {
-    const response = await apiClient.get<PaginatedResponse<Product>>(`/products/?category__slug=${categorySlug}`);
-    return response.data.results || [];
+    const response = await apiClient.get<PaginatedResponse<Product>>(`/products/?category__slug=${categorySlug}&page=${page}`);
+    const products = response.data.results || [];
+    
+    // Cache the results
+    setCachedData(cacheKey, products);
+    
+    return products;
   } catch (error) {
     console.error(`Error fetching products for category ${categorySlug}:`, error);
     return []; // Return empty array on error
   }
+}
+
+/**
+ * Clear cache (useful for admin actions or when data needs to be refreshed)
+ */
+export function clearProductCache(): void {
+  cache.clear();
 }

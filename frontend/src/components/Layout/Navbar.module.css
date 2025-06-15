@@ -148,7 +148,7 @@
 }
 
 .mobileMenu.dark {
-  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  background: linear-gradient(135deg, #0ABAB5 0%, #08a0a5 100%);
   backdrop-filter: blur(19px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -503,14 +503,58 @@
   }
 }
 
+.desktopLanguageSwitcher {
+  display: flex;
+  align-items: center;
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
+  .navContainer {
+    padding: 0 12px; /* Reduce padding for more space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logoContainer {
+    flex-shrink: 0;
+    order: 1; /* Logo comes first */
+  }
+
+  .logoContainer img {
+    max-height: 28px; /* Significantly reduce logo size on mobile */
+  }
+
+  .logo, .logoWhite {
+    max-height: 28px; /* Ensure both logo variants are smaller */
+  }
+
   .navLinks {
+    display: none;
+  }  .navIcons {
+    display: flex;
+    gap: 12px; /* Reduce gap between icons */
+    align-items: center;
+    order: 2; /* Keep profile menu visible */
+    flex-shrink: 0;
+  }
+
+  /* Hide language switcher on mobile since it's in hamburger menu */
+  .navIcons > :first-child {
+    display: none;
+  }
+
+  /* Hide language switcher on mobile since it's in hamburger menu */
+  .desktopLanguageSwitcher {
     display: none;
   }
 
   .mobileMenuButton {
     display: block;
+    order: 3; /* Ensure hamburger menu is always visible */
+    flex-shrink: 0;
+    margin-left: 8px; /* Add small spacing */
   }
 
   .mobileMenu {
@@ -522,7 +566,7 @@
   }
 
   .userName {
-    display: none;
+    display: none; /* Hide username text on mobile to save space */
   }
 
   .userAvatar {
@@ -530,9 +574,190 @@
     height: 32px;
     font-size: 13px;
   }
+
   .userDropdown {
     right: -10px;
     min-width: 180px;
+  }
+
+  /* Ensure icons remain visible and properly sized */
+  .iconSvg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Ensure proper spacing and prevent overflow */
+  .navContainer > * {
+    flex-shrink: 0;
+  }
+}
+
+/* Extra small screens (small phones) */
+@media (max-width: 480px) {
+  .navContainer {
+    padding: 0 8px; /* Even less padding on very small screens */
+  }
+
+  .logoContainer img {
+    max-height: 24px; /* Further reduce logo size */
+  }
+
+  .logo, .logoWhite {
+    max-height: 24px;
+  }
+
+  .navIcons {
+    gap: 8px; /* Reduce gap further */
+  }
+
+  .userAvatar {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .iconSvg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .userButton {
+    padding: 4px 6px;
+  }
+
+  /* Ensure the navbar height can be slightly reduced if needed */
+  .navbar {
+    height: 70px;
+  }
+
+  .mobileMenu {
+    top: 70px;
+  }
+
+  .mobileMenu.open {
+    height: calc(100vh - 70px);
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar {
+    height: 60px; /* Reduce height in landscape mode */
+  }
+
+  .logoContainer img {
+    max-height: 22px;
+  }
+
+  .logo, .logoWhite {
+    max-height: 22px;
+  }
+
+  .mobileMenu {
+    top: 60px;
+  }
+
+  .mobileMenu.open {
+    height: calc(100vh - 60px);
+  }
+}
+
+/* Adjustments for very small screens (like iPhone SE) */
+@media (max-width: 375px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .navContainer {
+    padding: 0 10px;
+  }
+
+  .logoContainer img {
+    max-height: 20px;
+  }
+
+  .logo, .logoWhite {
+    max-height: 20px;
+  }
+
+  .navIcons {
+    gap: 6px;
+  }
+
+  .userAvatar {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .iconSvg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .userButton {
+    padding: 2px 4px;
+  }
+
+  .mobileMenu {
+    top: 60px;
+  }
+
+  .mobileMenu.open {
+    height: calc(100vh - 60px);
+  }
+}
+
+/* Very small devices (like older iPhones) */
+@media (max-width: 320px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .navContainer {
+    padding: 0 8px;
+  }
+
+  .logoContainer img {
+    max-height: 18px;
+  }
+
+  .logo, .logoWhite {
+    max-height: 18px;
+  }
+
+  .navIcons {
+    gap: 4px;
+  }
+
+  .userAvatar {
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+  }
+
+  .iconSvg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .userButton {
+    padding: 2px 4px;
+  }
+
+  .mobileMenu {
+    top: 50px;
+  }
+
+  .mobileMenu.open {
+    height: calc(100vh - 50px);
+  }
+}
+
+/* Hide mobile user menu by default on very small screens */
+@media (max-width: 375px) {
+  .mobileUserSection {
+    display: none;
   }
 }
 
@@ -543,5 +768,5 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 1rem 0;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }

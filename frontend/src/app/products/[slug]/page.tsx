@@ -10,6 +10,7 @@ import { getProductBySlug } from '@/services/productService';
 import { addToCart, addToCartAPI } from '@/store/cartSlice';
 import { RootState, AppDispatch } from '@/store/store';
 import LoadingCircle from '@/components/LoadingCircle';
+import ProductDescription from '@/components/ProductDescription';
 import { useI18n } from '../../../hooks/useI18n';
 import styles from './productDetail.module.css';
 
@@ -454,10 +455,9 @@ export default function ProductDetailPage() {  const { t } = useI18n();
             <div className={`${styles.availabilityDot} ${availabilityDotClass}`}></div>            <span className={`${styles.availabilityText} ${availabilityTextClass}`}>
               {t('product.availability.inStock')}
             </span>
-          </div>
-
-          {/* Description */}
-          <div className={styles.description}>            {product.description || t('product.description.noDescription')}
+          </div>          {/* Description */}
+          <div className={styles.description}>
+            <ProductDescription description={product.description || t('product.description.noDescription')} />
           </div>
 
           <div className={styles.divider}></div>

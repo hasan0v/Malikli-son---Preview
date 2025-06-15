@@ -35,7 +35,8 @@ const CheckoutSuccess: React.FC = () => {
         // Mock order data for now
         const mockOrder: Order = {
           order_id: orderId,
-          order_number: `ORD-${Date.now()}`,          shipping_address: {
+          order_number: `ORD-${Date.now()}`,          
+          shipping_address: {
             street_address: '123 Main St',
             city: 'New York',
             state: 'NY',
@@ -50,7 +51,8 @@ const CheckoutSuccess: React.FC = () => {
             estimated_delivery_min_days: 5,
             estimated_delivery_max_days: 7,
             is_active: true
-          },          shipping_cost: 9.99,
+          },          
+          shipping_cost: 9.99,
           subtotal_amount: 89.99,
           discount_amount: 0,
           tax_amount: 0,

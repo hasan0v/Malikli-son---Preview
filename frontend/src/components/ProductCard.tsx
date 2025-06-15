@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import SafeImage from './SafeImage';
 import { addToCart } from '@/store/cartSlice';
+import { RootState } from '@/store/store';
 import { findMatchingVariant, calculateVariantPrice, getVariantDisplayName } from '@/utils/variantUtils';
 import { useI18n } from '@/hooks/useI18n';
 import styles from './ProductCard.module.css';
@@ -23,6 +25,8 @@ interface ProductCardProps {
   availableColors?: Array<{id?: number, code: string, name: string, image?: string}>;
   availableSizes?: Array<{id?: number, code: string, name: string}>;
   product?: any; // We'll use this for more advanced variant handling
+  priority?: boolean; // For prioritizing above-the-fold images
+  index?: number; // Card position for lazy loading optimization
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -38,10 +42,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
   sizeName,
   availableColors = [],
   availableSizes = [],
-  product
+  product,
+  priority = false,
+  index = 0
 }) => {
   const { t } = useI18n();
   const dispatch = useDispatch();
+  const router = useRouter();
+  const { isAuthenticated } = useSelector((state: RootState) => state.auth);
 
   const [selectedColor, setSelectedColor] = useState<string | undefined>(color);
   const [selectedColorName, setSelectedColorName] = useState<string | undefined>(colorName);
@@ -110,6 +118,34 @@ const ProductCard: React.FC<ProductCardProps> = ({
     */
   };  // New Buy Now functionality
   const handleBuyNow = () => {
+    // Check authentication first
+    if (!isAuthenticated) {
+      // Store checkout data for after login
+      const checkoutParams = new URLSearchParams({
+        buyNow: 'true',
+        productId: id.toString(),
+        productName: name,
+        productSlug: slug || '',
+        image: currentImageUrl,
+        ...(product?.buy_now_link && { buyNowLink: product.buy_now_link }),
+        ...(selectedVariantId && { variantId: selectedVariantId.toString() }),
+        ...(selectedColor && { color: selectedColor }),
+        ...(selectedColorName && { colorName: selectedColorName }),
+        ...(selectedSize && { size: selectedSize }),
+        ...(selectedSizeName && { sizeName: selectedSizeName }),
+        price: currentPrice.toString(),
+        quantity: '1'
+      });
+
+      // Store the checkout URL to redirect after login
+      localStorage.setItem('redirectAfterLogin', `/checkout?${checkoutParams.toString()}`);
+      
+      // Redirect to login
+      router.push('/auth/login');
+      return;
+    }
+
+    // User is authenticated, proceed with Buy Now
     // Redirect to checkout page with product information
     const params = new URLSearchParams({
       buyNow: 'true',
@@ -127,7 +163,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       quantity: '1'
     });
     
-    window.location.href = `/checkout?${params.toString()}`;
+    router.push(`/checkout?${params.toString()}`);
   };
 
   const handleColorSelect = (colorCode: string, colorName: string, colorImage?: string, variantId?: number) => {
@@ -179,13 +215,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
       {/* Product Image Container with Hover Effects */}
       <div className={styles.imageContainer}>
         <Link href={`/products/${slug}`}>
-          <div className={styles.imageWrapper}>
-            <SafeImage
+          <div className={styles.imageWrapper}>            <SafeImage
               src={isHovered && secondaryImageUrl ? secondaryImageUrl : currentImageUrl}
               alt={name}
               width={300}
               height={400}
               className={styles.productImage}
+              priority={priority || index < 4} // Prioritize first 4 images
+              quality={90}
+              placeholder="blur"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              data-priority={priority || index < 4 ? "true" : "false"}
             />
             
             {/* Quick Add Overlay */}
@@ -233,12 +273,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <>            {/* Color Selection */}
             {availableColors.length > 0 && (
               <div className={styles.colorSelection}>
-                <div className={styles.selectionHeader}>
-                  <span className={styles.selectionLabel}>{t('product.variants.color')}:</span>
-                  {effectiveColorName && (
-                    <span className={styles.selectedValue}>{effectiveColorName}</span>
-                  )}
-                </div>
                 <div className={styles.colorOptions}>
                   {availableColors.map((colorOption, index) => (
                     <button
@@ -262,12 +296,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
             )}            {/* Size Selection */}
             {availableSizes.length > 0 && (
               <div className={styles.sizeSelection}>
-                <div className={styles.selectionHeader}>
-                  <span className={styles.selectionLabel}>{t('product.variants.size')}:</span>
-                  {effectiveSizeName && (
-                    <span className={styles.selectedValue}>{effectiveSizeName}</span>
-                  )}
-                </div>
                 <div className={styles.sizeOptions}>
                   {availableSizes.map((sizeOption, index) => (
                     <button

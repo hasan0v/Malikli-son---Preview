@@ -468,8 +468,8 @@
 }
 
 .sizeOption {
-  min-width: 56px;
-  height: 48px;
+  min-width: 15px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -519,8 +519,8 @@
 }
 
 .colorOption {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
@@ -996,4 +996,26 @@
 
 .addToCartButton.loading span {
   opacity: 0.8;
+}
+
+/* Product Description Section */
+.description {
+  margin: 24px 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .description {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .description {
+    margin: 16px 0;
+  }
 }

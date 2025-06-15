@@ -39,7 +39,17 @@ export default function CheckoutPage() {
   // Ensure component is mounted on client before accessing search params
   useEffect(() => {
     setIsClientMounted(true);
-  }, []);  // Initialize Buy Now flow if URL parameters are present
+  }, []);
+
+  // Redirect to login if user is not authenticated
+  useEffect(() => {
+    if (isClientMounted && !isAuthenticated) {
+      // Store current path to redirect back after login
+      const currentPath = '/checkout' + (window.location.search || '');
+      localStorage.setItem('redirectAfterLogin', currentPath);
+      router.push('/auth/login');
+    }
+  }, [isClientMounted, isAuthenticated, router]);  // Initialize Buy Now flow if URL parameters are present
   useEffect(() => {
     if (!isClientMounted || !searchParams) return;
     
@@ -103,7 +113,7 @@ export default function CheckoutPage() {
       id: 1,
       name: t('checkout.shipping.standardShipping'),
       description: t('checkout.shipping.standardDescription'),
-      cost: 10.00,
+      cost: 15.00,
       estimated_delivery_min_days: 5,
       estimated_delivery_max_days: 14,
       is_active: true,

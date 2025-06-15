@@ -137,7 +137,7 @@ export async function getOrderByUID(uid: string): Promise<any> {
 /**
  * Generate suggested URLs for payment platform redirection
  */
-export function generatePaymentRedirectUrls(baseUrl: string = 'http://127.0.0.1:3000') {
+export function generatePaymentRedirectUrls(baseUrl: string = 'https://malikli1992.store') {
   return {
     success_url: `${baseUrl}/order/payment-callback?status=success&token={token}&uid={uid}`,
     failure_url: `${baseUrl}/order/payment-callback?status=failed&token={token}&uid={uid}`,

@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.utils.text import slugify
 from products.models import Product, ProductVariant # Import from your products app
 from products.storage import CloudflareR2Storage
+from products.image_utils import optimize_image_for_upload
 from django.conf import settings
 from .utils import drop_banner_image_path
 
@@ -35,8 +36,12 @@ class Drop(models.Model):
     is_public = models.BooleanField(default=False) # Control visibility before launch
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
+    
     def save(self, *args, **kwargs):
+        # Convert banner image to WebP if needed
+        if self.banner_image and hasattr(self.banner_image, 'file'):
+            self.banner_image = optimize_image_for_upload(self.banner_image, 'banner')
+        
         if not self.slug:
             self.slug = slugify(self.name)
             # Ensure slug uniqueness

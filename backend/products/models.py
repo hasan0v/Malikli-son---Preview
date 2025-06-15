@@ -3,6 +3,7 @@ from django.utils.text import slugify
 from django.contrib.postgres.fields import ArrayField  # PostgreSQL optimized field
 from .storage import CloudflareR2Storage
 from django.conf import settings
+from .image_utils import optimize_image_for_upload
 
 # Get the correct storage backend
 def get_storage():
@@ -40,14 +41,15 @@ def category_image_path(instance, filename):
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=120, unique=True, blank=True)
+    slug = models.SlugField(max_length=120, unique=True, blank=True, db_index=True)  # Add index
     description = models.TextField(blank=True, null=True)
     parent_category = models.ForeignKey(
         'self',
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name='subcategories'
+        related_name='subcategories',
+        db_index=True  # Add index for category hierarchy queries
     )
     image = models.ImageField(
         upload_to=category_image_path, 
@@ -55,11 +57,15 @@ class Category(models.Model):
         null=True,
         storage=get_storage()
     )
-    is_active = models.BooleanField(default=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True, db_index=True)  # Add index for filtering
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)  # Add index for ordering
     updated_at = models.DateTimeField(auto_now=True)
-
+    
     def save(self, *args, **kwargs):
+        # Convert image to WebP if needed
+        if self.image and hasattr(self.image, 'file'):
+            self.image = optimize_image_for_upload(self.image, 'category')
+        
         if not self.slug:
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
@@ -69,29 +75,35 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = "Categories"
+        indexes = [
+            models.Index(fields=['is_active', 'created_at']),
+            models.Index(fields=['parent_category', 'is_active']),
+            models.Index(fields=['slug']),
+        ]
 
 def product_image_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/product_images/<product_slug>/<filename>
     return f'product_images/{instance.slug}/{filename}'
 
 class Product(models.Model):
-    name = models.CharField(max_length=255)
-    slug = models.SlugField(max_length=270, unique=True, blank=True)
-    sku_prefix = models.CharField(max_length=50, unique=True, blank=True, null=True)
+    name = models.CharField(max_length=255, db_index=True)  # Add index for search
+    slug = models.SlugField(max_length=270, unique=True, blank=True, db_index=True)  # Add index
+    sku_prefix = models.CharField(max_length=50, unique=True, blank=True, null=True, db_index=True)  # Add index
     description = models.TextField(blank=True, null=True)
     category = models.ForeignKey(
         Category,
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name='products'
+        related_name='products',
+        db_index=True  # Add index for category filtering
     )
-    base_price = models.DecimalField(max_digits=10, decimal_places=2)
+    base_price = models.DecimalField(max_digits=10, decimal_places=2, db_index=True)  # Add index for price sorting
     # Add buyNowLink field for external payment links
     buy_now_link = models.URLField(max_length=500, blank=True, null=True, help_text="External payment link for Buy Now functionality")
-    tags = ArrayField(models.CharField(max_length=50), blank=True, default=list)  # Changed from JSONField to ArrayField
-    is_archived = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
+    tags = ArrayField(models.CharField(max_length=50), blank=True, default=list, db_index=True)  # Add index for tag filtering
+    is_archived = models.BooleanField(default=False, db_index=True)  # Add index for filtering
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)  # Add index for ordering
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
@@ -226,27 +238,33 @@ def product_variant_image_path(instance, filename):
     return f'product_variant_images/{instance.product.slug}/{instance.sku_suffix}/{filename}'
 
 class ProductVariant(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='variants')
-    sku_suffix = models.CharField(max_length=50)  # e.g., "-S", "-RED"
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='variants', db_index=True)  # Add index
+    sku_suffix = models.CharField(max_length=50, db_index=True)  # Add index
     name_suffix = models.CharField(max_length=100, blank=True, null=True)  # e.g., "Small", "Red"
     
     # Replace JSON field with direct relationships
-    size = models.ForeignKey(Size, on_delete=models.SET_NULL, null=True, blank=True, related_name='variants')
-    color = models.ForeignKey(Color, on_delete=models.SET_NULL, null=True, blank=True, related_name='variants')
+    size = models.ForeignKey(Size, on_delete=models.SET_NULL, null=True, blank=True, related_name='variants', db_index=True)  # Add index
+    color = models.ForeignKey(Color, on_delete=models.SET_NULL, null=True, blank=True, related_name='variants', db_index=True)  # Add index
     
     # Keep attributes for any other non-standard attributes
     attributes = models.JSONField(default=dict, blank=True, help_text="Additional attributes beyond size and color")
     
-    additional_price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    additional_price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, db_index=True)  # Add index
     image = models.ImageField(
         upload_to=product_variant_image_path, 
         blank=True, 
         null=True,
         storage=get_storage()
     )
-    is_active = models.BooleanField(default=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True, db_index=True)  # Add index
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)  # Add index
     updated_at = models.DateTimeField(auto_now=True)
+
+    def save(self, *args, **kwargs):
+        # Convert image to WebP if needed
+        if self.image and hasattr(self.image, 'file'):
+            self.image = optimize_image_for_upload(self.image, 'variant')
+        super().save(*args, **kwargs)
 
     def __str__(self):
         variant_parts = []
@@ -261,6 +279,12 @@ class ProductVariant(models.Model):
 
     class Meta:
         unique_together = ('product', 'sku_suffix')
+        indexes = [
+            models.Index(fields=['product', 'is_active']),
+            models.Index(fields=['size', 'color']),
+            models.Index(fields=['is_active', 'created_at']),
+        ]
+
 def general_product_image_path(instance, filename):
     # Define a path structure, e.g., based on product or variant
     if instance.variant:
@@ -272,8 +296,8 @@ def general_product_image_path(instance, filename):
     return f'{path_base}/{filename}'
 
 class ProductImage(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='images', null=True, blank=True)
-    variant = models.ForeignKey(ProductVariant, on_delete=models.CASCADE, related_name='images', null=True, blank=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='images', null=True, blank=True, db_index=True)  # Add index
+    variant = models.ForeignKey(ProductVariant, on_delete=models.CASCADE, related_name='images', null=True, blank=True, db_index=True)  # Add index
     image = models.ImageField(
         upload_to=general_product_image_path, 
         blank=True, 
@@ -281,9 +305,20 @@ class ProductImage(models.Model):
         storage=get_storage()
     )
     alt_text = models.CharField(max_length=255, blank=True, null=True)
-    display_order = models.IntegerField(default=0)
-    is_primary = models.BooleanField(default=False)  # Main image flag
+    display_order = models.IntegerField(default=0, db_index=True)  # Add index for ordering
+    is_primary = models.BooleanField(default=False, db_index=True)  # Add index for filtering primary images
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def save(self, *args, **kwargs):
+        # Handle the case where created_at might be None for existing records
+        if not self.created_at:
+            from django.utils import timezone
+            self.created_at = timezone.now()
+        
+        # Convert image to WebP if needed
+        if self.image and hasattr(self.image, 'file'):
+            self.image = optimize_image_for_upload(self.image, 'product')
+        super().save(*args, **kwargs)
 
     def __str__(self):
         if self.product:
@@ -294,3 +329,8 @@ class ProductImage(models.Model):
 
     class Meta:
         ordering = ['display_order']
+        indexes = [
+            models.Index(fields=['product', 'display_order']),
+            models.Index(fields=['variant', 'display_order']),
+            models.Index(fields=['is_primary']),
+        ]

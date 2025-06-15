@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RootState } from '@/store/store';
@@ -18,7 +19,9 @@ interface CartSidebarProps {
 export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
   const { t } = useI18n();
   const dispatch = useDispatch<any>();
+  const router = useRouter();
   const cartItems = useSelector((state: RootState) => state.cart.items);
+  const { isAuthenticated } = useSelector((state: RootState) => state.auth);
   const sidebarRef = useRef<HTMLDivElement>(null);
   // Add client-side rendering flag
   const [isClient, setIsClient] = useState(false);
@@ -27,6 +30,19 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  // Handle checkout navigation with authentication check
+  const handleCheckout = () => {
+    if (!isAuthenticated) {
+      // Store current path to redirect back after login
+      localStorage.setItem('redirectAfterLogin', '/checkout');
+      router.push('/auth/login');
+    } else {
+      router.push('/checkout');
+    }
+    onClose(); // Close sidebar after navigation
+  };
+
     const handleRemoveItem = (item: any) => {
     dispatch(removeFromCart({
       id: item.id,
@@ -211,13 +227,12 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
                   </span>
                 </div>
                 
-                <div className={styles.cartButtons}>
-                  <Link href="/cart" className={styles.viewCartBtn} onClick={onClose}>
+                <div className={styles.cartButtons}>                  <Link href="/cart" className={styles.viewCartBtn} onClick={onClose}>
                     {t('cart.sidebar.viewCart')}
                   </Link>
-                  <Link href="/checkout" className={styles.checkoutBtn}>
+                  <button onClick={handleCheckout} className={styles.checkoutBtn}>
                     {t('cart.sidebar.checkout')}
-                  </Link>
+                  </button>
                 </div>
               </div>
             </>

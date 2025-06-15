@@ -5,6 +5,7 @@ from django.urls import path
 from django.shortcuts import render, get_object_or_404
 from django import forms
 from django.contrib import messages
+from django.utils.html import format_html
 
 # Add this helper class after imports but before other admin classes
 class VariantBulkCreateForm(forms.Form):
@@ -146,7 +147,7 @@ class ProductVariantAdmin(admin.ModelAdmin):
 
 @admin.register(ProductImage)
 class ProductImageAdmin(admin.ModelAdmin):
-    list_display = ('id', 'product_link', 'variant_link', 'alt_text', 'is_primary', 'display_order')
+    list_display = ('id', 'product_link', 'variant_link', 'alt_text', 'is_primary', 'image_format', 'image_size', 'display_order')
     list_filter = ('is_primary', 'product', 'variant')
     search_fields = ('alt_text', 'product__name', 'variant__name_suffix')
     
@@ -165,6 +166,33 @@ class ProductImageAdmin(admin.ModelAdmin):
             link = reverse("admin:products_productvariant_change", args=[obj.variant.id])
             return format_html('<a href="{}">{}</a>', link, str(obj.variant))
         return "-"
+    
+    def image_format(self, obj):
+        """Display image format (extension)"""
+        if obj.image and obj.image.name:
+            import os
+            ext = os.path.splitext(obj.image.name)[1].upper()
+            if ext == '.WEBP':
+                return format_html('<span style="color: green; font-weight: bold;">{}</span>', ext)
+            return ext
+        return "-"
+    image_format.short_description = "Format"
+    
+    def image_size(self, obj):
+        """Display image file size"""
+        if obj.image:
+            try:
+                size_bytes = obj.image.size
+                if size_bytes < 1024:
+                    return f"{size_bytes} B"
+                elif size_bytes < 1024*1024:
+                    return f"{size_bytes/1024:.1f} KB"
+                else:
+                    return f"{size_bytes/(1024*1024):.1f} MB"
+            except:
+                return "N/A"
+        return "-"
+    image_size.short_description = "Size"
     
     def image_url_preview(self, obj):
         if obj.image:

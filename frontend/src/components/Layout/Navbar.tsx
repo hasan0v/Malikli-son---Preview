@@ -93,17 +93,23 @@ export default function Navbar() {
   return (
     <>
       <nav className={navbarClass}>
-        <div className={styles.navContainer}>
-          <Link href="/" className={styles.logoContainer}>
-            {/* Use standard logo on server render, then conditionally apply styles once mounted */}          <Image 
+        <div className={styles.navContainer}>          <Link href="/" className={styles.logoContainer}>
+            {/* Use standard logo on server render, then conditionally apply styles once mounted */}
+            <Image 
               src="/logo.png" 
               alt="Malikli1992 Logo" 
               width={150} 
               height={40} 
               className={mounted && isHomePage && !isScrolledOrMenuOpen ? styles.logoWhite : styles.logo}
               priority
+              style={{
+                width: 'auto',
+                height: 'auto',
+                maxHeight: '40px',
+                // Responsive sizing handled by CSS media queries
+              }}
             />
-          </Link>          <div className={styles.navLinks}>
+          </Link><div className={styles.navLinks}>
             <Link href="https://www.malikli1992.store/shipping.html" className={styles.navLink}>
               {t('nav.delivery')}
             </Link>
@@ -113,11 +119,13 @@ export default function Navbar() {
             <Link href="https://www.malikli1992.store/contact.html" className={styles.navLink}>
               {t('nav.contact')}
             </Link>
-          </div><div className={styles.navIcons}>
-            {/* Language Switcher */}
+          </div>        <div className={styles.navIcons}>
+          {/* Language Switcher - hidden on mobile, available in hamburger menu */}
+          <div className={styles.desktopLanguageSwitcher}>
             <LanguageSwitcher />
-            
-            {/* User Authentication Section */}
+          </div>
+          
+          {/* User Authentication Section */}
             {isAuthenticated && user ? (
               <div className={`${styles.userMenuContainer} user-menu-container`}>
                 <button 
@@ -269,13 +277,10 @@ export default function Navbar() {
             <Link href="https://www.malikli1992.store/contact.html" onClick={() => setMobileMenuOpen(false)}>
               {t('nav.contact')}
             </Link>
-            
-            {/* Language Switcher for Mobile - Commented out */}
-            {/* 
+              {/* Language Switcher for Mobile */}
             <div className={styles.mobileLangSection}>
               <LanguageSwitcher />
             </div>
-            */}
             
             {/* Auth section for mobile - only show login/register when not authenticated */}
             {!isAuthenticated && (

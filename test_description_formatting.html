@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description Preview</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .original { background: #f5f5f5; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        .formatted { background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; white-space: pre-line; }
+        .section { margin-bottom: 20px; }
+        .feature-title { font-weight: bold; color: #0ABAB5; margin-bottom: 8px; }
+        .bullet-point { margin-left: 20px; margin-bottom: 8px; }
+        .highlight { background: rgba(10, 186, 181, 0.1); padding: 2px 4px; border-radius: 4px; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Description Formatting Preview</h1>        <h2>Original Description with Line Breaks:</h2>
+        <div class="original">
+            Minimalism meets utility. ✓ Comfort: 95% combed cotton + 5% elastane for stretch. ✓ Style: The zipper adds urban edge, transforming a basic into a statement. ✓ Versatility: Pairs with tailored trousers (smart-casual) or distressed jeans (rebel aesthetic). *Fabric Excellence: 238-250 GSM* (1.5-2x denser than standard tees at 120-180 GSM) ✓ Durability: Holds shape wash after wash. ✓ Fit: Structured yet fluid drape to flatter all body types. ✓ Year-round: Breathable for summer, substantial for cool evenings. *For whom?* Those who see clothing as an investment—not compromise. Feel the difference at first touch. *Sizes:* S-XL
+        </div>        <h2>Formatted Description (How it will appear with proper line breaks):</h2>
+        <div class="formatted">
+            <div class="section">
+                <p><strong>Minimalism meets utility.</strong></p>
+            </div>
+            
+            <div class="section">
+                <ul>
+                    <li class="bullet-point"><span class="highlight">✓</span> <strong>Comfort:</strong> <span class="highlight">95%</span> combed cotton + <span class="highlight">5%</span> elastane for stretch.</li>
+                    <li class="bullet-point"><span class="highlight">✓</span> <strong>Style:</strong> The zipper adds urban edge, transforming a basic into a statement.</li>
+                    <li class="bullet-point"><span class="highlight">✓</span> <strong>Versatility:</strong> Pairs with tailored trousers (smart-casual) or distressed jeans (rebel aesthetic).</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="feature-title">Fabric Excellence</div>
+                <p><span class="highlight">238-250 GSM</span> (1.5-2x denser than standard tees at <span class="highlight">120-180 GSM</span>)</p>
+            </div>
+            
+            <div class="section">
+                <ul>
+                    <li class="bullet-point"><span class="highlight">✓</span> <strong>Durability:</strong> Holds shape wash after wash.</li>
+                    <li class="bullet-point"><span class="highlight">✓</span> <strong>Fit:</strong> Structured yet fluid drape to flatter all body types.</li>
+                    <li class="bullet-point"><span class="highlight">✓</span> <strong>Year-round:</strong> Breathable for summer, substantial for cool evenings.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="feature-title">For whom?</div>
+                <p>Those who see clothing as an investment—not compromise. Feel the difference at first touch.</p>
+            </div>
+            
+            <div class="section">
+                <div class="feature-title">Sizes</div>
+                <p>S-XL</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
